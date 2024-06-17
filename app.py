@@ -4,7 +4,7 @@ import json
 import os
 from datetime import timedelta
 
-app = Flask(__name__,static_folder='/static/')
+app = Flask(__name__,static_folder='./static')
 app.secret_key = os.urandom(24)
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(days=100)
 PORT_NUM = 7860
