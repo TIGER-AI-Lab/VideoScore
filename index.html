@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/954/954593.png?v=2">
 
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
   <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.16.0/gradio.js"></script>
@@ -114,10 +115,10 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">MantisScore: A Reliable Fine-grained Metric for Video Generation</h1>
+            <h1 class="title is-1 publication-title">🔮MantisScore <br> A Reliable Fine-grained Metric for Video Generation</h1>
               <div class="is-size-5 publication-authors">
                   <span class="author-block">
-                    <sup>1,2</sup><sup>♧</sup><a href="" style="font-weight:normal;">Xuan He*</a>,
+                    <sup>1,2</sup><a href="" style="font-weight:normal;">Xuan He*</a>,
                   </span>
                   <span class="author-block">
                     <sup>1</sup><a href="https://jdf-prog.github.io/" style="font-weight:normal;">Dongfu Jiang*</a>,
@@ -252,7 +253,7 @@
 
             <centering>
               <div style="text-align: center;">
-                <img id="teaser" width="85%" src="static/images/teaser.png">     
+                <img id="teaser" width="85%" src="images/teaser.png">     
               </div>
             
             </centering> 
@@ -323,7 +324,9 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
         <h2 class="title is-3">
-          VideoEval Dataset</h2>
+          🐳Video-Eval Dataset: <br> Multi-Aspect Human-Annotated Video Evaluation Data
+        
+        </h2>
       </div>
     </div>   
   <div class="container is-max-desktop">
@@ -336,20 +339,20 @@
             <ul>
                 VideoEval contains a total of <b>37.6K</b> text-to-video pairs from 11 popular video generative models, 
                 with some real-world videos as data augmentation. 
-                The videos are annotated by raters for five evaluation dimensions: <b></b>Visual Quality, <b>Temporal Consistency</b>, <b>Dynamic Degree</b>,
+                The videos are annotated by raters for five evaluation dimensions: <b>Visual Quality</b>, <b>Temporal Consistency</b>, <b>Dynamic Degree</b>,
                  <b>Text-to-Video Alignment</b> and <b>Factual Consistency</b>, 
                 in 1-4 scoring scale. Below we show two annotated video examples and the detailed description of our VideoEval dataset.
                 Please check out <a href="https://huggingface.co/TIGER-Lab/Video_Eval">🤗 <b>Video-Eval</b></a> on hugging face datasets for usage.
               <p></p>
               <centering>
                 <div style="text-align: center;">
-                    <img id="anno_example" width="85%" src="static/images/anno_example.png">     
+                    <img id="anno_example" width="85%" src="images/anno_example.png">     
                 </div>
               </centering> 
               <p></p>
               <centering>
                 <div style="text-align: center;">
-                    <img id="dataset" width="85%" src="static/images/dataset.png">     
+                    <img id="dataset" width="85%" src="images/dataset.png">     
                 </div>
               </centering>
             </ul>
@@ -359,7 +362,11 @@
     <!-- MantisScore. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
-        <h2 class="title is-3"> MantisScore </h2>
+        
+        <h2 class="title is-3"> 
+          <!--<img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/954/954596.png">-->
+
+          🔮MantisScore </h2>
       </div>
     </div>   
     <div class="container is-max-desktop">
@@ -390,7 +397,7 @@
     <!-- Results. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
-        <h2 class="title is-3"> Evaluation Results</h2>
+        <h2 class="title is-3"> 🎯Evaluation Results</h2>
       </div>
     </div>
     <div class="container is-max-desktop">
@@ -398,7 +405,8 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-4"><span style="font-size: 100%;">VideoEval-test</span></h2>
+        <h2 class="title is-4"><span style="font-size: 100%;">
+          🐳VideoEval-test</span></h2>
         
         <p>
           We test our video evaluator MantisScore on VideoEval-test set, 
@@ -409,7 +417,7 @@
         <p></p>
         <centering>
           <div style="text-align: center;">
-              <img id="res_video_eval" width="75%" src="static/images/res_video_eval.png">     
+              <img id="res_video_eval" width="75%" src="images/res_video_eval.png">     
           </div>
         </centering>
         
@@ -419,7 +427,9 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-4"><span style="font-size: 100%;">EvalCrafter Benchmark</span></h2>
+        <h2 class="title is-4"><span style="font-size: 100%;">
+          <img id="painting_icon" width="3%" src="images/ec_icon.png">
+          EvalCrafter Benchmark</span></h2>
         
         <p>
           We select 3 dimensions from EvalCrafter that match our evaluation aspects 
@@ -429,7 +439,7 @@
         <p></p>
         <centering>
           <div style="text-align: center;">
-              <img id="res_eval_crafter" width="40%" src="static/images/res_eval_crafter.png">     
+              <img id="res_eval_crafter" width="40%" src="images/res_eval_crafter.png">     
           </div>
         </centering>
         
@@ -439,7 +449,7 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-4"><span style="font-size: 100%;">GenAI-Bench and VBench</span></h2>
+        <h2 class="title is-4"><span style="font-size: 100%;">⚔️GenAI-Bench and 🧩VBench</span></h2>
         
         <p>
             GenAI-Bench is a multimodal benchmark for MLLM's capability on preference comparison
@@ -454,7 +464,7 @@
         <p></p>
         <centering>
           <div style="text-align: center;">
-            <img id="teaser" width="75%" src="static/images/res_genai_vbench.png">     
+            <img id="teaser" width="75%" src="images/res_genai_vbench.png">     
           </div>
         </centering> 
         
