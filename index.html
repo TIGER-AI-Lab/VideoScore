@@ -18,7 +18,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/954/954593.png?v=2">
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
   <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.16.0/gradio.js"></script>
@@ -115,7 +114,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">🔮MantisScore <br> A Reliable Fine-grained Metric for Video Generation</h1>
+            <h1 class="title is-1 publication-title">MantisScore: A Reliable Fine-grained Metric for Video Generation</h1>
               <div class="is-size-5 publication-authors">
                   <span class="author-block">
                     <sup>1,2</sup><a href="" style="font-weight:normal;">Xuan He*</a>,
@@ -219,12 +218,12 @@
                 </span>
 
                 <span class="link-block">
-                  <a href="https://huggingface.co/datasets/TIGER-Lab/VideoEval" target="_blank"
+                  <a href="https://huggingface.co/datasets/TIGER-Lab/Video_Eval" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-database"></i>
                     </span>
-                    <span>VideoEval </span>
+                    <span>Video-Eval </span>
                   </a>
                 </span>
 
@@ -253,7 +252,7 @@
 
             <centering>
               <div style="text-align: center;">
-                <img id="teaser" width="85%" src="images/teaser.png">     
+                <img id="teaser" width="85%" src="static/images/teaser.png">     
               </div>
             
             </centering> 
@@ -273,25 +272,23 @@
           <div class="content has-text-justified">
             <p>
 
-              The recent years have witnessed great advances
-              in text-to-video generation. However, the video
-              evaluation metrics have lagged significantly behind, which fails to produce an accurate and
-              holistic measure of the generated videos' quality. The main barrier is the lack of high-quality
-              human rating data. In this paper, we release
-              VideoEval, the first large-scale multi-aspect
-              video evaluation dataset. VideoEval consists
-              of high-quality human-provided ratings for 5
+              The recent years have witnessed great advances in text-to-video generation. 
+              However, the video evaluation metrics have lagged significantly behind, 
+              which fails to produce an accurate and holistic measure of the generated videos' quality. 
+              The main barrier is the lack of high-quality human rating data. 
+              In this paper, we release VideoEval, the first large-scale multi-aspect video evaluation dataset. 
+              VideoEval consists of high-quality human-provided ratings for 5
               video evaluation aspects on the 37.6K videos
-              generated from 11 existing popular video generative models. We train MantisScore based
-              on VideoEval to enable automatic video quality assessment. Experiments show that the
-              Spearman correlation between MantisScore
+              generated from 11 existing popular video generative models. 
+              We train MantisScore based on VideoEval to enable automatic video quality assessment. 
+              Experiments show that the Spearman correlation between MantisScore
               and humans can reach 77.1 on VideoEval 
               test, beating the prior best metrics by about
-              50 points. Further result on the held-out Eval020 Crafter, GenAI-Bench, and VBench, show that
+              50 points. Further result on the held-out Eval Crafter, GenAI-Bench, and VBench, show that
               MantisScore is highly generalizable and
-              still beating the prior best metrics by a remark023 able margin. We observe that using Mantis as
+              still beating the prior best metrics by a remarkable margin. We observe that using Mantis as
               the based model consistently beats that using
-              Idefics2 and VideoLLaVA, and the regression026 based model can achieve better results than the
+              Idefics2 and VideoLLaVA, and the regression based model can achieve better results than the
               generative ones. Due to its high reliability, we
               believe MantisScore can serve as a valuable
               tool for accelerate video generation research.
@@ -306,6 +303,8 @@
                 <li><b>Evaluation</b>. We test our model on VideoEval-test and 3 other Benchmarks: <a href="https://evalcrafter.github.io/"> EvalCrafter</a>, 
                   <a href="https://github.com/hiamitabha/genai-bench">GenAI-Bench </a> and <a href="https://vchitect.github.io/VBench-project/">VBench</a>, 
                   compared with both feature-based metrics and MLLM prompting methods. 
+                  </span></li>
+                <li><b>Open Source</b>. Our VideoEval datase, evaluation results and all the training/evaluation code will be released as public.
                   </span></li>
 
               </ol>  
@@ -324,9 +323,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
         <h2 class="title is-3">
-          🐳Video-Eval Dataset: <br> Multi-Aspect Human-Annotated Video Evaluation Data
-        
-        </h2>
+          VideoEval Dataset</h2>
       </div>
     </div>   
   <div class="container is-max-desktop">
@@ -346,13 +343,13 @@
               <p></p>
               <centering>
                 <div style="text-align: center;">
-                    <img id="anno_example" width="85%" src="images/anno_example.png">     
+                    <img id="anno_example" width="85%" src="static/images/anno_example.png">     
                 </div>
               </centering> 
               <p></p>
               <centering>
                 <div style="text-align: center;">
-                    <img id="dataset" width="85%" src="images/dataset.png">     
+                    <img id="dataset" width="85%" src="static/images/dataset.png">     
                 </div>
               </centering>
             </ul>
@@ -362,11 +359,9 @@
     <!-- MantisScore. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
-        
-        <h2 class="title is-3"> 
-          <!--<img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/954/954596.png">-->
-
-          🔮MantisScore </h2>
+        <h2 class="title is-3">
+          <img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/954/954593.png">
+          MantisScore </h2>
       </div>
     </div>   
     <div class="container is-max-desktop">
@@ -397,7 +392,7 @@
     <!-- Results. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
-        <h2 class="title is-3"> 🎯Evaluation Results</h2>
+        <h2 class="title is-3"> Evaluation Results</h2>
       </div>
     </div>
     <div class="container is-max-desktop">
@@ -405,8 +400,7 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-4"><span style="font-size: 100%;">
-          🐳VideoEval-test</span></h2>
+        <h2 class="title is-4"><span style="font-size: 100%;">VideoEval-test</span></h2>
         
         <p>
           We test our video evaluator MantisScore on VideoEval-test set, 
@@ -417,7 +411,7 @@
         <p></p>
         <centering>
           <div style="text-align: center;">
-              <img id="res_video_eval" width="75%" src="images/res_video_eval.png">     
+              <img id="res_video_eval" width="75%" src="static/images/res_video_eval.png">     
           </div>
         </centering>
         
@@ -427,9 +421,7 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-4"><span style="font-size: 100%;">
-          <img id="painting_icon" width="3%" src="images/ec_icon.png">
-          EvalCrafter Benchmark</span></h2>
+        <h2 class="title is-4"><span style="font-size: 100%;">EvalCrafter Benchmark</span></h2>
         
         <p>
           We select 3 dimensions from EvalCrafter that match our evaluation aspects 
@@ -439,7 +431,7 @@
         <p></p>
         <centering>
           <div style="text-align: center;">
-              <img id="res_eval_crafter" width="40%" src="images/res_eval_crafter.png">     
+              <img id="res_eval_crafter" width="40%" src="static/images/res_eval_crafter.png">     
           </div>
         </centering>
         
@@ -449,7 +441,7 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-4"><span style="font-size: 100%;">⚔️GenAI-Bench and 🧩VBench</span></h2>
+        <h2 class="title is-4"><span style="font-size: 100%;">GenAI-Bench and VBench</span></h2>
         
         <p>
             GenAI-Bench is a multimodal benchmark for MLLM's capability on preference comparison
@@ -464,7 +456,7 @@
         <p></p>
         <centering>
           <div style="text-align: center;">
-            <img id="teaser" width="75%" src="images/res_genai_vbench.png">     
+            <img id="teaser" width="75%" src="static/images/res_genai_vbench.png">     
           </div>
         </centering> 
         
