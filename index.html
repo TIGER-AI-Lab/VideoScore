@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/954/954593.png?v=2">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
@@ -252,7 +252,7 @@
 
             <centering>
               <div style="text-align: center;">
-                <img id="teaser" width="85%" src="{{ url_for('static', filename='images/teaser.png') }}">     
+                <img id="teaser" width="85%" src="static/images/teaser.png">     
               </div>
             
             </centering> 
@@ -322,8 +322,8 @@
     <!-- VideoEval Dataset. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
-        <h2 class="title is-3"><img id="painting_icon" 
-          width="3%" src="https://cdn-icons-png.flaticon.com/512/5886/5886001.png"> VideoEval Dataset</h2>
+        <h2 class="title is-3">
+          VideoEval Dataset</h2>
       </div>
     </div>   
   <div class="container is-max-desktop">
@@ -336,19 +336,20 @@
             <ul>
                 VideoEval contains a total of <b>37.6K</b> text-to-video pairs from 11 popular video generative models, 
                 with some real-world videos as data augmentation. 
-                The videos are annotated by raters for five evaluation dimensions: Visual Quality, Temporal Consistency, Dynamic Degree, Text-to-Video Alignment and Factual Consistency, 
+                The videos are annotated by raters for five evaluation dimensions: <b></b>Visual Quality, <b>Temporal Consistency</b>, <b>Dynamic Degree</b>,
+                 <b>Text-to-Video Alignment</b> and <b>Factual Consistency</b>, 
                 in 1-4 scoring scale. Below we show two annotated video examples and the detailed description of our VideoEval dataset.
-                Please check out <a href="https://huggingface.co/TIGER-Lab/Video_Eval">🤗 Video-Eval</a> on hugging face datasets for usage.
+                Please check out <a href="https://huggingface.co/TIGER-Lab/Video_Eval">🤗 <b>Video-Eval</b></a> on hugging face datasets for usage.
               <p></p>
               <centering>
                 <div style="text-align: center;">
-                    <img id="anno_example" width="85%" src="{{ url_for('static', filename='images/anno_example.png') }}">     
+                    <img id="anno_example" width="85%" src="static/images/anno_example.png">     
                 </div>
               </centering> 
               <p></p>
               <centering>
                 <div style="text-align: center;">
-                    <img id="dataset" width="85%" src="{{ url_for('static', filename='images/dataset.png') }}">     
+                    <img id="dataset" width="85%" src="static/images/dataset.png">     
                 </div>
               </centering>
             </ul>
@@ -408,7 +409,7 @@
         <p></p>
         <centering>
           <div style="text-align: center;">
-              <img id="res_video_eval" width="75%" src="{{ url_for('static', filename='images/res_video_eval.png') }}">     
+              <img id="res_video_eval" width="75%" src="static/images/res_video_eval.png">     
           </div>
         </centering>
         
@@ -428,7 +429,7 @@
         <p></p>
         <centering>
           <div style="text-align: center;">
-              <img id="res_eval_crafter" width="40%" src="{{ url_for('static', filename='images/res_eval_crafter.png') }}">     
+              <img id="res_eval_crafter" width="40%" src="static/images/res_eval_crafter.png">     
           </div>
         </centering>
         
@@ -453,7 +454,7 @@
         <p></p>
         <centering>
           <div style="text-align: center;">
-            <img id="teaser" width="75%" src="{{ url_for('static', filename='images/res_genai_vbench.png') }}">     
+            <img id="teaser" width="75%" src="static/images/res_genai_vbench.png">     
           </div>
         </centering> 
         
