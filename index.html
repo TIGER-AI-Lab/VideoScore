@@ -684,19 +684,21 @@
           <img id="painting_icon" width="3%" src="static/images/data_logo4.png">
           VideoEval-test</span></h2>
         <p>
-          We test our video evaluator MantisScore on VideoEval-test set, 
-          Here is the results of some feature-based metrics like PIQE, CLIP-sim, X-CILIP-Sore etc, 
+          We test MantisScore on VideoEval-test set, containing 760 videos with human scores from five dimensions. 
+          We take the Spearman correlation between MantisScore and human annotation as performance indicator. 
+          Below we show the results of some feature-based metrics like PIQE, CLIP-sim, X-CILIP-Sore etc, and some
           MLLM-prompting methods like GPT-4o Gemini-1.5-Pro, etc and our MantisScore. 
-          As seen in the table below, MantisScore surpass the best baseline by 54.1 in average on 5 aspects. 
         </p>
         <br>
         <h2 class="title is-5"><span style="font-size: 100%;">
           <img id="painting_icon" width="3%" src="static/images/ec_icon.png">
           EvalCrafter Benchmark</span></h2>
         <p>
-          We select 3 dimensions from EvalCrafter that match our evaluation aspects 
-          and collect 2500+ videos for test. MantisScore surpass all the baselines in 3 apsects 
-          and EvalCrafter(GPT-4V) in Text-to-Video Alignment.
+          We select 3 dimensions (Visual Quality, Temporal Consistency and Text-to-Video Alignment) 
+          from EvalCrafter that match our evaluation aspects 
+          and collect 2500+ videos for test. 
+          We take the Spearman correlation between MantisScore and human annotation as performance indicator.
+
         </p>
         <br>
         <h2 class="title is-5"><span style="font-size: 100%;">⚔️GenAI-Bench and VBench</span></h2>
@@ -704,10 +706,11 @@
             GenAI-Bench is a multimodal benchmark for MLLM's capability on preference comparison
             for tasks like text-to-video generation, image-editing and others, while 
             VBench is a comprehensive multi-aspect benchmark suite for
-            video generative models. For GenAI-Bench we collect 2100+ videos and 
-            for VBench select a subset from 5 aspects of VBench, like technical 
-            quality, subject consistency, and so on, then subsample 100 unique prompts (2000 videos totally) for testing.
-            We use the averaged scores of the five aspects for MLLM prompting baselines and our models to
+            video generative models. <br>
+            For GenAI-Bench we collect 2100+ videos in test and 
+            for VBench we select a subset from 5 aspects of VBench, like technical 
+            quality, subject consistency etc, then subsample 100 unique prompts for four T2V models (2000 videos totally) for test.
+            We use averaged score of our five dimensions for MLLM prompting baselines and MantisScore to
             give the preference and calculate the pairwise accuracy as performance indicator.
         </p>
         <!--<centering>
@@ -848,9 +851,9 @@
       <div class="columns is-centered">
         <div class="column is-full-width">
             <p style="text-align:center">
-              Scale of all the scores is [1,2,3,4] except for MantisScore (reg), 
+              Scale of all the scores is in [1, 2, 3, 4] except for MantisScore (reg), 
               which outputs five float logits ranging from 0.50 to 4.50. <br>
-              For scale [1,2,3,4], 1-Bad, 2-Avg, 3-Good, 4-Perfect/Real. <br>
+              For scale [1, 2, 3, 4], 1-Bad, 2-Avg, 3-Good, 4-Perfect/Real. <br>
 
 
             </p>
@@ -899,12 +902,12 @@
                     <td>Idefics1</td><td>4</td><td>4</td><td>3</td><td>1</td><td>2</td>
                   </tr>
                   <tr style="background-color: rgba(42, 149, 235, 0.15);">
-                    <td>PIQE</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                    <td>DINO-sim</td><td>-</td><td>1</td><td>-</td><td>-</td><td>-</td>
+                    <td>PIQE</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
+                    <td>DINO-sim</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
                   </tr>
                   <tr style="background-color: rgba(42, 149, 235, 0.15);">
-                    <td>SSIM-dyn</td><td>-</td><td>-</td><td>3</td><td>-</td><td>-</td>
-                    <td>CLIP-Score</td><td>-</td><td>-</td><td>-</td><td>2</td><td>-</td>
+                    <td>SSIM-dyn</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td>
+                    <td>CLIP-Score</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td>
                   </tr>
               </tbody>
             </table>
@@ -951,12 +954,12 @@
                     <td>Idefics1</td><td>4</td><td>4</td><td>3</td><td>1</td><td>2</td>
                   </tr>
                   <tr style="background-color: rgba(42, 149, 235, 0.15);">
-                    <td>PIQE</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                    <td>DINO-sim</td><td>-</td><td>3</td><td>-</td><td>-</td><td>-</td>
+                    <td>PIQE</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
+                    <td>DINO-sim</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td>
                   </tr>
                   <tr style="background-color: rgba(42, 149, 235, 0.15);">
-                    <td>SSIM-dyn</td><td>-</td><td>-</td><td>4</td><td>-</td><td>-</td>
-                    <td>CLIP-Score</td><td>-</td><td>-</td><td>-</td><td>2</td><td>-</td>
+                    <td>SSIM-dyn</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td>
+                    <td>CLIP-Score</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td>
                   </tr>
               </tbody>
             </table>
@@ -977,7 +980,7 @@
       <div class="columns is-centered">
         <div class="column is-full-width">
             <p style="text-align:center">
-              In GenAI-Bench, we have two videos with same prompt and a human preference annotation in each entry. 
+              In each item we have two videos with same prompt and a human preference annotation. 
               For MantisScore and MLLM prompting methods, we use average score of all 5 dimensions to predict preference, 
               while for feature-based metrics, we use their discretized output for the prediction of preference direcly.
             </p>
