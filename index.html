@@ -270,66 +270,66 @@
   </section>
 
 
-  <section class="section"  style="background-color:#efeff081">
+<!----------------------------------------- Abstract. --------------------------------------------------->
+  <section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h2 class="title is-3"> 
+      Abstract</h2>
+  </div>
+  </section>   
+
+  <section class="section">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
-        <div class="column is-six-fifths">
-          <h2 class="title is-3">Abstract</h2>
+        <div class="column is-four-fifths">
+          
           <div class="content has-text-justified">
             <p>
-
               The recent years have witnessed great advances
-              in text-to-video generation. However, the video
-              evaluation metrics have lagged significantly behind, which fails to produce an accurate and
-              holistic measure of the generated videos' quality. The main barrier is the lack of high-quality
-              human rating data. <br>
-              
-              In this paper, we release
-              VideoEval, the first large-scale multi-aspect
-              video evaluation dataset. VideoEval consists
-              of high-quality human-provided ratings for 5
-              video evaluation aspects on the 37.6K videos
-              generated from 11 existing popular video generative models. We train MantisScore based
-              on VideoEval to enable automatic video quality assessment. <br>
-              
-              Experiments show that the
-              Spearman correlation between MantisScore
-              and humans can reach 77.1 on VideoEval 
-              test, beating the prior best metrics by about
-              50 points. Further result on the held-out Eval-Crafter, GenAI-Bench, and VBench, show that
-              MantisScore is highly generalizable and
-              still beating the prior best metrics by a remarkable margin. <br>
-              
-              We observe that using Mantis as
-              the based model consistently beats that using
-              Idefics2 and VideoLLaVA, and the regression based model can achieve better results than the
-              generative ones. Due to its high reliability, we
-              believe MantisScore can serve as a valuable
-              tool for accelerate video generation research.<br>
-              <ol type="1">
-
-                <li><b>VideoEval Dataset</b>. We release the first large scale multi-dimension video evaluation dataset, 
-                  consisting of 37.6K text-to-video pairs with human annotated scores.<span style="font-size: 100%;">
-                  </span></li>
-                <li><b>MantisScore</b>. We introduce MantisScore, and video quality evaluator trained on 
-                  VideoEval dataset with <a href="https://huggingface.co/TIGER-Lab/Mantis-8B-Idefics2">Mantis-8B-Idefics2</a> as base model.<span style="font-size: 100%;">
-                  </span></li>
-                <li><b>Evaluation</b>. We test our model on VideoEval-test and 3 other Benchmarks: <a href="https://evalcrafter.github.io/"> EvalCrafter</a>, 
-                  <a href="https://huggingface.co/datasets/TIGER-Lab/GenAI-Bench">GenAI-Bench </a> and <a href="https://vchitect.github.io/VBench-project/">VBench</a>, 
-                  compared with both feature-based metrics and MLLM prompting methods. 
-                  </span></li>
-
+              in text-to-video generation. However, <b>the video
+              evaluation metrics have lagged significantly behind</b>, which fails to produce an accurate and
+              holistic measure of the generated videos' quality. The main barrier is the lack of <b>high-quality
+              human rating data</b>. <br>
+              <ol type="I">
+                <li>
+                  <img id="painting_icon" width="3%" src="{{ url_for('static', filename='images/data_logo4.png') }}">
+                  <b>VideoEval Dataset</b>. In this paper, we release
+                  <b><i>VideoEval</i></b>, the first large-scale multi-aspect
+                  video evaluation dataset. VideoEval consists
+                  of high-quality human-provided ratings for 5
+                  video evaluation aspects on the 37.6K videos
+                  generated from 11 existing popular video generative models.
+                </li>
+                <li>
+                  <img id="painting_icon" width="3%" src="{{ url_for('static', filename='images/logo3.png') }}">
+                  <b>MantisScore</b>. 
+                  We train <b><i>MantisScore</i></b> based on VideoEval to enable automatic video quality assessment. 
+                  Experiments show that the Spearman correlation between MantisScore
+                  and humans can reach <b>77.1</b> on VideoEval test, beating the prior best metrics by about
+                  <b>50 points</b>. Further result on the held-out Eval-Crafter, GenAI-Bench, and VBench, show that
+                  MantisScore is highly generalizable and
+                  still <b>beating the prior best metrics by a remarkable margin. </b>
+                </li>
+                <li>
+                  <b>Model Variants</b>. We observe that using Mantis as
+                  the based model consistently beats that using
+                  Idefics2 and VideoLLaVA, and the regression based model can achieve better results than the
+                  generative ones.
+                </li>
+                
               </ol>  
-           </p>
+              Due to its high reliability, we
+              believe MantisScore can serve as a valuable
+              tool for accelerate video generation research.
+              
+            </p>
   
           </div>
         </div>
       </div>
-        
     </div>
   </section>
-
 
 
 
