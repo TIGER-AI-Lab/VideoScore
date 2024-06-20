@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/954/954593.png?v=2">
 
+  <link rel="icon" href="images/logo3.png?v=2">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
@@ -109,99 +109,82 @@
 
 <body>
 
-
-  <section class="hero">
+<!----------------------------------------- Title and Authors. --------------------------------------------------->
+<section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">🔮MantisScore <br> A Reliable Fine-grained Metric for Video Generation</h1>
+            <h1 class="title is-1 publication-title is-bold">
+              <img id="painting_icon" width="3%" src="{{ url_for('static', filename='images/logo3.png') }}">
+              MantisScore </h1>
+              <h2 class="subtitle is-3 publication-subtitle"> A Reliable Fine-grained Metric for Video Generation</h2>
+              <br> 
               <div class="is-size-5 publication-authors">
                   <span class="author-block">
-                    <sup>1,2</sup><a href="" style="font-weight:normal;">Xuan He*</a>,
+                    <sup style="color:#ffac33;">1</sup><sup>,</sup><sup style="color:#007bff;">2</sup><sup>,†</sup>
+                    <a href="" style="font-weight:normal;">Xuan He*</a>,
                   </span>
                   <span class="author-block">
-                    <sup>1</sup><a href="https://jdf-prog.github.io/" style="font-weight:normal;">Dongfu Jiang*</a>,
+                    <sup style="color:#ffac33;">1</sup><sup>,†</sup>
+                    <a href="https://jdf-prog.github.io/" style="font-weight:normal;">Dongfu Jiang*</a>,
                   </span>
                   <span class="author-block">
-                    <sup>1,3</sup><a href="" style="font-weight:normal;">Ge Zhang</a>,
+                    <sup style="color:#ffac33;">1</sup><sup>,</sup><sup style="color:#ed4b82;">3</sup>
+                    <a href="" style="font-weight:normal;">Ge Zhang</a>,
                   </span>
                   <span class="author-block">
-                    <sup>1</sup><a href="https://kuwingfung.github.io/" style="font-weight:normal;">Max Ku</a>,
+                    <sup style="color:#ffac33;">1</sup>
+                    <a href="https://kuwingfung.github.io/" style="font-weight:normal;">Max Ku</a>,
                   </span>
                   <br>
+                  <sup style="color:#ffac33;">1</sup><span class="author-block">Achint Soni,</span>
+                  <sup style="color:#ffac33;">1</sup><span class="author-block">Sherman Siu,</span>
+                  <sup style="color:#ffac33;">1</sup><span class="author-block">Haonan Chen,</span>
+                  <sup style="color:#ffac33;">1</sup><span class="author-block">Abhranil Chandra,</span>
+                  <sup style="color:#ffac33;">1</sup><span class="author-block">Ziyan Jiang,</span>
+                  <sup style="color:#ffac33;">1</sup><span class="author-block">Aaran Arulraj,</span>
+                  <sup style="color:#9b51e0;">4</sup><span class="author-block">Kai Wang,</span>
+                  <sup style="color:#ffac33;">1</sup><span class="author-block">Quy Duc Do,</span>
+                  <sup style="color:#ffac33;">1</sup><span class="author-block">Yuansheng Ni,</span>
+                  <sup style="color:#007bff;">2</sup><span class="author-block">Bohan Lyu,</span>
+                  <sup style="color:#ffac33;">1</sup><span class="author-block">Yaswanth Narsupalli,</span>
+                  <sup style="color:#ffac33;">1</sup><span class="author-block">Rongqi Fan,</span>
+                  <sup style="color:#ffac33;">1</sup><span class="author-block">Zhiheng Lyu,</span>
                   <span class="author-block">
-                    <sup>1</sup><a style="font-weight:normal;">Achint Soni</a>,
-                  </span>
-                  <span class="author-block">
-                    <sup>1</sup><a style="font-weight:normal;">Sherman Siu</a>,
-                  </span>
-                  <span class="author-block">
-                    <sup>1</sup><a style="font-weight:normal;">Haonan Chen</a>,
-                  </span>
-                  <span class="author-block"> 
-                    <sup>1</sup><a style="font-weight:normal;">Abhranil Chandra</a>,
-                  </span>
-                  <span class="author-block">
-                    <span class="author-block">
-                    <sup>1</sup><a style="font-weight:normal;">Ziyan Jiang</a>,
-                  </span>
-                  <span class="author-block">
-                    <sup>1</sup><a style="font-weight:normal;">Aaran Arulraj</a>,
+                    <sup style="color:#6fbf73;">5</sup><a href="https://yuchenlin.xyz/" style="font-weight:normal;">Bill Yuchen Lin</a>,
                   </span>
                   <span class="author-block">
-                    <sup>4</sup><a style="font-weight:normal;">Kai Wang</a>,
+                    <sup style="color:#ffac33;">1,</sup><sup>,†</sup>
+                    <a href="https://wenhuchen.github.io/" style="font-weight:normal;">Wenhu Chen</a>
                   </span>
-                  <span class="author-block">
-                    <sup>1</sup><a style="font-weight:normal;">Quy Duc Do</a>,
-                  </span>
-                  <span class="author-block">
-                    <sup>1</sup><a style="font-weight:normal;">Yuansheng Ni</a>,
-                  </span>
-                  <span class="author-block">
-                    <sup>2</sup><a style="font-weight:normal;">Bohan Lyu</a>,
-                  </span>
-                  <span class="author-block">
-                    <sup>1</sup><a style="font-weight:normal;">Yaswanth Narsupalli</a>,
-                  </span>
-                  <span class="author-block">
-                    <sup>1</sup><a style="font-weight:normal;">Rongqi Fan</a>,
-                  </span>
-                  <span class="author-block">
-                    <sup>1</sup><a style="font-weight:normal;">Zhiheng Lyu</a>,
-                  </span>
-                  <span class="author-block">
-                    <sup>5</sup><a href="https://yuchenlin.xyz/" style="font-weight:normal;">Bill Yuchen Lin</a>,
-                  </span>
-                  <span class="author-block">
-                    <sup>1</sup><a href="https://wenhuchen.github.io/" style="font-weight:normal;">Wenhu Chen</a>
-                  </span>
-                
-              </div>
-
+              </div>  
+            <br>           
             <div class="is-size-5 publication-authors">
-              <p></p>
-                            <span class="author-block">
-
+                <span class="author-block">
+                    <sup style="color:#ffac33;">1</sup>University of Waterloo, 
+                    <sup style="color:#007bff;">2</sup>Tsinghua University, 
+                    <sup style="color:#ed4b82;">3</sup>StarDust.AI, 
+                    <sup style="color:#9b51e0;">4</sup>University of Toronto, 
+                    <sup style="color:#6fbf73;">5</sup>AI2          
+                </span>
+            </div>  
+            <br>   
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
                     *Equal Contribution
-                            </span>
-                          </div>
-                          
+              </span>
+            </div>
             <div class="is-size-5 publication-authors">
-                            <span class="author-block">
-                    <sup>1</sup>University of Waterloo, 
-                    <sup>2</sup>Tsinghua University, 
-                    <sup>3</sup>StarDust.AI, 
-                    <sup>4</sup>University of Toronto, 
-                    <sup>5</sup>AI2
-                    
-                        </span>
-                     </div>   
+                <span class="author-block">†Corresponding to:</span>
+                <span class="author-block"><a href="mailto:hexuan21@mails.tsinghua.edu.cn">hexuan21@mails.tsinghua.edu.cn</a>,</span>
+                <span class="author-block"><a href="mailto:dongfu.jiang@uwaterloo.ca">dongfu.jiang@uwaterloo.ca</a>,</span>
+                <span class="author-block"><a href="mailto:wenhuchen@uwaterloo.ca">wenhuchen@uwaterloo.ca</a></span>
+            </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <!-- add arXiv link -->
                   <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -222,53 +205,62 @@
                 </span>
 
                 <span class="link-block">
-                  <a href="https://huggingface.co/datasets/TIGER-Lab/Video_Eval" target="_blank"
+                  <a href="https://huggingface.co/datasets/TIGER-Lab/VideoEval" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-database"></i>
                     </span>
-                    <span>VideoEval </span>
+                    <span>VideoEval</span>
                   </a>
                 </span>
 
-                <span class="link-block">
-                  <a href="https://huggingface.co/datasets/TIGER-Lab/MantisScore_Bench" target="_blank"
+                <!--<span class="link-block">
+                  <a href="https://huggingface.co/datasets/TIGER-Lab/MantisScore-Bench" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-database"></i>
                     </span>
-                    <span>MantisScore_Bench </span>
+                    <span>MantisScore-Bench</span>
+                  </a>
+                </span>-->
+
+                <span class="link-block">
+                  <a href="https://huggingface.co/TIGER-Lab/MantisScore-default" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      🔥 
+                    </span>
+                    <span>Models</span>
                   </a>
                 </span>
 
                 <span class="link-block">
-                  <a href="https://huggingface.co/spaces/TIGER-Lab/MantisScore" target="_blank"
+                  <a href="https://huggingface.co/spaces/Mantis-VL/MantisScore" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       🤗
                     </span>
-                    <span> Spaces</span>
+                    <span>Spaces</span>
                   </a>
                 </span>
 
-                <!-- <span class="link-block">
-                  <a href="https://twitter.com/DongfuJiang/status/1786552974598078677" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-twitter"></i>
-                    </span>
-                    <span>Twitter</span>
-                  </a>
-                </span> -->
+                <span class="link-block">
+                  <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon has-text-white">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>Twitter</span>
+                </a>
+              </span>
 
               </div>
             </div>
 
             <centering>
               <div style="text-align: center;">
-                <img id="teaser" width="85%" src="static/images/teaser.png">     
+                <img id="teaser" width="85%" src="{{ url_for('static', filename='images/teaser.png') }}">     
               </div>
-            
             </centering> 
 
           </div>
@@ -276,6 +268,7 @@
       </div>
     </div>
   </section>
+
 
   <section class="section"  style="background-color:#efeff081">
     <div class="container is-max-desktop">
@@ -290,24 +283,30 @@
               in text-to-video generation. However, the video
               evaluation metrics have lagged significantly behind, which fails to produce an accurate and
               holistic measure of the generated videos' quality. The main barrier is the lack of high-quality
-              human rating data. In this paper, we release
+              human rating data. <br>
+              
+              In this paper, we release
               VideoEval, the first large-scale multi-aspect
               video evaluation dataset. VideoEval consists
               of high-quality human-provided ratings for 5
               video evaluation aspects on the 37.6K videos
               generated from 11 existing popular video generative models. We train MantisScore based
-              on VideoEval to enable automatic video quality assessment. Experiments show that the
+              on VideoEval to enable automatic video quality assessment. <br>
+              
+              Experiments show that the
               Spearman correlation between MantisScore
               and humans can reach 77.1 on VideoEval 
               test, beating the prior best metrics by about
-              50 points. Further result on the held-out Eval020 Crafter, GenAI-Bench, and VBench, show that
+              50 points. Further result on the held-out Eval-Crafter, GenAI-Bench, and VBench, show that
               MantisScore is highly generalizable and
-              still beating the prior best metrics by a remark023 able margin. We observe that using Mantis as
+              still beating the prior best metrics by a remarkable margin. <br>
+              
+              We observe that using Mantis as
               the based model consistently beats that using
-              Idefics2 and VideoLLaVA, and the regression026 based model can achieve better results than the
+              Idefics2 and VideoLLaVA, and the regression based model can achieve better results than the
               generative ones. Due to its high reliability, we
               believe MantisScore can serve as a valuable
-              tool for accelerate video generation research.
+              tool for accelerate video generation research.<br>
               <ol type="1">
 
                 <li><b>VideoEval Dataset</b>. We release the first large scale multi-dimension video evaluation dataset, 
@@ -330,6 +329,10 @@
         
     </div>
   </section>
+
+
+
+
 
 
   <section class="section">
