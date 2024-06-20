@@ -116,7 +116,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title is-bold">
-              <img id="painting_icon" width="3%" src="{{ url_for('static', filename='images/logo3.png') }}">
+              <img id="painting_icon" width="3%" src="images/logo3.png">
               MantisScore </h1>
               <h2 class="subtitle is-3 publication-subtitle"> A Reliable Fine-grained Metric for Video Generation</h2>
               <br> 
@@ -259,7 +259,7 @@
 
             <centering>
               <div style="text-align: center;">
-                <img id="teaser" width="85%" src="{{ url_for('static', filename='images/teaser.png') }}">     
+                <img id="teaser" width="85%" src="images/teaser.png">     
               </div>
             </centering> 
 
@@ -293,7 +293,7 @@
               human rating data</b>. <br>
               <ol type="I">
                 <li>
-                  <img id="painting_icon" width="3%" src="{{ url_for('static', filename='images/data_logo4.png') }}">
+                  <img id="painting_icon" width="3%" src="images/data_logo4.png">
                   <b>VideoEval Dataset</b>. In this paper, we release
                   <b><i>VideoEval</i></b>, the first large-scale multi-aspect
                   video evaluation dataset. VideoEval consists
@@ -302,7 +302,7 @@
                   generated from 11 existing popular video generative models.
                 </li>
                 <li>
-                  <img id="painting_icon" width="3%" src="{{ url_for('static', filename='images/logo3.png') }}">
+                  <img id="painting_icon" width="3%" src="images/logo3.png">
                   <b>MantisScore</b>. 
                   We train <b><i>MantisScore</i></b> based on VideoEval to enable automatic video quality assessment. 
                   Experiments show that the Spearman correlation between MantisScore
@@ -335,138 +335,347 @@
 
 
 
-  <section class="section">
-    <!-- VideoEval Dataset. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-six-fifths">
-        <h2 class="title is-3">
-         🐳 Video-Eval Dataset: <br> Multi-Aspect Human-Annotated Video Evaluation Data
-        
-        </h2>
-      </div>
-    </div>   
+<!----------------------------------------- VideoEval Dataset. --------------------------------------------------->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h2 class="title is-3">
+      <img id="painting_icon" width="3%" src="images/data_logo4.png">
+           VideoEval Dataset <br> Multi-Aspect Human-Annotated Video Evaluation Data</h2>
+  </div>
+</section> 
+
+<section class="section">
   <div class="container is-max-desktop">
-  
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <div class="content has-text-justified">
-          
+        <div class="content has-text-justified has-text-centered">
           <p>
-            <ul>
                 VideoEval contains a total of <b>37.6K</b> text-to-video pairs from 11 popular video generative models, 
                 with some real-world videos as data augmentation. 
                 The videos are annotated by raters for five evaluation dimensions: <b>Visual Quality</b>, <b>Temporal Consistency</b>, <b>Dynamic Degree</b>,
                  <b>Text-to-Video Alignment</b> and <b>Factual Consistency</b>, 
-                in 1-4 scoring scale. Below we show two annotated video examples and the detailed description of our VideoEval dataset.
-                Please check out <a href="https://huggingface.co/TIGER-Lab/Video_Eval">🤗 <b>Video-Eval</b></a> on hugging face datasets for usage.
-              <p></p>
-              <centering>
-                <div style="text-align: center;">
-                    <img id="anno_example" width="85%" src="static/images/anno_example.png">     
-                </div>
-              </centering> 
-              <p></p>
-              <centering>
-                <div style="text-align: center;">
-                    <img id="dataset" width="85%" src="static/images/dataset.png">     
-                </div>
-              </centering>
-            </ul>
-            
-  
-  <section class="section">
-    <!-- MantisScore. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-six-fifths">
-        
-        <h2 class="title is-3"> 
-          <!--<img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/954/954596.png">-->
+                in 1-4 scoring scale. Below we show the detailed description of our VideoEval dataset.
+                Please check out 
+                <a href="https://huggingface.co/TIGER-Lab/VideoEval">🤗 <b>VideoEval</b></a> 
+                on hugging face datasets for usage.
 
-          🔮MantisScore </h2>
+              <p></p>
+
+              <centering>
+                <div style="text-align: center;">
+                    <h3 class="title is-4">Statistics</h3>
+                    <img id="dataset" width="75%" src="images/dataset.png">     
+                <div
+              </centering>
+          </p>
+        </div>
       </div>
-    </div>   
-    <div class="container is-max-desktop">
-  
+    </div>
+    <br>
+    <br>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+          <h3 class="title is-4">Annotation Examples</h3>
+          <b style="color:#007bff;">1-Bad, 2-Average, 3-Good, 4-Real/Perfect</b><br>
+      </div>
+    </div>
+
+        <hr style="height: 2px; background: #333">
+    <div class="container">
+      <div class="columns is-multiline">
+        <!-- Row 1 -->
+        <!-- 1, 1 -->
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="eg_videos/0004577.gif" alt="GIF 1">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;">
+              prompt: completely base your choice of which one to visit today on the dish that most entices your taste buds, 1080P, high quality, comic
+              <br>
+            </p>
+            <table class="table is-two-fifths">
+              <thead><tr style="background-color: rgba(110, 194, 134, 0.15);">
+                  <th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr></thead>
+              <tbody><tr ><td>3</td><td>3</td><td>1</td><td>3</td><td>3</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 1, 2 -->
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="eg_videos/1005886.gif" alt="GIF 1">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;">
+              prompt: an African American female video editor editing videos<br><br>
+            </p>
+            <table class="table is-two-fifths">
+              <thead><tr style="background-color: rgba(110, 194, 134, 0.15);">
+                  <th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr></thead>
+              <tbody><tr ><td>1</td><td>1</td><td>3</td><td>3</td><td>1</td></tr></tbody>
+            </table>
+
+          </div>
+        </div>
+        <!-- 1, 3 -->
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="eg_videos/2003040.gif" alt="GIF 1">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;">
+              prompt: Cinematic, A light rain is falling. Tea pickers are picking tea in a tea garden, 4K, anime style<br><br>
+            </p>
+            <table class="table is-two-fifths">
+              <thead><tr style="background-color: rgba(110, 194, 134, 0.15);">
+                  <th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr></thead>
+              <tbody><tr ><td>3</td><td>2</td><td>3</td><td>3</td><td>1</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <!-- 2, 1 -->
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="eg_videos/3003666.gif" alt="GIF 1">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;">
+              prompt: crypto new year Christmas santa money dollars pack<br>
+              
+            </p>
+            <table class="table is-two-fifths">
+              <thead><tr style="background-color: rgba(110, 194, 134, 0.15);">
+                  <th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr></thead>
+              <tbody><tr ><td>1</td><td>2</td><td>3</td><td>3</td><td>1</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 2, 2 -->
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="eg_videos/4004440.gif" alt="GIF 1">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;">
+              prompt: Woman receiving a rose and blushing with a smile<br>
+              
+            </p>
+            <table class="table is-two-fifths">
+              <thead><tr style="background-color: rgba(110, 194, 134, 0.15);">
+                  <th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr></thead>
+              <tbody><tr ><td>2</td><td>2</td><td>3</td><td>3</td><td>2</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 2, 3 -->
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="eg_videos/5001175.gif" alt="GIF 1">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;">
+              prompt: panorama gold coast city  in future as a dystopian prison<br>
+              
+            </p>
+            <table class="table is-two-fifths">
+              <thead><tr style="background-color: rgba(110, 194, 134, 0.15);">
+                  <th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr></thead>
+              <tbody><tr ><td>2</td><td>3</td><td>3</td><td>2</td><td>3</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <!-- 3, 1 -->
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="eg_videos/6003973.gif" alt="GIF 1">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;">
+              prompt: little bear looks surprised as the moon gets smaller<br>
+              
+            </p>
+            <table class="table is-two-fifths">
+              <thead><tr style="background-color: rgba(110, 194, 134, 0.15);">
+                  <th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr></thead>
+              <tbody><tr ><td>1</td><td>2</td><td>3</td><td>1</td><td>2</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 3, 2 -->
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="eg_videos/7003198.gif" alt="GIF 1">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;">
+              prompt: alexandra daddario, upperbody focus, slow motion, cinematic<br>
+              
+            </p>
+            <table class="table is-two-fifths">
+              <thead><tr style="background-color: rgba(110, 194, 134, 0.15);">
+                  <th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr></thead>
+              <tbody><tr ><td>2</td><td>2</td><td>3</td><td>3</td><td>1</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        
+        <!-- 3, 3 -->
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="eg_videos/8001892.gif" alt="GIF 1">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;">
+              prompt: cinematic portrait of two dogs running away from a medieval man<br>
+              
+            </p>
+            <table class="table is-two-fifths">
+              <thead><tr style="background-color: rgba(110, 194, 134, 0.15);">
+                  <th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr></thead>
+              <tbody><tr ><td>1</td><td>2</td><td>3</td><td>2</td><td>1</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Row 4 -->
+        <!-- 4, 1 -->
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="eg_videos/9000974.gif" alt="GIF 1">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;">
+              prompt: a skateboard on the bottom of a surfboard, front view<br>
+              
+            </p>
+            <table class="table is-two-fifths">
+              <thead><tr style="background-color: rgba(110, 194, 134, 0.15);">
+                  <th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr></thead>
+              <tbody><tr ><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 4, 2 -->
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="25%" src="eg_videos/p005353.gif" alt="GIF 1">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;">
+              prompt: yellow van with trailer starts to back up<br><br>
+            </p>
+            <table class="table is-two-fifths">
+              <thead><tr style="background-color: rgba(110, 194, 134, 0.15);">
+                  <th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr></thead>
+              <tbody><tr ><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 4, 3 -->
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="eg_videos/s000907.gif" alt="GIF 1">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;">
+              prompt: five gray wolf pups frolicking and chasing each other around a remote gravel road, surrounded by grass. The pups run and leap, chasing each other, and nipping at each other, playing<br>
+            </p>
+            <table class="table is-two-fifths">
+              <thead><tr style="background-color: rgba(110, 194, 134, 0.15);">
+                  <th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr></thead>
+              <tbody><tr ><td>4</td><td>2</td><td>4</td><td>2</td><td>4</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr style="height: 2px; background: #333">
+
+
+  </div>  
+
+  </section>        
+ 
+<!----------------------------------------- MantisScore. --------------------------------------------------->  
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h2 class="title is-3">
+    <img id="painting_icon" width="3%" src="{{ url_for('static', filename='images/logo3.png') }}">
+    <span style="vertical-align: middle">MantisScore</span>
+  </h2>
+  </div>
+</section>  
+
+<section class="section"> 
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
         <div class="content has-text-justified"> 
           <p>
             MantisScore is finetuned on VideoEval dataset's 37K training set taking 
             <a href="https://huggingface.co/openai/clip-vit-large-patch14-336">Mantis-8B-Idefics2</a> as base model. 
-            We try generation scoring method and regression scoring method, the former one means model's answer is in a template 
-            predefined for video quality evaluation while the latter one outputs 5 logits as evaluation scores in 5 dimensions.
+            We try generation scoring method and regression scoring method, 
+            the former one means model's answer is in a template 
+            predefined for video quality evaluation 
+            while the latter one outputs 5 logits as evaluation scores in 5 dimensions.
          
-            Besides, we also make ablation on base model, using Mantis-8B-Idefics2, Idefics2-8B and VideoLLaVA-7B 
-            as base models to finetune. Mantis-8B-Idefics2 turns out to have the best performance on video quality evaluation.
+            Besides, we also make ablation on base model, using 
+            <a href="https://huggingface.co/openai/clip-vit-large-patch14-336">Mantis-8B-Idefics2</a>, 
+            <a href="https://huggingface.co/HuggingFaceM4/idefics2-8b">Idefics2-8B</a>
+             and 
+             <a href="https://huggingface.co/LanguageBind/Video-LLaVA-7B">VideoLLaVA-7B </a>
+            as base models to finetune. Mantis-8B-Idefics2 turns out to 
+            have the best performance on video quality evaluation.
           </p>
         </div>          
       </div>
     </div>
-  
-  
-  </section>
-  
-  
+  </div>
 
-
-  <section class="section">
-    <!-- Results. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-six-fifths">
-        <h2 class="title is-3"> 🎯Evaluation Results</h2>
-      </div>
-    </div>
-    <div class="container is-max-desktop">
-  
-
+  <div class="hero-body has-text-centered">
+    <h2 class="title is-4">
+      <span style="vertical-align: middle">Video Evaluation Benchmarks</span>
+    </h2>
+  </div>
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-4"><span style="font-size: 100%;">
-          🐳VideoEval-test</span></h2>
-        
+        <h2 class="title is-5"><span style="font-size: 100%;">
+          <img id="painting_icon" width="3%" src="{{ url_for('static', filename='images/data_logo4.png') }}">
+          VideoEval-test</span></h2>
         <p>
           We test our video evaluator MantisScore on VideoEval-test set, 
           Here is the results of some feature-based metrics like PIQE, CLIP-sim, X-CILIP-Sore etc, 
           MLLM-prompting methods like GPT-4o Gemini-1.5-Pro, etc and our MantisScore. 
           As seen in the table below, MantisScore surpass the best baseline by 54.1 in average on 5 aspects. 
-        
-        <p></p>
-        <centering>
-          <div style="text-align: center;">
-              <img id="res_video_eval" width="75%" src="static/images/res_video_eval.png">     
-          </div>
-        </centering>
-        
-      </div>
-    </div>
-
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-4"><span style="font-size: 100%;">
-          <img id="painting_icon" width="3%" src="static/images/ec_icon.png">
+        </p>
+        <br>
+        <h2 class="title is-5"><span style="font-size: 100%;">
+          <img id="painting_icon" width="3%" src="{{ url_for('static', filename='images/ec_icon.png') }}">
           EvalCrafter Benchmark</span></h2>
-        
         <p>
           We select 3 dimensions from EvalCrafter that match our evaluation aspects 
           and collect 2500+ videos for test. MantisScore surpass all the baselines in 3 apsects 
           and EvalCrafter(GPT-4V) in Text-to-Video Alignment.
-        
-        <p></p>
-        <centering>
-          <div style="text-align: center;">
-              <img id="res_eval_crafter" width="40%" src="static/images/res_eval_crafter.png">     
-          </div>
-        </centering>
-        
-      </div>
-    </div>
-
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-4"><span style="font-size: 100%;">⚔️GenAI-Bench and 🧩VBench</span></h2>
-        
+        </p>
+        <br>
+        <h2 class="title is-5"><span style="font-size: 100%;">⚔️GenAI-Bench and VBench</span></h2>
         <p>
             GenAI-Bench is a multimodal benchmark for MLLM's capability on preference comparison
             for tasks like text-to-video generation, image-editing and others, while 
@@ -476,25 +685,352 @@
             quality, subject consistency, and so on, then subsample 100 unique prompts (2000 videos totally) for testing.
             We use the averaged scores of the five aspects for MLLM prompting baselines and our models to
             give the preference and calculate the pairwise accuracy as performance indicator.
-        
-        <p></p>
-        <centering>
+        </p>
+        <!--<centering>
           <div style="text-align: center;">
-            <img id="teaser" width="75%" src="static/images/res_genai_vbench.png">     
+              <img id="res_video_eval" width="75%" src="{{ url_for('static', filename='images/res_video_eval.png') }}">     
           </div>
-        </centering> 
-        
+        </centering>-->
       </div>
     </div>
+  </div>
+
+  <div class="hero-body has-text-centered">
+    <h2 class="title is-4">
+      <span style="vertical-align: middle">Results & Leaderboard</span>
+    </h2>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        
+          <div class="model-labels-container is-size-5">
+
+            <span style="background-color: rgba(110, 194, 134, 0.15);padding: 5px 10px;">MantisScore series</span>
+            
+            <span style="background-color: rgba(255, 208, 80, 0.15);padding: 5px 10px;">MLLM Open Source</span>
+            <span style="background-color: rgba(42, 149, 235, 0.15);padding: 5px 10px;">Feature-Based Metric</span>
+            <p></p>
+          </div>
+
+        <table class="table is-bordered is-three-fifths">
+          <thead>
+            <tr style="background-color: rgba(211, 211, 211, 0.5);">
+              <th>Metric</th>
+              <th>Final Sum Score ↓</th>
+              <th>VideoEval-test</th>
+              <th>EvalCrafter</th>
+              <th>GenAI-Bench</th>
+              <th>VBench</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: rgba(110, 194, 134, 0.15);">
+              <td>MantisScore (reg)</td><td><b>278.3</b></td><td>75.7</td><td><b>51.1</b></td><td><b>78.5</b></td><td><b>73.0</b></td></tr>
+            
+            <tr style="background-color: rgba(110, 194, 134, 0.15);">
+              <td>MantisScore-(gen)</td><td>222.4</td><td><b>77.1</b></td><td>27.6</td><td>59.0</td><td>58.7</td></tr>
+            
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>∆ over Best Baseline</td><td>119.5</td> <td>54.0</td><td>14.9</td><td>11.4</td><td>17.9</td></tr>
+
+            <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>Gemini-1.5-Pro</td><td><u>158.8</u></td><td>22.1</td><td>22.9</td><td>60.9</td><td>52.9</td></tr>
+              
+            <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>Gemini-1.5-Flash</td><td>157.5</td><td>20.8</td><td>17.3</td><td><u>67.1</u></td><td>52.3</td></tr>
+              
+            <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>GPT-4o</td><td>155.4</td><td><u>23.1</u></td><td>28.7</td><td>52.0</td><td>51.7</td></tr>
+
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>CLIP-sim</td><td>126.8</td><td>8.9</td><td><u>36.2</u></td><td>34.2</td><td>47.4</td></tr>
+            
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>DINO-sim</td><td>121.3</td><td>7.5</td><td>32.1</td><td>38.5</td><td>43.3</td></tr>
+            
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>SSIM-sim</td><td>118.0</td><td>13.4</td><td>26.9</td><td>34.1</td><td>43.5</td></tr>
+            
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>CLIP-Score</td><td>114.4</td><td>-7.2</td><td>21.7</td><td>45.0</td><td>54.9</td></tr>
+
+            <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>LLaVA-1.5-7B</td><td>108.3</td><td>8.5</td><td>10.5</td><td>49.9</td><td>39.4</td></tr>
+            
+            <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>LLaVA-1.6-7B</td><td>93.3</td><td>-3.1</td><td>13.2</td><td>44.5</td><td>38.7</td></tr>
+
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>X-CLIP-Score</td><td>92.9</td><td>-1.9</td><td>13.3</td><td>41.4</td><td>40.1</td></tr>
+
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>PIQE</td><td>78.3</td><td>-10.1</td><td>-1.2</td><td>34.5</td><td><u>55.1</u></td></tr>
+            
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>BRISQUE</td><td>75.9</td><td>-20.3</td><td>3.9</td><td>38.5</td><td>53.7</td></tr>
+            
+            <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>Idefics1</td><td>73.0</td><td>6.5</td><td>0.3</td><td>34.6</td><td>31.7</td></tr>
+            
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>MSE-dyn</td><td>42.5</td><td>-5.5</td><td>-17.0</td><td>28.4</td><td>36.5</td></tr>
+            
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>SSIM-dyn</td><td>36.7</td><td>-12.9</td><td>-26.4</td><td>31.4</td><td>44.5</td></tr>
+
+            <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>Fuyu</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            
+            <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>Kosmos-2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            
+              <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>CogVLM</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            
+              <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>OpenFlamingo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr> 
+
+          </tbody>
+        </table>
+        <p style="text-align:center">
+          The best MantisScore is <b>in bold</b> and the best in baselines is <u>underlined</u>. 
+          "-" means the answer of MLLM is meaningless or in wrong format. 
+        </p>
+      </div>
+    </div>
+  </div>
+    
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h2 class="title is-3">
+    <span style="vertical-align: middle">Case Studies</span>
+  </h2>
+  </div>
+</section>  
+
+<section>
+    <div class="hero-body has-text-centered">
+      <h2 class="title is-4">
+        <span style="vertical-align: middle">
+          <img id="painting_icon" width="3%" src="{{ url_for('static', filename='images/data_logo4.png') }}">
+            VideoEval-test</span></h2></span>
+      </h2>
+    </div>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+            <p style="text-align:center">
+              Scale of all the scores is [1,2,3,4] except for MantisScore (reg), 
+              which outputs five float logits ranging from 0.50 to 4.50. <br>
+              For scale [1,2,3,4], 1-Bad, 2-Avg, 3-Good, 4-Perfect/Real. <br>
+
+
+            </p>
+        </div>
+      </div>
+
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="{{ url_for('static', filename='case_study/5000217.gif') }}" alt="GIF">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;"> 
+              prompt: A robot that throws a stack of paper from a desk
+            </p>
+          </div>
+        </div>
+
+        <div class="column is-two-thirds">
+            <table class="table is-full-width is-striped is-size-7">
+              <thead>
+                <tr style="background-color: rgba(180, 180, 180, 0.15);">
+                  <th>Method</th><th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                  <th>Method</th><th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr style="background-color: rgba(245, 123, 113, 0.15);">
+                    <td>Human score</td><td>3</td><td>1</td><td>3</td><td>3</td><td>1</td>
+                    <td></td><td></td><td></td><td></td><td></td><td></td>
+                  </tr>
+                  <tr style="background-color: rgba(110, 194, 134, 0.15);">
+                    <td>MantisScore (reg)</td><td>2.67</td><td>0.81</td><td>3.09</td><td>2.50</td><td>0.80</td>
+                    <td>MantisScore (gen)</td><td>3</td><td>1</td><td>3</td><td>3</td><td>1</td>
+                  </tr>
+                  <tr style="background-color: rgba(255, 208, 80, 0.15);">
+                    <td>GPT-4o</td><td>3</td><td>4</td><td>2</td><td>3</td><td>4</td>
+                    <td>Gemini-1.5-Pro</td><td>3</td><td>1</td><td>1</td><td>3</td><td>3</td>
+                  </tr>
+                  <tr style="background-color: rgba(255, 208, 80, 0.15);">
+                    <td>Gemini-1.5-Flash</td><td>3</td><td>1</td><td>1</td><td>3</td><td>3</td>
+                    <td>LLaVA-1.6-7B</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td>
+                  </tr>
+                  <tr style="background-color: rgba(255, 208, 80, 0.15);">
+                    <td>LLaVA-1.5-7B</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td>
+                    <td>Idefics1</td><td>4</td><td>4</td><td>3</td><td>1</td><td>2</td>
+                  </tr>
+                  <tr style="background-color: rgba(42, 149, 235, 0.15);">
+                    <td>PIQE</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td>
+                    <td>DINO-sim</td><td>-</td><td>1</td><td>-</td><td>-</td><td>-</td>
+                  </tr>
+                  <tr style="background-color: rgba(42, 149, 235, 0.15);">
+                    <td>SSIM-dyn</td><td>-</td><td>-</td><td>3</td><td>-</td><td>-</td>
+                    <td>CLIP-Score</td><td>-</td><td>-</td><td>-</td><td>2</td><td>-</td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="{{ url_for('static', filename='case_study/8000454.gif') }}" alt="GIF">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;"> 
+              prompt: Every day must be Sunday Amusement park inside the school
+            </p>
+          </div>
+        </div>
+
+        <div class="column is-two-thirds">
+            <table class="table is-full-width is-striped is-size-7">
+              <thead>
+                <tr style="background-color: rgba(180, 180, 180, 0.15);">
+                  <th>Method</th><th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                  <th>Method</th><th>VQ</th><th>TC</th><th>DD</th><th>TVA</th><th>FC</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr style="background-color: rgba(245, 123, 113, 0.15);">
+                    <td>Human score</td><td>1</td><td>1</td><td>3</td><td>2</td><td>1</td>
+                    <td></td><td></td><td></td><td></td><td></td><td></td>
+                  </tr>
+                  <tr style="background-color: rgba(110, 194, 134, 0.15);">
+                    <td>MantisScore (reg)</td><td>1.04</td><td>1.42</td><td>2.95</td><td>1.97</td><td>1.09</td>
+                    <td>MantisScore (gen)</td><td>1</td><td>1</td><td>3</td><td>2</td><td>1</td>
+                  </tr>
+                  <tr style="background-color: rgba(255, 208, 80, 0.15);">
+                    <td>GPT-4o</td><td>3</td><td>4</td><td>2</td><td>3</td><td>3</td>
+                    <td>Gemini-1.5-Pro</td><td>2</td><td>1</td><td>2</td><td>2</td><td>1</td>
+                  </tr>
+                  <tr style="background-color: rgba(255, 208, 80, 0.15);">
+                    <td>Gemini-1.5-Flash</td><td>2</td><td>1</td><td>1</td><td>2</td><td>1</td>
+                    <td>LLaVA-1.6-7B</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td>
+                  </tr>
+                  <tr style="background-color: rgba(255, 208, 80, 0.15);">
+                    <td>LLaVA-1.5-7B</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td>
+                    <td>Idefics1</td><td>4</td><td>4</td><td>3</td><td>1</td><td>2</td>
+                  </tr>
+                  <tr style="background-color: rgba(42, 149, 235, 0.15);">
+                    <td>PIQE</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td>
+                    <td>DINO-sim</td><td>-</td><td>3</td><td>-</td><td>-</td><td>-</td>
+                  </tr>
+                  <tr style="background-color: rgba(42, 149, 235, 0.15);">
+                    <td>SSIM-dyn</td><td>-</td><td>-</td><td>4</td><td>-</td><td>-</td>
+                    <td>CLIP-Score</td><td>-</td><td>-</td><td>-</td><td>2</td><td>-</td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+      
+
+      </div>
+    </div>
+      
+    <div class="hero-body has-text-centered">
+      <h2 class="title is-4">
+            <span style="vertical-align: middle">
+            ⚔️GenAI-Bench</span>
+      </h2>
+    </div>
+
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+            <p style="text-align:center">
+              In GenAI-Bench, we have two videos with same prompt and a human preference annotation in each entry. 
+              For MantisScore and MLLM prompting methods, we use average score of all 5 dimensions to predict preference, 
+              while for feature-based metrics, we use their discretized output for the prediction of preference direcly.
+            </p>
+        </div>
+      </div>
+
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="{{ url_for('static', filename='case_study/0_left.gif') }}" alt="GIF">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;"> 
+              Left Video<br>
+              prompt: a cute dog is playing a ball
+            </p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="70%" src="{{ url_for('static', filename='case_study/0_right.gif') }}" alt="GIF">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;"> 
+              Right Video<br>
+              prompt: a cute dog is playing a ball
+            </p>
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+            <img width="100%" src="{{ url_for('static', filename='images/genaibench_0.png') }}" alt="GIF">
+        </div>
+      </div>
+
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="100%" src="{{ url_for('static', filename='case_study/13_left.gif') }}" alt="GIF">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;"> 
+              Left Video<br>
+              prompt: An astronaut flying in space, oil painting
+            </p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="gif-container">
+            <div class="gif-wrapper">
+              <img width="70%" src="{{ url_for('static', filename='case_study/13_right.gif') }}" alt="GIF">
+            </div>
+            <p style="text-align: left;font-family:Times New Roman;"> 
+              Right Video<br>
+              prompt: An astronaut flying in space, oil painting
+            </p>
+          </div>
+        </div>
+
+        <div class="column is-one-third">
+            <img width="100%" src="{{ url_for('static', filename='images/genaibench_13.png') }}" alt="GIF">
+        </div>
+      </div>
   
+    </div>
+
   </section>
 
+<!--  -->
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
+    
     <h2 class="title">BibTeX</h2>
     
   </div>
+</section>
 
 
 </body>
