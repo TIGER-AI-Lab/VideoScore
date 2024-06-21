@@ -307,46 +307,43 @@
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
+           
           <div class="content has-text-justified">
             <p>
               The recent years have witnessed great advances
-              in text-to-video generation. However, <b>the video
-              evaluation metrics have lagged significantly behind</b>, which fails to produce an accurate and
-              holistic measure of the generated videos' quality. The main barrier is the lack of <b>high-quality
-              human rating data</b>. <br>
+              in video generation. However, the development
+              of automatic video metrics is lagging significantly behind. None of the existing metric is
+              able to provide reliable scores over generated
+              videos. The main barrier is <b>the lack of large-scale human-annotated dataset</b>.
               <ol type="I">
                 <li>
                   <img id="painting_icon" width="3%" src="static/images/data_logo4.png">
-                  <b>VideoFeedback Dataset</b>. In this paper, we release
-                  <b><i>VideoFeedback</i></b>, the first large-scale multi-aspect
-                  video evaluation dataset. VideoFeedback consists
-                  of high-quality human-provided ratings for 5
-                  video evaluation aspects on the 37.6K videos
-                  generated from 11 existing popular video generative models.
+                  <b>VideoFeedback Dataset</b>.
+                  In this paper, we release VideoFeedback, the first large-scale dataset 
+                  containing human-provided multiaspect score over 37.6K synthesized videos
+                  from 11 existing video generative models. 
                 </li>
                 <li>
                   <img id="painting_icon" width="3%" src="static/images/logo3.png">
                   <b>MantisScore</b>. 
-                  We train <b><i>MantisScore</i></b> based on VideoFeedback to enable automatic video quality assessment. 
-                  Experiments show that the Spearman correlation between MantisScore
-                  and humans can reach <b>77.1</b> on VideoFeedback test, beating the prior best metrics by about
-                  <b>50 points</b>. Further result on the held-out Eval-Crafter, GenAI-Bench, and VBench, show that
-                  MantisScore is highly generalizable and
-                  still <b>beating the prior best metrics by a remarkable margin. </b>
+                    We train MantisScore (initialized from Mantis) based on VideoFeedback 
+                    to enable automatic video quality assessment. Experiments
+                    show that the Spearman correlation between
+                    MantisScore and humans can reach 77.1 on
+                    VideoFeedback-test, beating the prior best
+                    metrics by about 50 points. Further result on
+                    other held-out EvalCrafter, GenAI-Bench, and
+                    VBench show that MantisScore has consistently much higher correlation with human
+                    judges than other metrics. 
+                    <b></b>Human Feedback for Video generative models</b>. 
                 </li>
                 <li>
-                  <b>Model Variants</b>. We observe that using Mantis as
-                  the based model consistently beats that using
-                  Idefics2 and VideoLLaVA, and the regression based model can achieve better results than the
-                  generative ones.
+                    Due to these results, we believe MantisScore can serve as
+                    a great proxy for human raters to (1) rate different video models to track progress (2) simulate
+                    fine-grained human feedback in Reinforcement
+                    Learning with Human Feedback (RLHF) to improve current video generation models.
                 </li>
-                
-              </ol>  
-              Due to its high reliability, we
-              believe MantisScore can serve as a valuable
-              tool for accelerate video generation research.
-              
+              </ol>                
             </p>
   
           </div>
