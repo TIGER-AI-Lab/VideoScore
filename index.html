@@ -234,7 +234,7 @@
                     <span class="icon">
                       <i class="fas fa-database"></i>
                     </span>
-                    <span>VideoEval</span>
+                    <span>VideoFeedback</span>
                   </a>
                 </span>
 
@@ -318,9 +318,9 @@
               <ol type="I">
                 <li>
                   <img id="painting_icon" width="3%" src="static/images/data_logo4.png">
-                  <b>VideoEval Dataset</b>. In this paper, we release
-                  <b><i>VideoEval</i></b>, the first large-scale multi-aspect
-                  video evaluation dataset. VideoEval consists
+                  <b>VideoFeedback Dataset</b>. In this paper, we release
+                  <b><i>VideoFeedback</i></b>, the first large-scale multi-aspect
+                  video evaluation dataset. VideoFeedback consists
                   of high-quality human-provided ratings for 5
                   video evaluation aspects on the 37.6K videos
                   generated from 11 existing popular video generative models.
@@ -328,9 +328,9 @@
                 <li>
                   <img id="painting_icon" width="3%" src="static/images/logo3.png">
                   <b>MantisScore</b>. 
-                  We train <b><i>MantisScore</i></b> based on VideoEval to enable automatic video quality assessment. 
+                  We train <b><i>MantisScore</i></b> based on VideoFeedback to enable automatic video quality assessment. 
                   Experiments show that the Spearman correlation between MantisScore
-                  and humans can reach <b>77.1</b> on VideoEval test, beating the prior best metrics by about
+                  and humans can reach <b>77.1</b> on VideoFeedback test, beating the prior best metrics by about
                   <b>50 points</b>. Further result on the held-out Eval-Crafter, GenAI-Bench, and VBench, show that
                   MantisScore is highly generalizable and
                   still <b>beating the prior best metrics by a remarkable margin. </b>
@@ -359,12 +359,12 @@
 
 
 
-<!----------------------------------------- VideoEval Dataset. --------------------------------------------------->
+<!----------------------------------------- VideoFeedback Dataset. --------------------------------------------------->
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
     <h2 class="title is-3">
       <img id="painting_icon" width="3%" src="static/images/data_logo4.png">
-           VideoEval Dataset <br> Multi-Aspect Human-Annotated Video Evaluation Data</h2>
+           VideoFeedback Dataset <br> Multi-Aspect Human-Annotated Video Evaluation Data</h2>
   </div>
 </section> 
 
@@ -374,13 +374,13 @@
       <div class="column is-full-width">
         <div class="content has-text-justified has-text-centered">
           <p>
-                VideoEval contains a total of <b>37.6K</b> text-to-video pairs from 11 popular video generative models, 
+                VideoFeedback contains a total of <b>37.6K</b> text-to-video pairs from 11 popular video generative models, 
                 with some real-world videos as data augmentation. 
                 The videos are annotated by raters for five evaluation dimensions: <b>Visual Quality</b>, <b>Temporal Consistency</b>, <b>Dynamic Degree</b>,
                  <b>Text-to-Video Alignment</b> and <b>Factual Consistency</b>, 
-                in 1-4 scoring scale. Below we show the detailed description of our VideoEval dataset.
+                in 1-4 scoring scale. Below we show the detailed description of our VideoFeedback dataset.
                 Please check out 
-                <a href="https://huggingface.co/TIGER-Lab/VideoEval">🤗 <b>VideoEval</b></a> 
+                <a href="https://huggingface.co/datasets/TIGER-Lab/VideoEval">🤗 <b>VideoFeedback</b></a> 
                 on hugging face datasets for usage.
 
               <p></p>
@@ -652,7 +652,7 @@
       <div class="column is-full-width">
         <div class="content has-text-justified"> 
           <p>
-            MantisScore is finetuned on VideoEval dataset's 37K training set taking 
+            MantisScore is finetuned on VideoFeedback dataset's 37K training set taking 
             <a href="https://huggingface.co/openai/clip-vit-large-patch14-336">Mantis-8B-Idefics2</a> as base model. 
             We try generation scoring method and regression scoring method, 
             the former one means model's answer is in a template 
@@ -682,9 +682,9 @@
       <div class="column is-full-width">
         <h2 class="title is-5"><span style="font-size: 100%;">
           <img id="painting_icon" width="3%" src="static/images/data_logo4.png">
-          VideoEval-test</span></h2>
+          VideoFeedback-test</span></h2>
         <p>
-          We test MantisScore on VideoEval-test set, containing 760 videos with human scores from five dimensions. 
+          We test MantisScore on VideoFeedback-test set, containing 760 videos with human scores from five dimensions. 
           We take the Spearman correlation between MantisScore and human annotation as performance indicator. 
           Below we show the results of some feature-based metrics like PIQE, CLIP-sim, X-CILIP-Sore etc, and some
           MLLM-prompting methods like GPT-4o Gemini-1.5-Pro, etc and our MantisScore. 
@@ -746,7 +746,7 @@
             <tr style="background-color: rgba(211, 211, 211, 0.5);">
               <th>Metric</th>
               <th>Final Sum Score ↓</th>
-              <th>VideoEval-test</th>
+              <th>VideoFeedback-test</th>
               <th>EvalCrafter</th>
               <th>GenAI-Bench</th>
               <th>VBench</th>
@@ -844,7 +844,7 @@
       <h2 class="title is-4">
         <span style="vertical-align: middle">
           <img id="painting_icon" width="3%" src="static/images/data_logo4.png">
-            VideoEval-test</span></h2></span>
+            VideoFeedback-test</span></h2></span>
       </h2>
     </div>
     <div class="container is-max-desktop">
