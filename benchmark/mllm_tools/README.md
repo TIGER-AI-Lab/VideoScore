@@ -120,7 +120,7 @@ python otterimage_eval.py
 python ottervideo_eval.py
 ```
 
-### [VideoLLaVA]
+### VideoLLaVA
 ```bash
 mkdir -p model_utils && cd model_utils && git clone https://github.com/PKU-YuanGroup/Video-LLaVA.git
 
