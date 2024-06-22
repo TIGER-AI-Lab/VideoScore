@@ -1,5 +1,6 @@
 /benchmark/logs/
 /benchmark/eval_results/
+/benchmark/__pycahce__/
 
 /data/videofb/
 
