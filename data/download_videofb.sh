@@ -30,9 +30,3 @@ for split in "${splits[@]}"; do
     done
 done
 
-
-
-
-
-
-

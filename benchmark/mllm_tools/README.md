@@ -1,3 +1,5 @@
+## Acknowledgement: Code in mllm_tools is from https://github.com/TIGER-AI-Lab/Mantis/tree/main/mantis/mllm_tools
+
 ## Usage
 
 - Each `{model_name}_eval.py` can be run directly by `python {model_name}_eval.py` to roughly check the outputs on 3 examples. This is used for debugging purposes.
