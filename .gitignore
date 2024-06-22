@@ -1,6 +1,9 @@
 /benchmark/logs/
 /benchmark/eval_results/
-/benchmark/__pycahce__/
+/benchmark/__pycache__/
 
-/data/videofb/
+/data/video_feedback/
+/data/eval_crafter/
+/data/genaibench/
+/data/vbench/
 
