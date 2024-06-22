@@ -1,4 +1,5 @@
-## Acknowledgement: Code in mllm_tools is from https://github.com/TIGER-AI-Lab/Mantis/tree/main/mantis/mllm_tools
+## Acknowledgement
+Code in mllm_tools is from https://github.com/TIGER-AI-Lab/Mantis/tree/main/mantis/mllm_tools
 
 ## Usage
 
