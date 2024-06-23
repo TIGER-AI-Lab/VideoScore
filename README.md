@@ -23,6 +23,10 @@ official repo for "MantisScore: A Reliable Fine-grained Metric for Video Generat
 
 ## Introduction
 
+🚀The recent years have witnessed great advances in video generation. However, the development of automatic video metrics is lagging significantly behind. None of the existing metric is able to provide reliable scores over generated videos. 
+🤔The main barrier is the lack of large-scale human-annotated dataset.
+
+
 
 ## Installation
 
