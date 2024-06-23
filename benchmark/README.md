@@ -36,8 +36,12 @@ Suppose your current directory is "~/MantisScore"
 cd benchmark
 ```
 
-to evaluate model on certain benchmark
-...
+To evaluate model on certain benchmark
+//
+
+To be filled
+
+//
 
 
 After obtaining model output for each video in test set, you can run the following scripts to get SPCC or pairwise accuracy: 
