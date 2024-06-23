@@ -26,11 +26,11 @@ official repo for "MantisScore: A Reliable Fine-grained Metric for Video Generat
 🚀The recent years have witnessed great advances in video generation. However, the development of automatic video metrics is lagging significantly behind. None of the existing metric is able to provide reliable scores over generated videos. 
 🤔The main barrier is the lack of large-scale human-annotated dataset.
 
-- 🛢️VideoFeedback Dataset. In this paper, we release VideoFeedback, the first large-scale dataset containing human-provided multiaspect score over 37.6K synthesized videos from 11 existing video generative models.
+- 🛢️**VideoFeedback Dataset**. In this paper, we release VideoFeedback, the first large-scale dataset containing human-provided multiaspect score over 37.6K synthesized videos from 11 existing video generative models.
 
-- 🏅MantisScore. We train MantisScore (initialized from Mantis) based on VideoFeedback to enable automatic video quality assessment. Experiments show that the Spearman correlation between MantisScore and humans can reach 77.1 on VideoFeedback-test, beating the prior best metrics by about 50 points. Further result on other held-out EvalCrafter, GenAI-Bench, and VBench show that MantisScore has consistently much higher correlation with human judges than other metrics.
+- 🏅**MantisScore**. We train MantisScore (initialized from Mantis) based on VideoFeedback to enable automatic video quality assessment. Experiments show that the Spearman correlation between MantisScore and humans can reach 77.1 on VideoFeedback-test, beating the prior best metrics by about 50 points. Further result on other held-out EvalCrafter, GenAI-Bench, and VBench show that MantisScore has consistently much higher correlation with human judges than other metrics.
 
-- 🫡Human Feedback for Video generative models. Due to these results, we believe MantisScore can serve as a great proxy for human raters to (1) rate different video models to track progress (2) simulate fine-grained human feedback in Reinforcement Learning with Human Feedback (RLHF) to improve current video generation models.
+- 🫡**Human Feedback for Video generative models**. Due to these results, we believe MantisScore can serve as a great proxy for human raters to (1) rate different video models to track progress (2) simulate fine-grained human feedback in Reinforcement Learning with Human Feedback (RLHF) to improve current video generation models.
 
 ## Installation
 
