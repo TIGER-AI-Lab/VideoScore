@@ -39,6 +39,7 @@ cd benchmark
 ```
 
 To evaluate model on certain benchmark
+
 //
 
 To be filled
@@ -58,9 +59,9 @@ bash get_vbench_pairwise_acc.sh
 ```
 
 ## Check results
-For example, the model output on GenAI-Bench set is saved to the following json files, respectively.
+For example, the output of MnantisScore on GenAI-Bench set is saved to the following json files, respectively.
 ```
-./eval_results/eval_genaibench_mantisscore.json
+./eval_results/genaibench/eval_genaibench_mantisscore.json
 ```
 
 For the Spearman correlation coefficient or the pairwise accuracy, it's saved to 
