@@ -1,6 +1,9 @@
 # MantisScore
 official repo for "MantisScore: A Reliable Fine-grained Metric for Video Generation"
-*** The code is being updated ***
+
+
+** The code is being updated **
+
 
 <a target="_blank" href="">
 <img style="height:22pt" src="https://img.shields.io/badge/-Paper-red?style=flat&logo=arxiv"></a>
