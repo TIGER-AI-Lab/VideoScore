@@ -1,10 +1,8 @@
 import os
-import json
 import re
 import torch
 import fire
 import logging
-import scipy.stats as stats
 import numpy as np
 from tqdm import tqdm
 from PIL import Image
@@ -77,60 +75,15 @@ def _model_output(
     return aspect_scores
 
 
-def _cal_spearman_correlation(
-    res_file: str="./benchmark/eval_results/eval_videofb_mantisscore.json",
-    bench_name: str="video_feedback"
-):
-    all_res=json.load(open(res_file,"r"))
-    all_ref_scores=[eval(item["ref"]) for item in all_res]
-    all_ans_scores=[eval(item["ans"]) for item in all_res]
-    
-    spearman_list=[]
-    p_value_list=[]
-    try:
-        all_ref_scores=np.array(all_ref_scores)
-        all_ans_scores=np.array(all_ans_scores)
-        for i in range(len(all_ref_scores[0])):
-            ref_list=[x[i] for x in all_ref_scores]
-            ans_list=[x[i] for x in all_ans_scores]
-            rho,p_value=stats.spearmanr(ref_list,ans_list)
-            if not np.isnan(rho):
-                rho*=100
-                spearman_list.append(round(rho,ROUND_DIGIT))
-                p_value_list.append(p_value)
-            else:
-                spearman_list.append(None)
-                p_value_list.append(None)    
-    except Exception as e:
-        logger.info(e)
-        spearman_list=[None for _ in range(len(all_ref_scores[0]))]
-        p_value_list=[None for _ in range(len(all_ref_scores[0]))]
-
-    dirname=os.path.dirname(res_file)
-    with open(f"{res_file}/spearman_corr_{bench_name}.json") as file:
-        json.dump({
-            "spearman_list":spearman_list,
-            "p_value_list":p_value_list,
-        },file,indent=4)
-
-
-def _cal_pairwise_acc(
-    res_file: str="./benchmark/eval_results/eval_genaibench_mantisscore.json",
-    bench_name: str="genaibench"
-):
-    None
-
-
 def main(
     model_repo_name: str="TIGER-Lab/MantisScore",
-    data_repo_name: str="TIGER-Lab/MantisScore-Bench",
+    data_repo_name: str="TIGER-Lab/VideoFeedback-Bench",
     frames_dir: str="./data/videofb/test", 
     name_postfixs: List[str]=['video_feedback'], 
-    result_file: str="./benchmark/eval_results/eval_videofb_mantisscore.json",
-    bench_name: str="video_feedback"
+    result_file: str="./benchmark/eval_results/video_feedback/eval_video_feedvack_mantisscore.json",
 ):
     '''
-    evalualte MantisScore model on MantisScore-Bench which contains four benchmarks, save results to 'result_file' 
+    evalualte MantisScore model on VideoFeedback-Bench which contains four benchmarks, save results to 'result_file' 
     and calculate spearman correlation coefficient between human-annotated references and model output.
     '''
     
@@ -166,12 +119,7 @@ def main(
                 "ans":f"{ans_scores}"
             }
             _add_to_res_file(result_file,curr_compare_dict)
-            
-    if bench_name in ["video_feedback","eval_crafter"]:      
-        _cal_spearman_correlation(result_file,bench_name)
-    elif bench_name in ["genaibench","vbench"]:
-        _cal_pairwise_acc(result_file,bench_name)
-    
+                
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)

@@ -6,6 +6,9 @@ from PIL import Image
 import requests
 
 def _add_to_res_file(eval_res_file,curr_res_compare_dict):
+    dirname=os.path.dirname(eval_res_file)
+    os.makedirs(dirname,exist_ok=True)
+    
     if not os.path.exists(eval_res_file):
         with open(eval_res_file,"w") as f:
             json.dump([curr_res_compare_dict],f,indent=4)
