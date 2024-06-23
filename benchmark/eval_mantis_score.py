@@ -8,7 +8,7 @@ from tqdm import tqdm
 from PIL import Image
 from typing import List
 from transformers import AutoProcessor
-from models.idefics2 import Idefics2ForSequenceClassification
+from mantis.models.idefics2 import Idefics2ForSequenceClassification
 from datasets import load_dataset
 from datetime import datetime
 from utils_tools import _add_to_res_file,regression_query_template

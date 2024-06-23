@@ -3,7 +3,7 @@
 import os
 import torch
 from mllm_tools.mllm_utils import merge_images, load_images
-from models.mllava import MLlavaProcessor, LlavaForConditionalGeneration, chat_mllava
+from mantis.models.mllava import MLlavaProcessor, LlavaForConditionalGeneration, chat_mllava
 from typing import List
 from transformers.utils import is_flash_attn_2_available
 
