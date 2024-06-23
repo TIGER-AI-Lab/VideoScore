@@ -1,5 +1,5 @@
 model_repo_name="TIGER-Lab/MantisScore"
-data_repo_name="TIGER-Lab/MantisScore-Bench"
+data_repo_name="TIGER-Lab/VideoFeedback-Bench"
 frames_dir="./data/video_feedback/test"
 name_postfixs="['video_feedback']"
 result_file='./benchmark/eval_results/eval_videofb_mantisscore.json'

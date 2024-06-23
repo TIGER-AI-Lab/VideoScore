@@ -1,7 +1,7 @@
 ## we use this variant "TIGER-Lab/MantisScore-anno-only" except for test set video_feedback
 model_repo_name="TIGER-Lab/MantisScore-anno-only"
 
-data_repo_name="TIGER-Lab/MantisScore-Bench"
+data_repo_name="TIGER-Lab/VideoFeedback-Bench"
 frames_dir="./data/eval_crafter/test"
 name_postfixs="['eval_crafter']"
 result_file='./benchmark/eval_results/eval_ec_mantisscore.json'
