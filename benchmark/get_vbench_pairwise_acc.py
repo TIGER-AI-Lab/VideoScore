@@ -39,28 +39,30 @@ def get_all_json_files(results_dir):
 
 def main(
     data_repo_name: str="TIGER-Lab/VideoFeedback-Bench",
-    result_dir: str="./benchmark/eval_results/genaibench",
-    csv_dir:str="./benchmark/eval_results/vbench/csv_results",
+    result_dir: str="./eval_results/vbench",
+    csv_dir:str="./eval_results/vbench/csv_results",
     exclude_tie:bool=False,
     seed: int=42,
     
 ):
     random.seed(seed)
         
-    ref_data=load_dataset(data_repo_name,name="genaibench",split="test")
+    ref_data=load_dataset(data_repo_name,name="vbench",split="test")
     
     source_list = ["technical_quality","subject_consistency","dynamics_degree","motion_smoothness","overall_consistency"]
     for target_source_idx, source_name in enumerate(source_list):
         print(f"-------------------{source_name}-------------------")
-        target_source_idx = source_list.index(source_name)
-        
+        target_source_idx = source_list.index(source_name)        
         
         ref_data_map = {}
-        for item in ref_data:
-            # "vbench-dynamics_degree-0-cogvideo",
-            idx = item["id"].split("-")[1] + "-" + str(int(item["id"].split("-")[2]))
-            model_name = item["id"].split("-")[3]
-            aspect_name = item["id"].split("-")[1]
+        for idx,item in enumerate(ref_data):
+            item["preference"]={k:v for k,v in item["preference"].items() if v is not None}
+
+            # source format: technical_quality_0_cogvideo
+            # target format: technical_quality-0
+            idx = item["id"].split("_")[0] + "_" + item["id"].split("_")[1] + "-" + str(int(item["id"].split("_")[2]))
+            model_name = item["id"].split("_")[3]
+            aspect_name = item["id"].split("_")[0] + "_" + item["id"].split("_")[1]
             if aspect_name != source_name:
                 continue
             # For this video, the text prompt is "(.*)"
@@ -71,15 +73,13 @@ def main(
                 ref_data_map[idx]["preference"][model_name] = item['preference']
             else:
                 ref_data_map[idx]["preference"][model_name] = {k: v for k, v in item['preference'].items() if v != 0.5}
-                
-            
+        
         all_model_acc = {}
         
         # add random as a model
         random_acc = 0
         for idx, item in ref_data_map.items():
             model_scores = {model_name: random.random() * 4 for model_name in item["preference"]}
-            
             for left_model_name in item["preference"]:
                 for right_model_name in item["preference"][left_model_name]:
                     left_score = model_scores[left_model_name]
@@ -88,6 +88,7 @@ def main(
                     right_preference = 1 - left_preference
                     if get_pairwise_acc(left_score, right_score, left_preference, right_preference):
                         random_acc += 1
+                        
         total_pairs = sum([sum([len(item["preference"][left_model_name]) for left_model_name in item["preference"]]) for item in ref_data_map.values()])
         random_acc = round(random_acc/total_pairs, 4)
         all_model_acc["Random"] = {
@@ -96,30 +97,26 @@ def main(
             "total_examples": total_pairs,
         }
         
-    
-    
-        
         for res_file in sorted(os.listdir(result_dir)):
             if not res_file.startswith("eval_"):
                 continue
             print(f"Processing {res_file}")
             model_name = res_file.split(".")[0].split("_")[-1]
-            with open(res_file, 'r') as f:
-                data = json.load(f)
+            data = json.load(open(f"{result_dir}/{res_file}", 'r'))
             
             data_map = {}
             last_idx = -1
             source_idx = 0
             for item in data:
-                # "27_cogvideo"
-                idx = int(item["id"].split("_")[0])
+                # "dynamics_degree_27_cogvideo"
+                idx = int(item["id"].split("_")[2])
                 if idx < last_idx:
                     source_idx += 1
                 last_idx = idx
                 if source_idx != target_source_idx:
                     continue
                 idx = f"{source_list[source_idx]}-{idx}"
-                model_name = item["id"].split("_")[1]
+                model_name = item["id"].split("_")[3]
                 
                 if idx not in ref_data_map:
                     continue
@@ -178,7 +175,7 @@ def main(
                 
             all_model_acc[model_name] = {
                 "acc": mean_acc,
-                "aspecct_accs": {aspect: aspecct_accs[aspect] for aspect in aspects},
+                "aspect_accs": {aspect: aspecct_accs[aspect] for aspect in aspects},
                 "total_examples": cur_total_pairs,
             }
         
@@ -198,7 +195,7 @@ def main(
         # random
         for model_name, model_acc in all_model_acc.items():
             # model_name = "\n".join(wrap(model_name, 50))
-            pt_table.add_row([model_name] + [model_acc["acc"]] + [model_acc["aspecct_accs"][aspect] for aspect in aspects] + [model_acc["total_examples"]])
+            pt_table.add_row([model_name] + [model_acc["acc"]] + [model_acc["aspect_accs"][aspect] for aspect in aspects] + [model_acc["total_examples"]])
         print(pt_table)
         os.makedirs(csv_dir, exist_ok=True)
         with open(os.path.join(csv_dir, f"vbench_pairwise_acc_{source_name}_{'exclude_tie' if exclude_tie else 'include_tie'}.csv"), "w") as f:

@@ -17,7 +17,7 @@ from utils_conv import conv_templates
 
 CONV_TEMPLATE = conv_templates["idefics_2"]
 NUM_ASPECT = 5
-ROUND_DIGIT = 4
+ROUND_DIGIT = 3
 MAX_NUM_FRAMES = 16
 REGRESSION_QUERY_TEMPLATE = regression_query_template()
 
@@ -78,14 +78,24 @@ def _model_output(
 def main(
     model_repo_name: str="TIGER-Lab/MantisScore",
     data_repo_name: str="TIGER-Lab/VideoFeedback-Bench",
-    frames_dir: str="./data/videofb/test", 
+    frames_dir: str="../data/video_feedback/test", 
     name_postfixs: List[str]=['video_feedback'], 
-    result_file: str="./benchmark/eval_results/video_feedback/eval_video_feedvack_mantisscore.json",
+    result_file: str="./eval_results/video_feedback/eval_video_feedvack_mantisscore.json",
+    bench_name: str="video_feedback",
 ):
     '''
     evalualte MantisScore model on VideoFeedback-Bench which contains four benchmarks, save results to 'result_file' 
     and calculate spearman correlation coefficient between human-annotated references and model output.
     '''
+    logging.basicConfig(level=logging.INFO)
+    logger= logging.getLogger(__name__)
+    date_time=datetime.now().strftime("%m-%d %H:%M:%S")
+    log_file=f"./logs/eval_MantisScore_on_{bench_name}_{date_time}.log"
+    os.makedirs(os.path.dirname(log_file),exist_ok=True)
+    file_handler = logging.FileHandler(log_file)
+    file_handler.setLevel(logging.INFO)
+    file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+    logger.addHandler(file_handler)
     
     processor = AutoProcessor.from_pretrained(model_repo_name,torch_dtype=torch.bfloat16)
     model = Idefics2ForSequenceClassification.from_pretrained(model_repo_name,torch_dtype=torch.bfloat16).eval()
@@ -106,9 +116,14 @@ def main(
             bot_text=item["conversations"][1]["value"]
             
             video_prompt=human_text.split("text prompt is \"")[1].split("\",\n")[0]
-
-            ref_scores=[int(item) for item in re.findall(r': (\d+)', bot_text)]
-
+            if bench_name=="video_feedback":
+                ref_scores=[int(item) for item in re.findall(r': (\d+)', bot_text)]
+            elif bench_name in ["eval_crafter","genaibench","vbench"]:
+                ref_scores=item["score_list"]
+                print(ref_scores)
+            else:
+                print("benchmark name is not supported")
+                exit()
             ans_scores=_model_output(model, processor, video_prompt, frame_path_list)
 
             logger.info(f"{idx} {vid} {ans_scores}")
@@ -122,14 +137,4 @@ def main(
                 
 
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    logger= logging.getLogger(__name__)
-    date_time=datetime.now().strftime("%m-%d %H:%M:%S")
-    log_file=f"./benchmark/logs/eval_on_videofb_{date_time}.log"
-    os.makedirs(os.path.dirname(log_file),exist_ok=True)
-    file_handler = logging.FileHandler(log_file)
-    file_handler.setLevel(logging.INFO)
-    file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-    logger.addHandler(file_handler)
-    
     fire.Fire(main)

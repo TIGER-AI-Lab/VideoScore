@@ -18,7 +18,7 @@ All the data and video frames we used can be found in [🤗VideoFeedback-Bench](
 
 ## Prepare data of video frames
 To download the video frames for test, please first set benchmark name in data/download_data.sh: 
-```shell
+```bash
 bench_name=video_feedback
 # bench_name=genaibench
 # bench_name=eval_crafter
@@ -26,54 +26,51 @@ bench_name=video_feedback
 ```
 then run: 
 ```
-bash download_data.sh
+cd data && bash download_data.sh
 ```
 
 ## Evaluation
 - Evaluate MantisScore on VideoFeedback-test: 
+Suppose your current directory is "~/MantisScore"
 ```
-bash benchmark/eval_on_videofb.sh
+cd benchmark
 ```
-- Evaluate MantisScore on our selected set from EvalCrafter : 
-```
-bash benchmark/eval_on_eval_crafter.sh
-```
-- Evaluate MantisScore on our selected set from GenAI-Bench: 
-```
-bash benchmark/eval_on_genaibench.sh
-```
-- Evaluate MantisScore on our selected set from VBench: 
-```
-bash benchmark/eval_on_vbench.sh
-```
+
+To evaluate model on certain benchmark
+//
+
+To be filled
+
+//
+
 
 After obtaining model output for each video in test set, you can run the following scripts to get SPCC or pairwise accuracy: 
 ```
-bash benchmark/get_spearman_corr.sh
+bash get_spearman_corr.sh
 ```
 ```
-bash benchmark/get_genaibench_pairwise_acc.sh
+bash get_genaibench_pairwise_acc.sh
 ```
 ```
-bash benchmark/get_vbench_pairwise_acc.sh
+bash get_vbench_pairwise_acc.sh
 ```
 
 ## Check results
 For example, the model output on GenAI-Bench set is saved to the following json files, respectively.
 ```
-./benchmark/eval_results/eval_genaibench_mantisscore.json
+./eval_results/eval_genaibench_mantisscore.json
 ```
 
 For the Spearman correlation coefficient or the pairwise accuracy, it's saved to 
 ```
-./benchmark/eval_results/video_feedback/spearman_corr_video_feedback.json
+./eval_results/video_feedback/spearman_corr_video_feedback.json
 ```
 ```
-./benchmark/eval_results/eval_crafter/spearman_corr_eval_crafter.json
+./eval_results/eval_crafter/spearman_corr_eval_crafter.json
 ```
 ```
-./benchmark/eval_results/genaibench/genaibench_pairwise_acc.txt
+./eval_results/genaibench/genaibench_pairwise_acc.txt
 ```
 ```
-./benchmark/eval_results/vbench/vbench_pairwise_acc.txt
+./eval_results/vbench/vbench_pairwise_acc.txt
 ```
