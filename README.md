@@ -68,6 +68,9 @@ For details, please check [benchmark/README.md](.benchmark/README.md)
 ## Training
 For details, please check [training/README.md](.training/README.md)
 
+## Acknowledgement
+Thanks [Mantis](https://github.com/TIGER-AI-Lab/Mantis/tree/main) for the training codebase of MantisScore and its variants and also for the MLLM plug-and-play tools in evaluation stage.
+
 ## Citation
 ```bibtex
 ```
