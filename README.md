@@ -19,6 +19,7 @@ pip install -e .[eval]
 git clone https://github.com/TIGER-AI-Lab/Mantis
 cd Mantis
 pip install -e .[train,eval]
+pip install flash-attn --no-build-isolation
 # then training scripts are in Mantis/train/scripts
 ```
 
