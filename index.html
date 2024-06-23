@@ -741,7 +741,7 @@
           <thead>
             <tr style="background-color: rgba(211, 211, 211, 0.5);">
               <th>Metric</th>
-              <th>Final Sum Score ↓</th>
+              <th>Final Avg Score ↓</th>
               <th>VideoFeedback-test</th>
               <th>EvalCrafter</th>
               <th>GenAI-Bench</th>
@@ -750,60 +750,60 @@
           </thead>
           <tbody>
             <tr style="background-color: rgba(110, 194, 134, 0.15);">
-              <td>MantisScore (reg)</td><td><b>278.3</b></td><td>75.7</td><td><b>51.1</b></td><td><b>78.5</b></td><td><b>73.0</b></td></tr>
+              <td>MantisScore (reg)</td><td><b>69.6</b></td><td>75.7</td><td><b>51.1</b></td><td><b>78.5</b></td><td><b>73.0</b></td></tr>
             
             <tr style="background-color: rgba(110, 194, 134, 0.15);">
-              <td>MantisScore-(gen)</td><td>222.4</td><td><b>77.1</b></td><td>27.6</td><td>59.0</td><td>58.7</td></tr>
+              <td>MantisScore-(gen)</td><td>55.6</td><td><b>77.1</b></td><td>27.6</td><td>59.0</td><td>58.7</td></tr>
             
             <!--<tr style="background-color: rgba(42, 149, 235, 0.15);">
               <td>∆ over Best Baseline</td><td>119.5</td> <td>54.0</td><td>14.9</td><td>11.4</td><td>17.9</td></tr>-->
 
             <tr style="background-color: rgba(255, 208, 80, 0.15);">
-              <td>Gemini-1.5-Pro</td><td><u>158.8</u></td><td>22.1</td><td>22.9</td><td>60.9</td><td>52.9</td></tr>
+              <td>Gemini-1.5-Pro</td><td><u>39.7</u></td><td>22.1</td><td>22.9</td><td>60.9</td><td>52.9</td></tr>
               
             <tr style="background-color: rgba(255, 208, 80, 0.15);">
-              <td>Gemini-1.5-Flash</td><td>157.5</td><td>20.8</td><td>17.3</td><td><u>67.1</u></td><td>52.3</td></tr>
+              <td>Gemini-1.5-Flash</td><td>39.4</td><td>20.8</td><td>17.3</td><td><u>67.1</u></td><td>52.3</td></tr>
               
             <tr style="background-color: rgba(255, 208, 80, 0.15);">
-              <td>GPT-4o</td><td>155.4</td><td><u>23.1</u></td><td>28.7</td><td>52.0</td><td>51.7</td></tr>
+              <td>GPT-4o</td><td>38.9</td><td><u>23.1</u></td><td>28.7</td><td>52.0</td><td>51.7</td></tr>
 
             <tr style="background-color: rgba(42, 149, 235, 0.15);">
-              <td>CLIP-sim</td><td>126.8</td><td>8.9</td><td><u>36.2</u></td><td>34.2</td><td>47.4</td></tr>
+              <td>CLIP-sim</td><td>31.7</td><td>8.9</td><td><u>36.2</u></td><td>34.2</td><td>47.4</td></tr>
             
             <tr style="background-color: rgba(42, 149, 235, 0.15);">
-              <td>DINO-sim</td><td>121.3</td><td>7.5</td><td>32.1</td><td>38.5</td><td>43.3</td></tr>
+              <td>DINO-sim</td><td>30.3</td><td>7.5</td><td>32.1</td><td>38.5</td><td>43.3</td></tr>
             
             <tr style="background-color: rgba(42, 149, 235, 0.15);">
-              <td>SSIM-sim</td><td>118.0</td><td>13.4</td><td>26.9</td><td>34.1</td><td>43.5</td></tr>
+              <td>SSIM-sim</td><td>29.5</td><td>13.4</td><td>26.9</td><td>34.1</td><td>43.5</td></tr>
             
             <tr style="background-color: rgba(42, 149, 235, 0.15);">
-              <td>CLIP-Score</td><td>114.4</td><td>-7.2</td><td>21.7</td><td>45.0</td><td>54.9</td></tr>
-
-            <tr style="background-color: rgba(255, 208, 80, 0.15);">
-              <td>LLaVA-1.5-7B</td><td>108.3</td><td>8.5</td><td>10.5</td><td>49.9</td><td>39.4</td></tr>
-            
-            <tr style="background-color: rgba(255, 208, 80, 0.15);">
-              <td>LLaVA-1.6-7B</td><td>93.3</td><td>-3.1</td><td>13.2</td><td>44.5</td><td>38.7</td></tr>
-
-            <tr style="background-color: rgba(42, 149, 235, 0.15);">
-              <td>X-CLIP-Score</td><td>92.9</td><td>-1.9</td><td>13.3</td><td>41.4</td><td>40.1</td></tr>
-
-            <tr style="background-color: rgba(42, 149, 235, 0.15);">
-              <td>PIQE</td><td>78.3</td><td>-10.1</td><td>-1.2</td><td>34.5</td><td><u>55.1</u></td></tr>
-            
-            <tr style="background-color: rgba(42, 149, 235, 0.15);">
-              <td>BRISQUE</td><td>75.9</td><td>-20.3</td><td>3.9</td><td>38.5</td><td>53.7</td></tr>
-            
-            <tr style="background-color: rgba(255, 208, 80, 0.15);">
-              <td>Idefics1</td><td>73.0</td><td>6.5</td><td>0.3</td><td>34.6</td><td>31.7</td></tr>
-            
-            <tr style="background-color: rgba(42, 149, 235, 0.15);">
-              <td>MSE-dyn</td><td>42.5</td><td>-5.5</td><td>-17.0</td><td>28.4</td><td>36.5</td></tr>
-            
-            <tr style="background-color: rgba(42, 149, 235, 0.15);">
-              <td>SSIM-dyn</td><td>36.7</td><td>-12.9</td><td>-26.4</td><td>31.4</td><td>44.5</td></tr>
+              <td>CLIP-Score</td><td>28.6</td><td>-7.2</td><td>21.7</td><td>45.0</td><td>54.9</td></tr>
 
             <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>LLaVA-1.5-7B</td><td>27.1</td><td>8.5</td><td>10.5</td><td>49.9</td><td>39.4</td></tr>
+            
+            <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>LLaVA-1.6-7B</td><td>23.3</td><td>-3.1</td><td>13.2</td><td>44.5</td><td>38.7</td></tr>
+
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>X-CLIP-Score</td><td>23.2</td><td>-1.9</td><td>13.3</td><td>41.4</td><td>40.1</td></tr>
+
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>PIQE</td><td>19.6</td><td>-10.1</td><td>-1.2</td><td>34.5</td><td><u>55.1</u></td></tr>
+            
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>BRISQUE</td><td>19.0</td><td>-20.3</td><td>3.9</td><td>38.5</td><td>53.7</td></tr>
+            
+            <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>Idefics1</td><td>18.3</td><td>6.5</td><td>0.3</td><td>34.6</td><td>31.7</td></tr>
+            
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>MSE-dyn</td><td>10.6</td><td>-5.5</td><td>-17.0</td><td>28.4</td><td>36.5</td></tr>
+            
+            <tr style="background-color: rgba(42, 149, 235, 0.15);">
+              <td>SSIM-dyn</td><td>9.2</td><td>-12.9</td><td>-26.4</td><td>31.4</td><td>44.5</td></tr>
+
+            <!-- <tr style="background-color: rgba(255, 208, 80, 0.15);">
               <td>Fuyu</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
             
             <tr style="background-color: rgba(255, 208, 80, 0.15);">
@@ -813,13 +813,13 @@
               <td>CogVLM</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
             
               <tr style="background-color: rgba(255, 208, 80, 0.15);">
-              <td>OpenFlamingo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr> 
+              <td>OpenFlamingo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr> -->
 
           </tbody>
         </table>
         <p style="text-align:center">
           The best MantisScore is <b>in bold</b> and the best in baselines is <u>underlined</u>. 
-          "-" means the answer of MLLM is meaningless or in wrong format. 
+          <!--"-" means the answer of MLLM is meaningless or in wrong format. -->
         </p>
       </div>
     </div>
