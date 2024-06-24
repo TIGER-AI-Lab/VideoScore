@@ -166,3 +166,6 @@ cython_debug/
 /checkpoints
 /data
 /*.egg-info
+
+
+/templates/
