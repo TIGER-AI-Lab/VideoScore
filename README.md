@@ -5,7 +5,7 @@ official repo for "MantisScore: A Reliable Fine-grained Metric for Video Generat
 ** The code is being updated **
 
 
-<a target="_blank" href="">
+<a target="_blank" href="https://arxiv.org/abs/2406.15252">
 <img style="height:22pt" src="https://img.shields.io/badge/-Paper-red?style=flat&logo=arxiv"></a>
 <a target="_blank" href="https://github.com/TIGER-AI-Lab/MantisScore">
 <img style="height:22pt" src="https://img.shields.io/badge/-Code-green?style=flat&logo=github"></a>
@@ -15,7 +15,7 @@ official repo for "MantisScore: A Reliable Fine-grained Metric for Video Generat
 <img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Dataset-red?style=flat"></a>
 <a target="_blank" href="https://huggingface.co/spaces/TIGER-Lab/Mantis">
 <img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Demo-red?style=flat"></a> 
-<a target="_blank" href="https://huggingface.co/TIGER-Lab/MantisScore">
+<a target="_blank" href="https://huggingface.co/collections/TIGER-Lab/mantisscore-6678c9451192e834e91cc0bf">
 <img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Models-red?style=flat"></a>
 <a target="_blank" href="">
 <img style="height:22pt" src="https://img.shields.io/badge/-Tweet-blue?style=flat&logo=twitter"></a>
@@ -87,4 +87,13 @@ For details, please check [training/README.md](training/README.md)
 
 ## Citation
 ```bibtex
+@article{he2024mantisscore,
+  title = {MantisScore: Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation},
+  author = {He, Xuan and Jiang, Dongfu and Zhang, Ge and Ku, Max and Soni, Achint and Siu, Sherman and Chen, Haonan and Chandra, Abhranil and Jiang, Ziyan and Arulraj, Aaran and Wang, Kai and Do, Quy Duc and Ni, Yuansheng and Lyu, Bohan and Narsupalli, Yaswanth and Fan, Rongqi and Lyu, Zhiheng and Lin, Yuchen and Chen, Wenhu},
+  journal = {ArXiv},
+  year = {2024},
+  volume={abs/2406.15252},
+  url = {https://arxiv.org/abs/2406.15252},
+}
+
 ```
