@@ -17,7 +17,7 @@ NUM_ASPECT=5
 MAX_TRY=5
 MAX_NUM_FRAMES=16
 BENCH_NAMES=["video_feedback","eval_crafter","vbench","genaibench"]
-
+MODEL_NAMES=["gemini-1.5-pro-latest","gemini-1.5-flash-latest"]
 
 def eval_gemini(
     data_repo_name: str="TIGER-Lab/VideoScore-Bench",
@@ -28,9 +28,9 @@ def eval_gemini(
     base_model: str="gemini-1.5-pro-latest",
 ):
     
-    if base_model not in ["gemini-1.5-pro-latest","gemini-1.5-flash-latest"]:
-        print("gemini base model is not supported")
-        exit()
+    if base_model not in MODEL_NAMES:
+        raise ValueError("gemini base model is not supported")
+    
     model = genai.GenerativeModel(base_model, generation_config=generation_config, safety_settings=safety_settings)
     
     logging.basicConfig(level=logging.INFO)

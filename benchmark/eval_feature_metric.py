@@ -3,18 +3,11 @@ import re
 import torch
 import fire
 import logging
-import numpy as np
 from tqdm import tqdm
-from PIL import Image
 from typing import List
-from torchvision.models import vit_b_16 
-from transformers import CLIPProcessor, CLIPModel
-from transformers import AutoTokenizer, AutoModel, AutoProcessor
-import torchvision.transforms as transforms
 from datasets import load_dataset
 from datetime import datetime
-from utils_tools import _add_to_res_file,regression_query_template
-from utils_conv import conv_templates
+from utils_tools import _add_to_res_file
 from feature_metric_tools.visual_eval import piqe_output, brisque_output
 from feature_metric_tools.temporal_eval import clip_inter_frame, dino_inter_frame, ssim_inter_frame
 from feature_metric_tools.dynamic_eval import  dynamic_mse, dynamic_ssim
@@ -48,11 +41,14 @@ def main(
     model,tokenizer,preprocess,processor=None,None,None,None
     
     if metric_name == "CLIP-sim" or "CLIP-Score":
+        from transformers import CLIPProcessor, CLIPModel
         model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
         model.to(device)
         tokenizer = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
     
     if metric_name == "DINO-sim":
+        from torchvision.models import vit_b_16 
+        import torchvision.transforms as transforms
         model = vit_b_16(pretrained=True)
         model.to(device)
         model.eval()  
@@ -64,6 +60,8 @@ def main(
         ])
     
     if metric_name == "X-CLIP-Score":
+        from transformers import AutoTokenizer, AutoModel, AutoProcessor
+        
         model = AutoModel.from_pretrained("microsoft/xclip-base-patch32")
         processor = AutoProcessor.from_pretrained("microsoft/xclip-base-patch32")
         tokenizer = AutoTokenizer.from_pretrained("microsoft/xclip-base-patch32")

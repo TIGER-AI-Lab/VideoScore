@@ -1,6 +1,7 @@
 import numpy as np
 from PIL import Image
 import cv2
+from typing import List
 from skimage.metrics import structural_similarity as ssim
 from skimage import io, color
 
@@ -16,7 +17,9 @@ MSE_POINT_HIGH=3000
 MSE_POINT_MID=1000
 MSE_POINT_LOW=100
 
-def dynamic_ssim(frame_path_list):
+def dynamic_ssim(
+    frame_path_list:List[str],
+    ):
     ssim_list=[]
     sampled_list = frame_path_list[::DYN_SAMPLE_STEP]
     for f_idx in range(len(sampled_list)-1):
@@ -42,7 +45,9 @@ def dynamic_ssim(frame_path_list):
     return ssim_avg, ans
 
 
-def dynamic_mse(frame_path_list):
+def dynamic_mse(
+    frame_path_list:List[str],
+    ):
     mse_list=[]
     sampled_list = frame_path_list[::DYN_SAMPLE_STEP]
     for f_idx in range(len(sampled_list)-1):        

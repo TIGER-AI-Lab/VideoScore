@@ -2,6 +2,7 @@ from brisque import BRISQUE
 from pypiqe import piqe
 from PIL import Image
 import numpy as np
+from typing import List
 
 ROUND_DIGIT=3
 NUM_ASPECT=5
@@ -14,9 +15,9 @@ BRISQUE_POINT_LOW=10
 BRISQUE_POINT_MID=30
 BRISQUE_POINT_HIGH=50
 
-def piqe_output(frames_path_list):
+def piqe_output(frame_path_list:List[str],):
     piqe_list=[]
-    for frame_path in frames_path_list:
+    for frame_path in frame_path_list:
         frame=np.array(Image.open(frame_path))
         piqe_score, _,_,_ = piqe(frame)
         piqe_list.append(piqe_score)
@@ -33,9 +34,9 @@ def piqe_output(frames_path_list):
     return piqe_avg, ans
 
 
-def brisque_output(frames_path_list):
+def brisque_output(frame_path_list:List[str],):
     brisque_list=[]
-    for frame_path in frames_path_list:
+    for frame_path in frame_path_list:
         frame=Image.open(frame_path)
         brisque_score=BRISQUE().score(frame)
         brisque_list.append(brisque_score)

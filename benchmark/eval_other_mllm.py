@@ -15,6 +15,7 @@ NUM_ASPECT=5
 MAX_TRY_FOR_BAD_MODEL=20
 MAX_NUM_FRAMES=24
 BENCH_NAMES=["video_feedback","eval_crafter","vbench","genaibench"]
+MODEL_NAMES=["llava_next","llava","idefics1","idefics2","kosmos2","openflamingo","cogvlm","fuyu"]
 
 NO_IMG_TOKENS=["idefics2","llava","llava_next"]
 GOOD_MODELS=["idefics1","llava","llava_next",]
@@ -93,9 +94,8 @@ def main(
     result_file: str="./eval_results/video_feedback/eval_video_feedback_llava_next.json",
     model_name: str="llava_next",
 ):
-    if model_name not in ["llava_next","llava","idefics1","idefics2","kosmos2","openflamingo","cogvlm","fuyu"]:
-        print("gemini base model is not supported")
-        exit()
+    if model_name not in MODEL_NAMES:
+        raise ValueError("the model is not supported")
     
     logging.basicConfig(level=logging.INFO)
     logger= logging.getLogger(__name__)
@@ -198,7 +198,6 @@ def main(
             
             if idx>MAX_TRY_FOR_BAD_MODEL and model_name not in GOOD_MODELS:
                 return
-
 
 
 if __name__=="__main__":

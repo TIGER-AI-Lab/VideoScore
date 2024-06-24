@@ -32,28 +32,95 @@ cd data && bash download_data.sh
 ```
 
 ## Evaluation
-- Evaluate MantisScore on VideoFeedback-test: 
-Suppose your current directory is "~/MantisScore"
 ```
 cd benchmark
 ```
+To evaluate either VideoScore or GPT4o or other MLLM prompting methods or some featured-based metrics,
+please choose the benchmark you want to evaluate on in the corresponding shell scripts firstly:  
+```bash
+bench_name="video_feedback"
+# bench_name="eval_crafter"
+# bench_name="genaibench"
+# bench_name="vbench"
+```
 
-To evaluate model on certain benchmark
+- To evaluate VideoScore model on certain benchmark,
+```bash
+bash eval_videoscore.sh
+```
 
-//
+- To evaluate GPT-4o on certain benchmark,
+```bash
+bash eval_gpt4o.sh
+```
 
-To be filled
+- To get results from Gemini-1.5-Pro or Gemini-1.5-Flash, you also need to choose the vairant model of Gemini-1.5
+```bash
+base_model="gemini-1.5-flash-latest"
+# base_model="gemini-1.5-pro-latest"
+```
+then run 
+```bash
+bash eval_gemini-1.5.sh
+```
 
-//
 
+- To get results from other open-source MLLMs, you need to specify the MLLM to be used in script:
+```bash
+model_name="idefics1"
+# model_name="llava"
+# model_name="llava_next"
+# model_name="idefics2"
+# model_name="cogvlm"
+# model_name="fuyu"
+# model_name="kosmos2"
+# model_name="openflamingo"
+# model_name="otterimage"
+```  
+then run 
+```bash
+bash eval_other_mllm.sh
+```
+
+- To get results from the feature-based metrics like CLIP-Score, SSIM, etc, 
+you need to specify the metric name in script:
+```bash
+metric_name="PIQE"
+# metric_name="BRISQUE"
+# metric_name="CLIP-sim"
+# metric_name="DINO-sim"
+# metric_name="SSIM-sim"
+# metric_name="MSE-dyn"
+# metric_name="SSIM-dyn"
+# metric_name="CLIP-Score"
+# metric_name="X-CLIP-Score"
+```
+then run 
+```bash
+bash eval_feature_metric.sh
+```
+
+## Get Spearman correlation coefficient or Pairwise Accuracy as performance indicator
 
 After obtaining model output for each video in test set, you can run the following scripts to get SPCC or pairwise accuracy: 
+- For VideoFeedback-test or EvalCrafter,
+
+first specify the benchmark name in script:
+```bash
+bench_name="video_feedback"
+# bench_name="eval_crafter"
+```
+then run
 ```
 bash get_spearman_corr.sh
 ```
+
+- For results of GenAI-Bench, 
 ```
 bash get_genaibench_pairwise_acc.sh
 ```
+
+- For results of VBench, 
 ```
 bash get_vbench_pairwise_acc.sh
 ```

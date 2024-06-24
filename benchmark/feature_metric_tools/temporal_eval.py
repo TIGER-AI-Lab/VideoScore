@@ -2,10 +2,8 @@ import numpy as np
 from tqdm import tqdm
 from PIL import Image
 import torch
-from torchvision.models import vit_b_16 
-from transformers import CLIPProcessor, CLIPModel
-import torchvision.transforms as transforms
 import torch.nn.functional as F
+from typing import List
 from skimage.metrics import structural_similarity as ssim
 from skimage import io, color
 
@@ -25,12 +23,16 @@ TEM_SSIM_POINT_MID=0.75
 TEM_SSIM_POINT_LOW=0.6
 
 
-def clip_inter_frame(model,tokenizer,frames_path_list):
+def clip_inter_frame(
+    model,
+    tokenizer,
+    frame_path_list:List[str],
+):
     device=model.device
     frame_sim_list=[]
-    for f_idx in range(len(frames_path_list)-1):
-        frame_1 = Image.open(frames_path_list[f_idx])
-        frame_2 = Image.open(frames_path_list[f_idx+1])
+    for f_idx in range(len(frame_path_list)-1):
+        frame_1 = Image.open(frame_path_list[f_idx])
+        frame_2 = Image.open(frame_path_list[f_idx+1])
         input_1 = tokenizer(images=frame_1, return_tensors="pt", padding=True).to(device)
         input_2 = tokenizer(images=frame_2, return_tensors="pt", padding=True).to(device)
         output_1 = model.get_image_features(**input_1).flatten()
@@ -50,12 +52,16 @@ def clip_inter_frame(model,tokenizer,frames_path_list):
     return clip_frame_score, ans
 
 
-def dino_inter_frame(model, preprocess, frames_path_list):
+def dino_inter_frame(
+    model, 
+    preprocess, 
+    frame_path_list:List[str],
+):
     device=model.device
     frame_sim_list=[]
-    for f_idx in tqdm(range(len(frames_path_list)-1)):
-        frame_1=Image.open(frames_path_list[f_idx])
-        frame_2=Image.open(frames_path_list[f_idx+1])
+    for f_idx in tqdm(range(len(frame_path_list)-1)):
+        frame_1=Image.open(frame_path_list[f_idx])
+        frame_2=Image.open(frame_path_list[f_idx+1])
         frame_tensor_1 = preprocess(frame_1).unsqueeze(0).to(device)
         frame_tensor_2 = preprocess(frame_2).unsqueeze(0).to(device)
         with torch.no_grad():
@@ -76,12 +82,14 @@ def dino_inter_frame(model, preprocess, frames_path_list):
     return frame_sim_avg, ans
 
 
-def ssim_inter_frame(frames_path_list):
+def ssim_inter_frame(
+    frame_path_list:List[str],
+):
     ssim_list=[]
-    for f_idx in range(len(frames_path_list)-1):
-        frame_1=Image.open(frames_path_list[f_idx])
+    for f_idx in range(len(frame_path_list)-1):
+        frame_1=Image.open(frame_path_list[f_idx])
         frame_1_gray=color.rgb2gray(frame_1)
-        frame_2=Image.open(frames_path_list[f_idx+1])
+        frame_2=Image.open(frame_path_list[f_idx+1])
         frame_2_gray=color.rgb2gray(frame_2)
 
         ssim_value, _ = ssim(frame_1_gray, frame_2_gray, full=True,\

@@ -1,6 +1,7 @@
 import numpy as np
 from PIL import Image
 import torch.nn.functional as F
+from typing import List
 
 NUM_ASPECT=5
 ROUND_DIGIT=3
@@ -17,11 +18,16 @@ X_CLIP_POINT_MID=0.225
 X_CLIP_POINT_HIGH=0.30
 
 
-def clip_score(model, tokenizer,text,frames_path_list):
+def clip_score(
+    model, 
+    tokenizer,
+    text:str,
+    frame_path_list:List[str],
+):
     device=model.device
     input_t = tokenizer(text=text, max_length=MAX_LENGTH, truncation=True, return_tensors="pt", padding=True).to(device)
     cos_sim_list=[]
-    for frame_path in frames_path_list:
+    for frame_path in frame_path_list:
         image=Image.open(frame_path)
         input_f = tokenizer(images=image, return_tensors="pt", padding=True).to(device)
         output_t = model.get_text_features(**input_t).flatten()
@@ -41,7 +47,13 @@ def clip_score(model, tokenizer,text,frames_path_list):
     return clip_score_avg, ans
 
 
-def x_clip_score(model, tokenizer, processor, text,frame_path_list):
+def x_clip_score(
+    model, 
+    tokenizer, 
+    processor, 
+    text:str,
+    frame_path_list:List[str],
+):
     
     def _read_video_frames(frame_paths, max_frames):
         total_frames = len(frame_paths)
