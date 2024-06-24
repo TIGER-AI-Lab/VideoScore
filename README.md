@@ -81,7 +81,7 @@ For details, please check [benchmark/README.md](benchmark/README.md)
 For details, please check [training/README.md](training/README.md)
 
 ## Acknowledgement
-- Thanks [Mantis](https://github.com/TIGER-AI-Lab/Mantis/tree/main) for the training codebase of VideoScore and its variants and also for the MLLM plug-and-play tools in evaluation stage! 
+- Thanks [Mantis](https://github.com/TIGER-AI-Lab/Mantis/tree/main) for the training codebase of VideoScore (and variants) and also for the plug-and-play MLLM tools in evaluation stage! 
 
 - Thanks [VIEScore](https://github.com/TIGER-AI-Lab/VIEScore/tree/main) for some codes of prompting MLLM in evaluation! 
 
