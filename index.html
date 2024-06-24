@@ -7,7 +7,7 @@
   <meta name="description" content="text-to-video generation evaluation">
   <meta name="keywords" content="multimodal evaluation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MantisScore</title>
+  <title>VideoScore</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./static/css/index.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <link rel="icon" href="static/images/logo3.png?v=3">
+  <link rel="icon" href="static/images/logo.png?v=4">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
@@ -140,8 +140,8 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title is-bold">
-              <img id="painting_icon" width="5%" src="static/images/logo3.png">
-              MantisScore </h1>
+              <img id="painting_icon" width="5%" src="static/images/logo.png">
+              VideoScore </h1>
               <h2 class="subtitle is-3 publication-subtitle"> Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation</h2>
               <br> 
               <div class="is-size-5 publication-authors">
@@ -219,7 +219,7 @@
                 </span>
 
                 <span class="link-block">
-                  <a href="https://github.com/TIGER-AI-Lab/MantisScore/" target="_blank"
+                  <a href="https://github.com/TIGER-AI-Lab/VideoScore/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -238,18 +238,18 @@
                   </a>
                 </span>
 
-                <!--<span class="link-block">
-                  <a href="https://huggingface.co/datasets/TIGER-Lab/MantisScore-Bench" target="_blank"
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/TIGER-Lab/VideoScore-Bench" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-database"></i>
                     </span>
-                    <span>MantisScore-Bench</span>
+                    <span>VideoScore-Bench</span>
                   </a>
-                </span>-->
+                </span>
 
                 <span class="link-block">
-                  <a href="https://huggingface.co/TIGER-Lab/MantisScore" target="_blank"
+                  <a href="https://huggingface.co/TIGER-Lab/VideoScore" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       🔥 
@@ -259,7 +259,7 @@
                 </span>
 
                 <span class="link-block">
-                  <a href="https://huggingface.co/spaces/Mantis-VL/MantisScore" target="_blank"
+                  <a href="https://huggingface.co/spaces/TIGER-Lab/MantisScore" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       🤗
@@ -324,21 +324,21 @@
                   from 11 existing video generative models. 
                 </li>
                 <li>
-                  <img id="painting_icon" width="3%" src="static/images/logo3.png">
-                  <b>MantisScore</b>. 
-                    We train MantisScore (initialized from Mantis) based on VideoFeedback 
+                  <img id="painting_icon" width="3%" src="static/images/logo.png">
+                  <b>VideoScore</b>. 
+                    We train VideoScore (initialized from Mantis) based on VideoFeedback 
                     to enable automatic video quality assessment. Experiments
                     show that the Spearman correlation between
-                    MantisScore and humans can reach 77.1 on
+                    VideoScore and humans can reach 77.1 on
                     VideoFeedback-test, beating the prior best
                     metrics by about 50 points. Further result on
                     other held-out EvalCrafter, GenAI-Bench, and
-                    VBench show that MantisScore has consistently much higher correlation with human
+                    VBench show that VideoScore has consistently much higher correlation with human
                     judges than other metrics. 
                     
                 </li>
                 <li><b>Human Feedback for Video generative models</b>. 
-                    Due to these results, we believe MantisScore can serve as
+                    Due to these results, we believe VideoScore can serve as
                     a great proxy for human raters to (1) rate different video models to track progress (2) simulate
                     fine-grained human feedback in Reinforcement
                     Learning with Human Feedback (RLHF) to improve current video generation models.
@@ -394,11 +394,19 @@
     </div>
     <br>
     <br>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+          <h3 class="title is-4">Dimensions of Evaluation</h3>
+          <img id="dataset" width="75%" src="static/images/subscore_def.png">   
+      </div>
+    </div>
+
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
           <h3 class="title is-4">Annotation Examples</h3>
-          <b style="color:#007bff;">1-Bad, 2-Average, 3-Good, 4-Real/Perfect</b><br>
+          <b style="color:#df2919;">1-Bad</b>, <b style="color:#e1b00e;">2-Average</b>, 
+            <b style="color:#007bff;">3-Good</b>, <b style="color:#3ec56b;"></b>4-Real/Perfect</b><br>
       </div>
     </div>
 
@@ -633,12 +641,12 @@
 
   </section>        
  
-<!----------------------------------------- MantisScore. --------------------------------------------------->  
+<!----------------------------------------- VideoScore. --------------------------------------------------->  
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
   <h2 class="title is-3">
-    <img id="painting_icon" width="3%" src="static/images/logo3.png">
-    <span style="vertical-align: middle">MantisScore</span>
+    <img id="painting_icon" width="3%" src="static/images/logo.png">
+    <span style="vertical-align: middle">VideoScore</span>
   </h2>
   </div>
 </section>  
@@ -649,7 +657,7 @@
       <div class="column is-full-width">
         <div class="content has-text-justified"> 
           <p>
-            MantisScore is finetuned on VideoFeedback dataset's 37K training set taking 
+            VideoScore is finetuned on VideoFeedback dataset's 37K training set taking 
             <a href="https://huggingface.co/openai/clip-vit-large-patch14-336">Mantis-8B-Idefics2</a> as base model. 
             We try generation scoring method and regression scoring method, 
             the former one means model's answer is in a template 
@@ -681,10 +689,10 @@
           <img id="painting_icon" width="3%" src="static/images/data_logo4.png">
           VideoFeedback-test</span></h2>
         <p>
-          We test MantisScore on VideoFeedback-test set, containing 760 videos with human scores from five dimensions. 
-          We take the Spearman correlation between MantisScore and human annotation as performance indicator. 
+          We test VideoScore on VideoFeedback-test set, containing 760 videos with human scores from five dimensions. 
+          We take the Spearman correlation between VideoScore and human annotation as performance indicator. 
           Below we show the results of some feature-based metrics like PIQE, CLIP-sim, X-CILIP-Sore etc, and some
-          MLLM-prompting methods like GPT-4o Gemini-1.5-Pro, etc and our MantisScore. 
+          MLLM-prompting methods like GPT-4o Gemini-1.5-Pro, etc and our VideoScore. 
         </p>
         <br>
         <h2 class="title is-5"><span style="font-size: 100%;">
@@ -694,7 +702,7 @@
           We select 3 dimensions (Visual Quality, Temporal Consistency and Text-to-Video Alignment) 
           from EvalCrafter that match our evaluation aspects 
           and collect 2500+ videos for test. 
-          We take the Spearman correlation between MantisScore and human annotation as performance indicator.
+          We take the Spearman correlation between VideoScore and human annotation as performance indicator.
 
         </p>
         <br>
@@ -707,7 +715,7 @@
             For GenAI-Bench we collect 2100+ videos in test and 
             for VBench we select a subset from 5 aspects of VBench, like technical 
             quality, subject consistency etc, then subsample 100 unique prompts for four T2V models (2000 videos totally) for test.
-            We use averaged score of our five dimensions for MLLM prompting baselines and MantisScore to
+            We use averaged score of our five dimensions for MLLM prompting baselines and VideoScore to
             give the preference and calculate the pairwise accuracy as performance indicator.
         </p>
         <!--<centering>
@@ -731,7 +739,7 @@
         
           <div class="model-labels-container is-size-5">
 
-            <span style="background-color: rgba(110, 194, 134, 0.15);padding: 5px 10px;">MantisScore series</span>
+            <span style="background-color: rgba(110, 194, 134, 0.15);padding: 5px 10px;">VideoScore series</span>
             <span style="background-color: rgba(255, 208, 80, 0.15);padding: 5px 10px;">MLLM Prompting Method</span>
             <span style="background-color: rgba(42, 149, 235, 0.15);padding: 5px 10px;">Feature-Based Metric</span>
             <p></p>
@@ -750,10 +758,10 @@
           </thead>
           <tbody>
             <tr style="background-color: rgba(110, 194, 134, 0.15);">
-              <td>MantisScore (reg)</td><td><b>69.6</b></td><td>75.7</td><td><b>51.1</b></td><td><b>78.5</b></td><td><b>73.0</b></td></tr>
+              <td>VideoScore (reg)</td><td><b>69.6</b></td><td>75.7</td><td><b>51.1</b></td><td><b>78.5</b></td><td><b>73.0</b></td></tr>
             
             <tr style="background-color: rgba(110, 194, 134, 0.15);">
-              <td>MantisScore-(gen)</td><td>55.6</td><td><b>77.1</b></td><td>27.6</td><td>59.0</td><td>58.7</td></tr>
+              <td>VideoScore-(gen)</td><td>55.6</td><td><b>77.1</b></td><td>27.6</td><td>59.0</td><td>58.7</td></tr>
             
             <!--<tr style="background-color: rgba(42, 149, 235, 0.15);">
               <td>∆ over Best Baseline</td><td>119.5</td> <td>54.0</td><td>14.9</td><td>11.4</td><td>17.9</td></tr>-->
@@ -818,7 +826,7 @@
           </tbody>
         </table>
         <p style="text-align:center">
-          The best MantisScore is <b>in bold</b> and the best in baselines is <u>underlined</u>. 
+          The best VideoScore is <b>in bold</b> and the best in baselines is <u>underlined</u>. 
           <!--"-" means the answer of MLLM is meaningless or in wrong format. -->
         </p>
       </div>
@@ -847,7 +855,7 @@
       <div class="columns is-centered">
         <div class="column is-full-width">
             <p style="text-align:center">
-              Scale of all the scores is in [1, 2, 3, 4] except for MantisScore (reg), 
+              Scale of all the scores is in [1, 2, 3, 4] except for VideoScore (reg), 
               which outputs five float logits ranging from 0.50 to 4.50. <br>
               For scale [1, 2, 3, 4], 1-Bad, 2-Avg, 3-Good, 4-Perfect/Real. <br>
 
@@ -882,8 +890,8 @@
                     <td></td><td></td><td></td><td></td><td></td><td></td>
                   </tr>
                   <tr style="background-color: rgba(110, 194, 134, 0.15);">
-                    <td>MantisScore (reg)</td><td>2.67</td><td>0.81</td><td>3.09</td><td>2.50</td><td>0.80</td>
-                    <td>MantisScore (gen)</td><td>3</td><td>1</td><td>3</td><td>3</td><td>1</td>
+                    <td>VideoScore (reg)</td><td>2.67</td><td>0.81</td><td>3.09</td><td>2.50</td><td>0.80</td>
+                    <td>VideoScore (gen)</td><td>3</td><td>1</td><td>3</td><td>3</td><td>1</td>
                   </tr>
                   <tr style="background-color: rgba(255, 208, 80, 0.15);">
                     <td>GPT-4o</td><td>3</td><td>4</td><td>2</td><td>3</td><td>4</td>
@@ -934,8 +942,8 @@
                     <td></td><td></td><td></td><td></td><td></td><td></td>
                   </tr>
                   <tr style="background-color: rgba(110, 194, 134, 0.15);">
-                    <td>MantisScore (reg)</td><td>1.91</td><td>1.86</td><td>2.84</td><td>2.44</td><td>1.67</td>
-                    <td>MantisScore (gen)</td><td>2</td><td>1</td><td>3</td><td>1</td><td>1</td>
+                    <td>VideoScore (reg)</td><td>1.91</td><td>1.86</td><td>2.84</td><td>2.44</td><td>1.67</td>
+                    <td>VideoScore (gen)</td><td>2</td><td>1</td><td>3</td><td>1</td><td>1</td>
                   </tr>
                   <tr style="background-color: rgba(255, 208, 80, 0.15);">
                     <td>GPT-4o</td><td>3</td><td>3</td><td>3</td><td>4</td><td>4</td>
@@ -986,8 +994,8 @@
                     <td></td><td></td><td></td><td></td><td></td><td></td>
                   </tr>
                   <tr style="background-color: rgba(110, 194, 134, 0.15);">
-                    <td>MantisScore (reg)</td><td>1.04</td><td>1.42</td><td>2.95</td><td>1.97</td><td>1.09</td>
-                    <td>MantisScore (gen)</td><td>1</td><td>1</td><td>3</td><td>2</td><td>1</td>
+                    <td>VideoScore (reg)</td><td>1.04</td><td>1.42</td><td>2.95</td><td>1.97</td><td>1.09</td>
+                    <td>VideoScore (gen)</td><td>1</td><td>1</td><td>3</td><td>2</td><td>1</td>
                   </tr>
                   <tr style="background-color: rgba(255, 208, 80, 0.15);">
                     <td>GPT-4o</td><td>3</td><td>4</td><td>2</td><td>3</td><td>3</td>
@@ -1030,7 +1038,7 @@
         <div class="column is-full-width">
             <p style="text-align:center">
               In each item we have two videos with same prompt and a human preference annotation. 
-              For MantisScore and MLLM prompting methods, we use average score of all 5 dimensions to predict preference, 
+              For VideoScore and MLLM prompting methods, we use average score of all 5 dimensions to predict preference, 
               while for feature-based metrics, we use their discretized output for the prediction of preference direcly.
             </p>
         </div>
@@ -1061,7 +1069,7 @@
         </div>
 
         <div class="column is-one-third">
-            <img width="100%" src="static/images/genaibench_0.png" alt="GIF">
+            <img width="100%" src="static/case_study/genai_0.png" alt="GIF">
         </div>
       </div>
 
@@ -1090,7 +1098,7 @@
         </div>
 
         <div class="column is-one-third">
-            <img width="100%" src="static/images/genaibench_13.png" alt="GIF">
+            <img width="100%" src="static/case_study/genai_13.png" alt="GIF">
         </div>
       </div>
   
@@ -1104,8 +1112,8 @@
   <div class="container is-max-desktop content">
     
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{he2024mantisscore,
-  title = {MantisScore: Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation},
+    <pre><code>@article{he2024videoscore,
+  title = {VideoScore: Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation},
   author = {He, Xuan and Jiang, Dongfu and Zhang, Ge and Ku, Max and Soni, Achint and Siu, Sherman and Chen, Haonan and Chandra, Abhranil and Jiang, Ziyan and Arulraj, Aaran and Wang, Kai and Do, Quy Duc and Ni, Yuansheng and Lyu, Bohan and Narsupalli, Yaswanth and Fan, Rongqi and Lyu, Zhiheng and Lin, Yuchen and Chen, Wenhu},
   journal = {ArXiv},
   year = {2024},
