@@ -2,9 +2,9 @@
 # mkdir -p ./eval_results/video_feedback
 
 # data_repo_name="TIGER-Lab/VideoFeedback-Bench"
-# name_postfixs="['video_feedback']"
-# result_file='./eval_results/video_feedback/eval_video_feedback_mantisscore.json'
 # bench_name="video_feedback"
+# name_postfixs="[${bench_name}]"
+# result_file="./eval_results/${bench_name}/eval_${bench_name}_mantisscore.json"
 
 # python eval_gpt4o.py \
 #     --data_repo_name $data_repo_name \
@@ -19,9 +19,10 @@
 # mkdir -p ./eval_results/eval_crafter
 
 # data_repo_name="TIGER-Lab/VideoFeedback-Bench"
-# name_postfixs="['eval_crafter']"
-# result_file='./eval_results/eval_crafter/eval_ec_mantisscore.json'
 # bench_name="eval_crafter"
+# name_postfixs="[${bench_name}]"
+# result_file="./eval_results/${bench_name}/eval_${bench_name}_mantisscore.json"
+
 
 # python eval_gpt4o.py \
 #     --data_repo_name $data_repo_name \
@@ -36,9 +37,9 @@
 mkdir -p ./eval_results/genaibench
 
 data_repo_name="TIGER-Lab/VideoFeedback-Bench"
-name_postfixs="['genaibench']"
-result_file='./eval_results/genaibench/eval_genaibench_mantisscore.json'
 bench_name="genaibench"
+name_postfixs="[${bench_name}]"
+result_file="./eval_results/${bench_name}/eval_${bench_name}_mantisscore.json"
 
 python eval_gpt4o.py \
     --data_repo_name $data_repo_name \
@@ -53,9 +54,9 @@ python eval_gpt4o.py \
 # mkdir -p ./benchmark/eval_results/vbench
 
 # data_repo_name="TIGER-Lab/VideoFeedback-Bench"
-# name_postfixs="['vbench']"
-# result_file='./eval_results/vbench/eval_vbench_mantisscore.json'
 # bench_name="vbench"
+# name_postfixs="[${bench_name}]"
+# result_file="./eval_results/${bench_name}/eval_${bench_name}_mantisscore.json"
 
 # python eval_gpt4o.py \
 #     --data_repo_name $data_repo_name \

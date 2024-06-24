@@ -6,7 +6,7 @@ import torch
 import numpy as np
 from typing import List
 from mllm_tools.mllm_utils import load_images
-from models.conversation import conv_videollava as default_conv
+from mantis.models.conversation import conv_videollava as default_conv
 import re
 from transformers import VideoLlavaProcessor, VideoLlavaForConditionalGeneration, AutoConfig
 

@@ -16,16 +16,16 @@ ROUND_DIGIT=4
 NUM_ASPECT=5
 MAX_TRY=5
 MAX_NUM_FRAMES=16
-
+BENCH_NAMES=["video_feedback","eval_crafter","vbench","genaibench"]
 
 
 def eval_gemini(
     data_repo_name: str="TIGER-Lab/VideoFeedback-Bench",
+    bench_name: str="video_feedback",
     frames_dir: str="../data/video_feedback/test", 
     name_postfixs: List[str]=['video_feedback'], 
     result_file: str="./eval_results/video_feedback/eval_video_feedback_gemini-1.5-pro.json",
     base_model: str="gemini-1.5-pro-latest",
-    bench_name: str="video_feedback",
 ):
     
     if base_model not in ["gemini-1.5-pro-latest","gemini-1.5-flash-latest"]:
@@ -36,7 +36,7 @@ def eval_gemini(
     logging.basicConfig(level=logging.INFO)
     logger= logging.getLogger(__name__)
     date_time=datetime.now().strftime("%m-%d %H:%M:%S")
-    log_file=f"./logs/eval_gpt4o_on_{bench_name}_{date_time}.log"
+    log_file=f"./logs/eval_{base_model}_on_{bench_name}_{date_time}.log"
     os.makedirs(os.path.dirname(log_file),exist_ok=True)
     file_handler = logging.FileHandler(log_file)
     file_handler.setLevel(logging.INFO)
@@ -60,13 +60,11 @@ def eval_gemini(
 
                     video_prompt=human_text.split("text prompt is \"")[1].split("\",\nall")[0]
                     
+                    assert bench_name in BENCH_NAMES, "benchmark name is not supported"
                     if bench_name=="video_feedback":
                         ref_scores=[int(item) for item in re.findall(r': (\d+)', bot_text)]
-                    elif bench_name in ["eval_crafter","vbench","genaibench"]:
-                        ref_scores=item["score_list"]
                     else:
-                        print("benchmark name is not supported")
-                        exit()
+                        ref_scores=item["score_list"]
                     
                     img_list=[]
                     for img_path in img_path_list:

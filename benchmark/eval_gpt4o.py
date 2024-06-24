@@ -20,6 +20,7 @@ ROUND_DIGIT = 3
 NUM_ASPECT = 5
 MAX_TRY = 5
 MAX_NUM_FRAMES = 20
+BENCH_NAMES=["video_feedback","eval_crafter","vbench","genaibench"]
 QUERY_TEMPLATE = label_query_template()
 
 
@@ -83,10 +84,9 @@ def query_one_video(logger,item,aws_s3_prefix):
 
 def eval_gpt4(
     data_repo_name: str="TIGER-Lab/VideoFeedback-Bench",
+    bench_name: str="video_feedback",
     name_postfixs: List[str]=['video_feedback'], 
     result_file: str="./eval_results/video_feedback/eval_video_feedback_gpt4o.json",
-    bench_name: str="video_feedback",
-    
 ):
     logging.basicConfig(level=logging.INFO)
     logger= logging.getLogger(__name__)
@@ -98,20 +98,20 @@ def eval_gpt4(
     file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
     logger.addHandler(file_handler)
 
+    aws_s3_prefix="https://video-bench-800.s3.ap-southeast-2.amazonaws.com/frames"
+    if bench_name=="eval_crafter":
+        aws_s3_prefix=f"https://eval-crafter-frames.s3.ap-southeast-2.amazonaws.com/frames"
+    if bench_name=="vbench":
+        aws_s3_prefix=f"https://vbench-frames.s3.ap-southeast-2.amazonaws.com/frames"
+    if bench_name=="genaibench":
+        aws_s3_prefix="https://genaibench-frames.s3.ap-southeast-2.amazonaws.com/frames"
+    
     for source in name_postfixs:
         test_data=load_dataset(data_repo_name,name=source, split="test")
         
         # test_dataset = Dataset.from_list(test_data)  
         # ans_dataset=test_dataset.map(query_one_video,num_proc=8)
-        
-        aws_s3_prefix="https://video-bench-800.s3.ap-southeast-2.amazonaws.com/frames"
-        if bench_name=="eval_crafter":
-            aws_s3_prefix=f"https://eval-crafter-frames.s3.ap-southeast-2.amazonaws.com/frames"
-        if bench_name=="vbench":
-            aws_s3_prefix=f"https://vbench-frames.s3.ap-southeast-2.amazonaws.com/frames"
-        if bench_name=="genaibench":
-            aws_s3_prefix="https://genaibench-frames.s3.ap-southeast-2.amazonaws.com/frames"
-        
+
         for idx,item in tqdm(enumerate(test_data)):
             retries = 0
             while retries < MAX_TRY:
@@ -123,13 +123,11 @@ def eval_gpt4(
                     bot_text=item["conversations"][1]["value"]
 
                     video_prompt=human_text.split("text prompt is \"")[1].split("\",\nall")[0]
+                    assert bench_name in BENCH_NAMES, "benchmark name is not supported"
                     if bench_name=="video_feedback":
                         ref_scores=[int(item) for item in re.findall(r': (\d+)', bot_text)]
-                    elif bench_name in ["eval_crafter","vbench","genaibench"]:
-                        ref_scores=item["score_list"]
                     else:
-                        print("benchmark name is not supported")
-                        exit()
+                        ref_scores=item["score_list"]
                                             
                     output=_azure_gpt_4o_output(img_name_list,video_prompt,aws_s3_prefix)
                     

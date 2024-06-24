@@ -7,7 +7,7 @@ from PIL import Image
 import torch
 from io import BytesIO
 from mllm_tools.mllm_utils import merge_images
-from models.conversation import conv_llava_v1
+from mantis.models.conversation import conv_llava_v1
 from typing import List
 from transformers import AutoProcessor, LlavaForConditionalGeneration
 from transformers.utils import is_flash_attn_2_available

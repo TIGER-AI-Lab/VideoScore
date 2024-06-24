@@ -2,7 +2,7 @@
 pip install transformers>=4.35.2
 """
 import torch
-from models.mfuyu import MFuyuForCausalLM, MFuyuProcessor, chat_mfuyu
+from mantis.models.mfuyu import MFuyuForCausalLM, MFuyuProcessor, chat_mfuyu
 from typing import List
 from mllm_tools.mllm_utils import load_images 
 
