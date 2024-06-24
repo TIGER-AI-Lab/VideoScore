@@ -1,6 +1,5 @@
 # VideoScore
-official repo for "VideoScore: A Reliable Fine-grained Metric for Video Generation"
-
+official repo for "VideoScore: Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation"
 
 ** The code is being updated **
 
