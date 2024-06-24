@@ -77,22 +77,22 @@ def _model_output(
 
 
 def main(
-    model_repo_name: str="TIGER-Lab/MantisScore",
-    data_repo_name: str="TIGER-Lab/VideoFeedback-Bench",
+    model_repo_name: str="TIGER-Lab/VideoScore",
+    data_repo_name: str="TIGER-Lab/VideoScore-Bench",
     frames_dir: str="../data/video_feedback/test", 
     name_postfixs: List[str]=['video_feedback'], 
-    result_file: str="./eval_results/video_feedback/eval_video_feedback_mantisscore.json",
+    result_file: str="./eval_results/video_feedback/eval_video_feedback_videoscore.json",
     bench_name: str="video_feedback",
 ):
     '''
-    evalualte MantisScore model on VideoFeedback-Bench which contains four benchmarks, save results to 'result_file' 
+    evalualte VideoScore model on VideoScore-Bench which contains four benchmarks, save results to 'result_file' 
     and calculate spearman correlation coefficient between human-annotated references and model output.
     '''
     
     logging.basicConfig(level=logging.INFO)
     logger= logging.getLogger(__name__)
     date_time=datetime.now().strftime("%m-%d %H:%M:%S")
-    log_file=f"./logs/eval_MantisScore_on_{bench_name}_{date_time}.log"
+    log_file=f"./logs/eval_videoscore_on_{bench_name}_{date_time}.log"
     os.makedirs(os.path.dirname(log_file),exist_ok=True)
     file_handler = logging.FileHandler(log_file)
     file_handler.setLevel(logging.INFO)

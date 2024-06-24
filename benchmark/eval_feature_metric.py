@@ -25,7 +25,7 @@ BENCH_NAMES=["video_feedback","eval_crafter","vbench","genaibench"]
 
 
 def main(
-    data_repo_name: str="TIGER-Lab/VideoFeedback-Bench",
+    data_repo_name: str="TIGER-Lab/VideoScore-Bench",
     metric_name: str="CLIP-Score",
     bench_name: str="video_feedback",
     frames_dir: str="../data/video_feedback/test", 

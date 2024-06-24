@@ -87,7 +87,7 @@ def query_one_video(model, model_name, bench_name, item, logger):
 
 
 def main(
-    data_repo_name: str="TIGER-Lab/VideoFeedback-Bench",
+    data_repo_name: str="TIGER-Lab/VideoScore-Bench",
     bench_name: str="video_feedback",
     name_postfixs: List[str]=['video_feedback'], 
     result_file: str="./eval_results/video_feedback/eval_video_feedback_llava_next.json",
@@ -202,5 +202,4 @@ def main(
 
 
 if __name__=="__main__":
-
     fire.Fire(main())

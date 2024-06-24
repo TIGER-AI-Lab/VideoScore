@@ -47,9 +47,10 @@ For this video, the text prompt is "{text_prompt}",
 all the frames of video are as follows:
 """
 
-model_name="TIGER-Lab/MantisScore"
+model_name="TIGER-Lab/VideoScore"
 video_path="video1.mp4"
 video_prompt="Near the Elephant Gate village, they approach the haunted house at night. Rajiv feels anxious, but Bhavesh encourages him. As they reach the house, a mysterious sound in the air adds to the suspense."
+
 
 processor = AutoProcessor.from_pretrained(model_name,torch_dtype=torch.bfloat16)
 model = Idefics2ForSequenceClassification.from_pretrained(model_name,torch_dtype=torch.bfloat16).eval()

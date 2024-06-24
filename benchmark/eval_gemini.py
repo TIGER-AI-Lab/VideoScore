@@ -20,7 +20,7 @@ BENCH_NAMES=["video_feedback","eval_crafter","vbench","genaibench"]
 
 
 def eval_gemini(
-    data_repo_name: str="TIGER-Lab/VideoFeedback-Bench",
+    data_repo_name: str="TIGER-Lab/VideoScore-Bench",
     bench_name: str="video_feedback",
     frames_dir: str="../data/video_feedback/test", 
     name_postfixs: List[str]=['video_feedback'], 

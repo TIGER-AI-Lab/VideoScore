@@ -6,7 +6,7 @@ bench_name=video_feedback
 # bench_name=eval_crafter
 # bench_name=vbench
 
-repo_id=TIGER-Lab/VideoFeedback-Bench
+repo_id=TIGER-Lab/VideoScore-Bench
 
 mkdir -p $bench_name
 mkdir -p "${bench_name}/test"

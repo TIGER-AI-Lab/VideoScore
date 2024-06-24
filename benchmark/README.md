@@ -14,9 +14,9 @@ generally better, we use the average score of five dimensions to predict the pre
 
 - VBench contains preference data among four videos, similarly we use the average score of five dimensions to predict the preference and calculate the pairwise accuracy of prediction.
 
-VideoFeedback-Bench is composed of about 7,000 videos, covering both Likert-scale annotation and human preference data. 
+VideoScore-Bench is composed of about 7,000 videos, covering both Likert-scale annotation and human preference data. 
 
-All the data and video frames we used can be found in [🤗VideoFeedback-Bench](https://huggingface.co/datasets/TIGER-Lab/VideoFeedback-Bench)
+All the data and video frames we used can be found in [🤗VideoScore-Bench](https://huggingface.co/datasets/TIGER-Lab/VideoScore-Bench)
 
 ## Prepare data of video frames
 To download the video frames for test, please first set benchmark name in data/download_data.sh: 

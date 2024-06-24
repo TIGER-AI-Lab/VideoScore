@@ -24,7 +24,7 @@ fi
 # mkdir -p ./eval_results/video_feedback
 
 # model_repo_name="TIGER-Lab/MantisScore"
-# data_repo_name="TIGER-Lab/VideoFeedback-Bench"
+# data_repo_name="TIGER-Lab/VideoScore-Bench"
 # bench_name="video_feedback"
 # frames_dir="../data/${bench_name}/test"
 # name_postfixs="[${bench_name}]"
@@ -46,7 +46,7 @@ fi
 
 # # we use this variant "TIGER-Lab/MantisScore-anno-only" except for VideoFeedback-test
 # model_repo_name="TIGER-Lab/MantisScore-anno-only"
-# data_repo_name="TIGER-Lab/VideoFeedback-Bench"
+# data_repo_name="TIGER-Lab/VideoScore-Bench"
 # bench_name="eval_crafter"
 # frames_dir="../data/${bench_name}/test"
 # name_postfixs="[${bench_name}]"
@@ -68,7 +68,7 @@ fi
 
 # # we use this variant "TIGER-Lab/MantisScore-anno-only" except for VideoFeedback-test
 # model_repo_name="TIGER-Lab/MantisScore-anno-only"
-# data_repo_name="TIGER-Lab/VideoFeedback-Bench"
+# data_repo_name="TIGER-Lab/VideoScore-Bench"
 # bench_name="genaibench"
 # frames_dir="../data/${bench_name}/test"
 # name_postfixs="[${bench_name}]"
@@ -91,7 +91,7 @@ mkdir -p ./benchmark/eval_results/vbench
 
 # we use this variant "TIGER-Lab/MantisScore-anno-only" except for VideoFeedback-test
 model_repo_name="TIGER-Lab/MantisScore-anno-only"
-data_repo_name="TIGER-Lab/VideoFeedback-Bench"
+data_repo_name="TIGER-Lab/VideoScore-Bench"
 bench_name="vbench"
 frames_dir="../data/${bench_name}/test"
 name_postfixs="[${bench_name}]"

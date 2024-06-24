@@ -12,7 +12,7 @@ base_model="gemini-1.5-flash-latest"
 # # ===== eval MantisScore on VideoFeedback-test =====
 # mkdir -p ./eval_results/video_feedback
 
-# data_repo_name="TIGER-Lab/VideoFeedback-Bench"
+# data_repo_name="TIGER-Lab/VideoScore-Bench"
 # bench_name="video_feedback"
 # frames_dir="../data/${bench_name}/test"
 # name_postfixs="[${bench_name}]"
@@ -32,7 +32,7 @@ base_model="gemini-1.5-flash-latest"
 # # ===== eval MantisScore on EvalCrafter =====
 # mkdir -p ./eval_results/eval_crafter
 
-# data_repo_name="TIGER-Lab/VideoFeedback-Bench"
+# data_repo_name="TIGER-Lab/VideoScore-Bench"
 # bench_name="eval_crafter"
 # frames_dir="../data/${bench_name}/test"
 # name_postfixs="[${bench_name}]"
@@ -51,7 +51,7 @@ base_model="gemini-1.5-flash-latest"
 # # ===== eval MantisScore on GenAI-Bench =====
 # mkdir -p ./eval_results/genaibench
 
-# data_repo_name="TIGER-Lab/VideoFeedback-Bench"
+# data_repo_name="TIGER-Lab/VideoScore-Bench"
 # bench_name="genaibench"
 # frames_dir="../data/${bench_name}/test"
 # name_postfixs="[${bench_name}]"
@@ -70,7 +70,7 @@ base_model="gemini-1.5-flash-latest"
 # ===== eval MantisScore on VBench =====
 mkdir -p ./benchmark/eval_results/vbench
 
-data_repo_name="TIGER-Lab/VideoFeedback-Bench"
+data_repo_name="TIGER-Lab/VideoScore-Bench"
 bench_name="vbench"
 frames_dir="../data/${bench_name}/test"
 name_postfixs="[${bench_name}]"

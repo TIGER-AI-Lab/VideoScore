@@ -83,7 +83,7 @@ def query_one_video(logger,item,aws_s3_prefix):
 
 
 def eval_gpt4(
-    data_repo_name: str="TIGER-Lab/VideoFeedback-Bench",
+    data_repo_name: str="TIGER-Lab/VideoScore-Bench",
     bench_name: str="video_feedback",
     name_postfixs: List[str]=['video_feedback'], 
     result_file: str="./eval_results/video_feedback/eval_video_feedback_gpt4o.json",
