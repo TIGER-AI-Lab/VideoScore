@@ -18,18 +18,12 @@ This is the official repo for "VideoScore: Building Automatic Metrics to Simulat
 <br>
 
 ## Introduction
-<iframe
-src="{{ url_for('static', filename='assets/VideoScore.mp4') }}"
-scrolling="no"
-border="0"
-frameborder="no"
-framespacing="0"
-allowfullscreen="true"
-height=600
-width=800>
-</iframe>
+<video controls>
+      <source src="https://video-bench-800.s3.ap-southeast-2.amazonaws.com/VideoScore.mp4" type="video/mp4">
+</video>
 
 
+https://video-bench-800.s3.ap-southeast-2.amazonaws.com/VideoScore.mp4
 🚀The recent years have witnessed great advances in video generation. However, the development of automatic video metrics is lagging significantly behind. None of the existing metric is able to provide reliable scores over generated videos. 
 🤔The main barrier is the lack of large-scale human-annotated dataset.
 
