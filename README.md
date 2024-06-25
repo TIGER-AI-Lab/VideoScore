@@ -16,7 +16,7 @@ official repo for "VideoScore: Building Automatic Metrics to Simulate Fine-grain
 <img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Demo-red?style=flat"></a> 
 <a target="_blank" href="https://huggingface.co/TIGER-Lab/VideoScore">
 <img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Models-red?style=flat"></a>
-<a target="_blank" href="">
+<a target="_blank" href="https://twitter.com/DongfuJiang/status/1805438506137010326">
 <img style="height:22pt" src="https://img.shields.io/badge/-Tweet-blue?style=flat&logo=twitter"></a>
 <br>
 
