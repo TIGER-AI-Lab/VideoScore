@@ -17,14 +17,13 @@ This is the official repo for "VideoScore: Building Automatic Metrics to Simulat
 <img style="height:22pt" src="https://img.shields.io/badge/-Tweet-blue?style=flat&logo=twitter"></a>
 <br>
 
+
 ## Introduction
+
 <video controls>
       <source src="https://video-bench-800.s3.ap-southeast-2.amazonaws.com/VideoScore.mp4" type="video/mp4">
 </video>
 
-
-
-https://video-bench-800.s3.ap-southeast-2.amazonaws.com/VideoScore.mp4
 🚀The recent years have witnessed great advances in video generation. However, the development of automatic video metrics is lagging significantly behind. None of the existing metric is able to provide reliable scores over generated videos. 
 🤔The main barrier is the lack of large-scale human-annotated dataset.
 
