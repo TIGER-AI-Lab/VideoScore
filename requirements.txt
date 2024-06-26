@@ -1,8 +1,0 @@
-transformers
-sentencepiece
-torch
-Pillow
-torch
-accelerate
-torchvision
-datasets==2.18.0
