@@ -9,7 +9,7 @@ This is the official repo for "VideoScore: Building Automatic Metrics to Simulat
 <img style="height:22pt" src="https://img.shields.io/badge/-🌐%20Website-blue?style=flat"></a>
 <a target="_blank" href="https://huggingface.co/datasets/TIGER-Lab/VideoFeedback">
 <img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Dataset-red?style=flat"></a>
-<a target="_blank" href="https://huggingface.co/spaces/TIGER-Lab/VideoScore">
+<a target="_blank" href="https://huggingface.co/spaces/TIGER-Lab/Mantis">
 <img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Demo-red?style=flat"></a> 
 <a target="_blank" href="https://huggingface.co/TIGER-Lab/VideoScore">
 <img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Models-red?style=flat"></a>
@@ -22,6 +22,9 @@ This is the official repo for "VideoScore: Building Automatic Metrics to Simulat
 
 ## Introduction
 Watch the video of introduction here! 
+
+<iframe width="640" height="360" src="https://video-bench-800.s3.ap-southeast-2.amazonaws.com/VideoScore.mp4" frameborder="0" allowfullscreen></iframe>
+
 [VideoScore](https://video-bench-800.s3.ap-southeast-2.amazonaws.com/VideoScore.mp4)
 
 🚀The recent years have witnessed great advances in video generation. However, the development of automatic video metrics is lagging significantly behind. None of the existing metric is able to provide reliable scores over generated videos. 
