@@ -15,7 +15,7 @@ NUM_ASPECT=5
 MAX_TRY_FOR_BAD_MODEL=20
 MAX_NUM_FRAMES=24
 BENCH_NAMES=["video_feedback","eval_crafter","vbench","genaibench"]
-MODEL_NAMES=["llava_next","llava","idefics1","idefics2","kosmos2","openflamingo","cogvlm","fuyu"]
+MODEL_NAMES=["llava_next","llava","idefics1","idefics2","kosmos2","openflamingo","otterimage","cogvlm","fuyu"]
 
 NO_IMG_TOKENS=["idefics2","llava","llava_next"]
 GOOD_MODELS=["idefics1","llava","llava_next",]

@@ -17,14 +17,15 @@ bench_name="genaibench"
 
 
 if [ "$metric_name" = "PIQE" -o "$metric_name" = "BRISQUE" ]; then
-    if conda info --envs | grep -q "piqe"; then
-        echo "env piqe exists"
+    if conda info --envs | grep -q "visual-eval"; then
+        echo "env visual-eval exists"
     else
-        echo "env piqe not exist, creating..."
-        conda create -n piqe
+        echo "env visual-eval not exist, creating..."
+        conda create -n visual-eval
     fi
-    conda activate piqe
+    conda activate visual-eval
     pip install pypiqe
+    pip install brisque
 fi
 
 

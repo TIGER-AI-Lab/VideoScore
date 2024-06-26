@@ -2,8 +2,6 @@
 """
 import os
 import torch
-import time
-import torch.nn as nn
 from typing import List, Union, Optional, Dict
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers.image_utils import load_image

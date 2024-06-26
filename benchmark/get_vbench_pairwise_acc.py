@@ -37,8 +37,9 @@ def get_all_json_files(results_dir):
                 files.extend(get_all_json_files(file))
     return files
 
+
 def main(
-    data_repo_name: str="TIGER-Lab/VideoFeedback-Bench",
+    data_repo_name: str="TIGER-Lab/VideoScore-Bench",
     result_dir: str="./eval_results/vbench",
     csv_dir:str="./eval_results/vbench/csv_results",
     exclude_tie:bool=False,
@@ -56,6 +57,7 @@ def main(
         
         ref_data_map = {}
         for idx,item in enumerate(ref_data):
+            
             item["preference"]={k:v for k,v in item["preference"].items() if v is not None}
 
             # source format: technical_quality_0_cogvideo
@@ -98,10 +100,10 @@ def main(
         }
         
         for res_file in sorted(os.listdir(result_dir)):
-            if not res_file.startswith("eval_"):
+            if not res_file.startswith("eval_") or not res_file.endswith(".json"):
                 continue
             print(f"Processing {res_file}")
-            model_name = res_file.split(".")[0].split("_")[-1]
+            file_model_name = res_file.split(".")[0].split("_")[-1]
             data = json.load(open(f"{result_dir}/{res_file}", 'r'))
             
             data_map = {}
@@ -109,14 +111,21 @@ def main(
             source_idx = 0
             for item in data:
                 # "dynamics_degree_27_cogvideo"
-                idx = int(item["id"].split("_")[2])
+                if item["id"].count("_")==1:
+                    idx = int(item["id"].split("_")[0])
+                    model_name = item["id"].split("_")[1]
+                else:
+                    idx = int(item["id"].split("_")[2])
+                    model_name = item["id"].split("_")[3]
+                    
                 if idx < last_idx:
                     source_idx += 1
                 last_idx = idx
                 if source_idx != target_source_idx:
                     continue
                 idx = f"{source_list[source_idx]}-{idx}"
-                model_name = item["id"].split("_")[3]
+                
+                
                 
                 if idx not in ref_data_map:
                     continue
@@ -130,7 +139,7 @@ def main(
                 
             
             # add preference of existing models
-            print("Total Pairs: ", total_pairs) 
+            print("Total pairs: ", total_pairs) 
             for idx in data_map.keys():
                 model_with_scores = list(data_map[idx]["model_scores"].keys())
                 data_map[idx]['preference'] = {
@@ -142,14 +151,14 @@ def main(
                     for left_model_name in model_with_scores 
                     if left_model_name in model_with_scores
                 }
-            with open("data_map.json", 'w') as f:
+            with open(f"{result_dir}/data_map.json", 'w') as f:
                 json.dump(data_map, f, indent=4)
             cur_total_pairs = count_total_pairs(data_map)
             if total_pairs != cur_total_pairs:
                 print(f"Missing pairs: {total_pairs - cur_total_pairs}")
             
             acc = 0
-            aspecct_accs = {aspect: 0 for aspect in aspects}
+            aspect_accs = {aspect: 0 for aspect in aspects}
             for idx in data_map.keys():
                 
                 for left_model_name in data_map[idx]["preference"]:
@@ -164,18 +173,18 @@ def main(
                                 left_score = data_map[idx]["model_scores"][left_model_name][aspect]
                                 right_score = data_map[idx]["model_scores"][right_model_name][aspect]
                                 if get_pairwise_acc(left_score, right_score, left_preference, right_preference):
-                                    aspecct_accs[aspect] += 1
+                                    aspect_accs[aspect] += 1
             
             mean_acc = round(acc/cur_total_pairs, 4) if cur_total_pairs != 0 else 0
             print(f"File: {res_file}")
             print(f"acc: {mean_acc}")
             for aspect in aspects:
-                aspecct_accs[aspect] = round(aspecct_accs[aspect]/cur_total_pairs, 4) if cur_total_pairs != 0 else 0
-                print(f"{aspect}: {aspecct_accs[aspect]}")
+                aspect_accs[aspect] = round(aspect_accs[aspect]/cur_total_pairs, 4) if cur_total_pairs != 0 else 0
+                print(f"{aspect}: {aspect_accs[aspect]}")
                 
-            all_model_acc[model_name] = {
+            all_model_acc[file_model_name] = {
                 "acc": mean_acc,
-                "aspect_accs": {aspect: aspecct_accs[aspect] for aspect in aspects},
+                "aspect_accs": {aspect: aspect_accs[aspect] for aspect in aspects},
                 "total_examples": cur_total_pairs,
             }
         

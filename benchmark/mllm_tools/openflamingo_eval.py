@@ -6,7 +6,6 @@ from mantis.models.conversation import conv_openflamingo
 from typing import List
 from mantis.mllm_tools.mllm_utils import merge_images, load_images
 from huggingface_hub import hf_hub_download
-import torch
 
 class OpenFlamingo():
     support_multi_image = True

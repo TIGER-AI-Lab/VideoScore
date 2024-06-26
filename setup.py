@@ -1,27 +1,79 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='mantisscore',
+    name='VideoScore',
     version='0.0.1',
-    description='',
-    author='Dongfu Jiang',
-    author_email='dongfu.jiang@uwaterloo.ca',
+    description='Official Codes for "VideoScore: Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation"',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    author='Xuan He & Dongfu Jiang',
+    author_email='hexuan21@mails.tsinghua.edu.cn & dongfu.jiang@uwaterloo.ca',
     packages=find_packages(),
     url='https://github.com/jdf-prog/many-image-qa',
     install_requires=[
-        "mantis-vl"
+        "mantis-vl",
+        "transformers",
+        "torch",
+        "Pillow",
+        "accelerate",
+        "torchvision",
+        "datasets==2.18.0"
     ],
     extras_require={
         "train": [
-            "mantis-vl[train]",
+            "fire",
+            "tqdm",
+            "numpy",
+            "requests",
+            "matplotlib",
+            "transformers_stream_generator",
+            "tiktoken",
+            "chardet",
+            "deepspeed",
+            "peft>=0.10",
+            "bitsandbytes",
+            "wandb",
+            "ninja",
+            "scipy",
+            "webdataset",
+            "braceexpand",
+            "pandas",
+            "orjson",
+            "prettytable",
+            "pytest",
+            "opencv-python",
+            "pyarrow",
+            "dask",
+            "einops-exts",
+            "datasets==2.18.0",
+            "open_clip_torch",
+            "openai",
+            "av"
         ],
         "eval": [
-            "mantis-vl[eval]"
+            "torch",
+            "torchvision",
+            "datasets==2.18.0",
+            "transformers",
+            "huggingface-hub",
+            "mantis-vl",
+            "Pillow",
+            "azure-identity",
+            "tqdm",
+            "opencv-python",
+            "datetime",
+            "scikit-image",
+            "numpy==1.26.4",
+            "prettytable",
+            "scipy",
+            "regex",
+            "requests",
+            "pathlib",
+            "fire",
+            "openai",
+            "tiktoken",
+            "av",
+            "decord",
         ]
     }
 )
-
-
-
-# change it to pyproject.toml
-# [build-system]

@@ -3,10 +3,10 @@
 # model_name="llava_next"
 # model_name="idefics2"
 # model_name="cogvlm"
-model_name="fuyu"
+# model_name="fuyu"
 # model_name="kosmos2"
 # model_name="openflamingo"
-# model_name="otterimage"
+model_name="otterimage"
 
 
 bench_name="video_feedback"
