@@ -1,6 +1,6 @@
 
-bench_name="video_feedback"
-# bench_name="eval_crafter"
+# bench_name="video_feedback"
+bench_name="eval_crafter"
 # bench_name="genaibench"
 # bench_name="vbench"
 
@@ -25,6 +25,6 @@ python eval_videoscore.py --model_repo_name $model_repo_name \
     --frames_dir $frames_dir  \
     --name_postfixs $name_postfixs \
     --result_file $result_file \
-    --bench_name $bench_name \
+    --bench_name $bench_name
 
 

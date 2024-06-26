@@ -77,6 +77,17 @@ model_name="idefics1"
 # model_name="openflamingo"
 # model_name="otterimage"
 ```  
+Please choose the avaiable GPU on your device by setting ```CUDA_VISIBLE_DEVICES```, as described in ```eval_other_mllm.py```
+
+```
+CUDA_VISIBLE_DEVICES=0 python eval_other_mllm.py \
+    --data_repo_name $data_repo_name \
+    --name_postfixs $name_postfixs \
+    --result_file $result_file \
+    --model_name $model_name \
+    --bench_name $bench_name
+```
+
 then run 
 ```bash
 bash eval_other_mllm.sh

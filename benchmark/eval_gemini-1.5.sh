@@ -8,8 +8,8 @@ else
 fi
 
 
-base_model="gemini-1.5-flash-latest"
-# base_model="gemini-1.5-pro-latest"
+# base_model="gemini-1.5-flash-latest"
+base_model="gemini-1.5-pro-latest"
 
 
 bench_name="video_feedback"

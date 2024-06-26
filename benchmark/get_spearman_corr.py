@@ -39,7 +39,7 @@ def cal_spearman_correlation(
             print(e)
             spearman_list=[None for _ in range(len(all_ref_scores[0]))]
             p_value_list=[None for _ in range(len(all_ref_scores[0]))]
-        print("SPCC: ",spearman_list)
+        print(f"metric: {result_file.split('eval_')[1].split('.')[0]}, SPCC: {spearman_list}")
         
         dirname=os.path.dirname(f"{result_dir}/{result_file}")
         spcc_file=f"{dirname}/spearman_corr_{bench_name}.json"

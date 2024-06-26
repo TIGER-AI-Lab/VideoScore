@@ -36,11 +36,14 @@ def _azure_gpt_4o_output(img_name_list,video_prompt,aws_s3_prefix):
     template=Template(QUERY_TEMPLATE)
     input_text_prompt=template.substitute(source=video_prompt,num_aspect=NUM_ASPECT)
     img_url_list=[f"{aws_s3_prefix}/{img_name}" for img_name in img_name_list]
+    print(f"before resampling, num of imgs:",len(img_name_list))
     
     if len(img_url_list)>MAX_NUM_FRAMES:
         step = len(img_url_list) / MAX_NUM_FRAMES
         img_url_list = [img_url_list[int(i * step)] for i in range(MAX_NUM_FRAMES)]
 
+    print("after resampling, num of imgs to gpt4o: ",len(img_url_list))
+    
     prompt_content=gpt_class.prepare_prompt(img_url_list, input_text_prompt)
     messages=[
         {
@@ -91,7 +94,7 @@ def eval_gpt4(
     logging.basicConfig(level=logging.INFO)
     logger= logging.getLogger(__name__)
     date_time=datetime.now().strftime("%m-%d %H:%M:%S")
-    log_file=f"./logs/eval_gpt4o_on_{bench_name}_{date_time}.log"
+    log_file=f"./logs/{bench_name}/eval_gpt4o_on_{bench_name}_{date_time}.log"
     os.makedirs(os.path.dirname(log_file),exist_ok=True)
     file_handler = logging.FileHandler(log_file)
     file_handler.setLevel(logging.INFO)
@@ -118,7 +121,7 @@ def eval_gpt4(
                 try:
                     vid=item["id"]
                     img_name_list=[f"{vid}/{img_file}" for img_file in item["images"]]
-                    print(f"len of img_name_list",len(img_name_list))
+                    
                     human_text=item["conversations"][0]["value"]
                     bot_text=item["conversations"][1]["value"]
 
@@ -130,8 +133,9 @@ def eval_gpt4(
                         ref_scores=item["score_list"]
                                             
                     output=_azure_gpt_4o_output(img_name_list,video_prompt,aws_s3_prefix)
-                    
-                    ans_scores=[int(item) for item in re.findall(r': (\d+)', output)]
+                    logger.info(f"{vid} {output}")
+
+                    ans_scores=ans_scores=[int(item) for item in re.findall(r'(?:: |:\*\* )(\d+)', output)]
                     ans_scores=_ans_formatted(ans_scores,NUM_ASPECT)
                     logger.info(f"{vid} {ans_scores}\n")
                     

@@ -8,7 +8,7 @@ mkdir -p "./eval_results/${bench_name}"
 
 data_repo_name="TIGER-Lab/VideoScore-Bench"
 name_postfixs="[${bench_name}]"
-result_file="./eval_results/${bench_name}/eval_${bench_name}_gpt4o.json"
+result_file="././eval_results/${bench_name}/eval_${bench_name}_gpt4o.json"
 
 python eval_gpt4o.py \
     --data_repo_name $data_repo_name \

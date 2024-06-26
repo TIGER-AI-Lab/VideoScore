@@ -27,7 +27,7 @@ class Llava():
         self.processor = AutoProcessor.from_pretrained(model_path)
 
         
-    def __call__(self,  inputs: List[dict],gpu_idx:int,) -> str:
+    def __call__(self,  inputs: List[dict]) -> str:
         """
         Args:
             inputs (List[dict]): [

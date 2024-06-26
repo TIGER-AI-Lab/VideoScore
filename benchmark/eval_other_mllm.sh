@@ -8,20 +8,21 @@ model_name="idefics1"
 # model_name="openflamingo"
 # model_name="otterimage"
 
+
 bench_name="video_feedback"
 # bench_name="eval_crafter"
 # bench_name="genaibench"
 # bench_name="vbench"
 
 
-mkdir -p"./eval_results/${bench_name}"
-
+mkdir -p "./eval_results/${bench_name}"
 
 data_repo_name="TIGER-Lab/VideoScore-Bench"
 name_postfixs="[${bench_name}]"
 result_file="./eval_results/${bench_name}/eval_${bench_name}_${model_name}.json"
 
-python eval_other_mllm.py \
+### please select the avaiable GPU on your device
+CUDA_VISIBLE_DEVICES=0 python eval_other_mllm.py \
     --data_repo_name $data_repo_name \
     --name_postfixs $name_postfixs \
     --result_file $result_file \

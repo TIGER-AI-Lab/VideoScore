@@ -1,29 +1,29 @@
 
 # metric_name="PIQE"
-metric_name="BRISQUE"
+# metric_name="BRISQUE"
 # metric_name="CLIP-sim"
 # metric_name="DINO-sim"
 # metric_name="SSIM-sim"
 # metric_name="MSE-dyn"
 # metric_name="SSIM-dyn"
 # metric_name="CLIP-Score"
-# metric_name="X-CLIP-Score"
+metric_name="X-CLIP-Score"
 
-bench_name="video_feedback"
+# bench_name="video_feedback"
 # bench_name="eval_crafter"
-# bench_name="genaibench"
+bench_name="genaibench"
 # bench_name="vbench"
 
 
 
-if [ "$metric_name" = "PIQE" ]; then
-    if conda info --envs | grep -q "piqe-new"; then
+if [ "$metric_name" = "PIQE" -o "$metric_name" = "BRISQUE" ]; then
+    if conda info --envs | grep -q "piqe"; then
         echo "env piqe exists"
     else
         echo "env piqe not exist, creating..."
-        conda create -n piqe-new
+        conda create -n piqe
     fi
-    conda activate piqe-new
+    conda activate piqe
     pip install pypiqe
 fi
 
@@ -44,3 +44,7 @@ python eval_feature_metric.py \
     --name_postfixs $name_postfixs \
     --result_file $result_file
 
+
+if [ "$metric_name" = "PIQE" -o "$metric_name" = "BRISQUE" ]; then
+    conda deactivate
+fi

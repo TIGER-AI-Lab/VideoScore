@@ -92,7 +92,7 @@ def main(
     logging.basicConfig(level=logging.INFO)
     logger= logging.getLogger(__name__)
     date_time=datetime.now().strftime("%m-%d %H:%M:%S")
-    log_file=f"./logs/eval_videoscore_on_{bench_name}_{date_time}.log"
+    log_file=f"./logs/{bench_name}/eval_videoscore_on_{bench_name}_{date_time}.log"
     os.makedirs(os.path.dirname(log_file),exist_ok=True)
     file_handler = logging.FileHandler(log_file)
     file_handler.setLevel(logging.INFO)

@@ -94,13 +94,14 @@ def main(
     result_file: str="./eval_results/video_feedback/eval_video_feedback_llava_next.json",
     model_name: str="llava_next",
 ):
+    print("model_name ",model_name)
     if model_name not in MODEL_NAMES:
         raise ValueError("the model is not supported")
     
     logging.basicConfig(level=logging.INFO)
     logger= logging.getLogger(__name__)
     date_time=datetime.now().strftime("%m-%d %H:%M:%S")
-    log_file=f"./logs/eval_{model_name}_on_{bench_name}_{date_time}.log"
+    log_file=f"./logs/{bench_name}/eval_{model_name}_on_{bench_name}_{date_time}.log"
     os.makedirs(os.path.dirname(log_file),exist_ok=True)
     file_handler = logging.FileHandler(log_file)
     file_handler.setLevel(logging.INFO)
@@ -180,7 +181,7 @@ def main(
                 ref_scores=[int(item) for item in re.findall(r': (\d+)', bot_text)]
             else:
                 ref_scores=item["score_list"]
-                
+ 
             output=_model_output(model, model_name,img_url_list,human_text)
             logger.info(f"{idx} {vid} {output}")
             
@@ -201,4 +202,4 @@ def main(
 
 
 if __name__=="__main__":
-    fire.Fire(main())
+    fire.Fire(main)

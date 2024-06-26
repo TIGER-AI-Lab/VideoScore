@@ -57,7 +57,7 @@ def dino_inter_frame(
     preprocess, 
     frame_path_list:List[str],
 ):
-    device=model.device
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     frame_sim_list=[]
     for f_idx in tqdm(range(len(frame_path_list)-1)):
         frame_1=Image.open(frame_path_list[f_idx])

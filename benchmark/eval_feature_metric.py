@@ -8,11 +8,6 @@ from typing import List
 from datasets import load_dataset
 from datetime import datetime
 from utils_tools import _add_to_res_file
-from feature_metric_tools.visual_eval import piqe_output, brisque_output
-from feature_metric_tools.temporal_eval import clip_inter_frame, dino_inter_frame, ssim_inter_frame
-from feature_metric_tools.dynamic_eval import  dynamic_mse, dynamic_ssim
-from feature_metric_tools.t2v_align_eval import clip_score, x_clip_score
-
 
 BENCH_NAMES=["video_feedback","eval_crafter","vbench","genaibench"]
 
@@ -26,11 +21,23 @@ def main(
     result_file: str="./eval_results/video_feedback/eval_video_feedback_CLIP-Score.json",
     
 ):
+    print("metric_name",metric_name)
+    
+    if metric_name in ["PIQE","BRISQUE"]:
+        from feature_metric_tools.visual_eval import piqe_output, brisque_output
+    elif metric_name in ["CLIP-sim","DINO-sim","SSIM-sim"]:
+        from feature_metric_tools.temporal_eval import clip_inter_frame, dino_inter_frame, ssim_inter_frame
+    elif metric_name in ["MSE-dyn","SSIM-dyn"]:
+        from feature_metric_tools.dynamic_eval import  dynamic_mse, dynamic_ssim
+    elif metric_name in ["CLIP-Score","X-CLIP-Score"]:
+        from feature_metric_tools.t2v_align_eval import clip_score, x_clip_score
+    else:
+        raise ValueError("metric name is not supported")
     
     logging.basicConfig(level=logging.INFO)
     logger= logging.getLogger(__name__)
     date_time=datetime.now().strftime("%m-%d %H:%M:%S")
-    log_file=f"./logs/eval_{metric_name}_on_{bench_name}_{date_time}.log"
+    log_file=f"./logs/{bench_name}/eval_{metric_name}_on_{bench_name}_{date_time}.log"
     os.makedirs(os.path.dirname(log_file),exist_ok=True)
     file_handler = logging.FileHandler(log_file)
     file_handler.setLevel(logging.INFO)
@@ -102,7 +109,7 @@ def main(
             elif metric_name == "CLIP-Score":
                 raw_float_score, ans_scores = clip_score(model,tokenizer,video_prompt,frame_path_list)
             elif metric_name == "X-CLIP-Score":
-                raw_float_score, ans_scores = x_clip_score(model, tokenizer, processor, text,frame_path_list)
+                raw_float_score, ans_scores = x_clip_score(model, tokenizer, processor,video_prompt,frame_path_list)
             else:
                 raise ValueError("Metric not supported")
             
