@@ -9,7 +9,7 @@ This is the official repo for "VideoScore: Building Automatic Metrics to Simulat
 <img style="height:22pt" src="https://img.shields.io/badge/-🌐%20Website-blue?style=flat"></a>
 <a target="_blank" href="https://huggingface.co/datasets/TIGER-Lab/VideoFeedback">
 <img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Dataset-red?style=flat"></a>
-<a target="_blank" href="https://huggingface.co/spaces/TIGER-Lab/Mantis">
+<a target="_blank" href="https://huggingface.co/spaces/TIGER-Lab/VideoScore">
 <img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Demo-red?style=flat"></a> 
 <a target="_blank" href="https://huggingface.co/TIGER-Lab/VideoScore">
 <img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Models-red?style=flat"></a>
