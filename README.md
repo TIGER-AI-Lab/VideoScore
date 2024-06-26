@@ -25,10 +25,6 @@ This is the official repo for "VideoScore: Building Automatic Metrics to Simulat
 
 
 ## Introduction
-Watch the video of introduction here! 
-
-[VideoScore](https://video-bench-800.s3.ap-southeast-2.amazonaws.com/VideoScore.mp4)
-
 
 <video src="https://user-images.githubusercontent.com/105091430/90adfb70-fdff-4101-9207-9bd4f43aae4c.mp4"></video>
 
