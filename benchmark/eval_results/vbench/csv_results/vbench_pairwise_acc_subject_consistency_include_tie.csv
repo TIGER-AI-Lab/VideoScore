@@ -1,0 +1,6 @@
+Model,Mean Acc,VQ,TC,DD,TVA,FC,Total Examples
+Random,0.42,0.42,0.42,0.42,0.42,0.42,1200
+CLIP-sim,0,0,0,0,0,0,0
+SSIM-sim,0,0,0,0,0,0,0
+gpt4o,0,0,0,0,0,0,0
+videoscore,0,0,0,0,0,0,0

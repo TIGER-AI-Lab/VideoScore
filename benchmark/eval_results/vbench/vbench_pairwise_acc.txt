@@ -1,0 +1,258 @@
+-------------------technical_quality-------------------
+Processing eval_vbench_CLIP-sim.json
+Total Pairs:  1200
+Missing pairs: 1152
+File: eval_vbench_CLIP-sim.json
+acc: 0.4583
+visual quality: 0.4583
+temporal consistency: 0.4583
+dynamic degree: 0.4583
+text-to-video alignment: 0.4583
+factual consistency: 0.4583
+Processing eval_vbench_SSIM-sim.json
+Total Pairs:  1200
+Missing pairs: 1188
+File: eval_vbench_SSIM-sim.json
+acc: 0.1667
+visual quality: 0.1667
+temporal consistency: 0.1667
+dynamic degree: 0.1667
+text-to-video alignment: 0.1667
+factual consistency: 0.1667
+Processing eval_vbench_gpt4o.json
+Total Pairs:  1200
+Missing pairs: 1188
+File: eval_vbench_gpt4o.json
+acc: 1.0
+visual quality: 0.6667
+temporal consistency: 1.0
+dynamic degree: 0.6667
+text-to-video alignment: 0.6667
+factual consistency: 0.6667
+Processing eval_vbench_videoscore.json
+Total Pairs:  1200
+Missing pairs: 1080
+File: eval_vbench_videoscore.json
+acc: 0.8833
+visual quality: 0.6667
+temporal consistency: 0.8167
+dynamic degree: 0.2333
+text-to-video alignment: 0.7667
+factual consistency: 0.8167
++-----------------------------------------------------------------------------------------------------+
+| Pairwise Accuracy on vbench (technical_quality) using Mean of 5 aspects or each single aspect score |
++--------------+------------+---------+---------+---------+---------+---------+-----------------------+
+|    Model     |  Mean Acc  |    VQ   |    TC   |    DD   |   TVA   |    FC   |     Total Examples    |
++--------------+------------+---------+---------+---------+---------+---------+-----------------------+
+|    lavie     |    1.0     |  0.6667 |   1.0   |  0.6667 |  0.6667 |  0.6667 |           12          |
+|  modelscope  |   0.8833   |  0.6667 |  0.8167 |  0.2333 |  0.7667 |  0.8167 |          120          |
+|    Random    |   0.445    |  0.445  |  0.445  |  0.445  |  0.445  |  0.445  |          1200         |
++--------------+------------+---------+---------+---------+---------+---------+-----------------------+
+-------------------subject_consistency-------------------
+Processing eval_vbench_CLIP-sim.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_CLIP-sim.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
+Processing eval_vbench_SSIM-sim.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_SSIM-sim.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
+Processing eval_vbench_gpt4o.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_gpt4o.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
+Processing eval_vbench_videoscore.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_videoscore.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
++-------------------------------------------------------------------------------------------------------+
+| Pairwise Accuracy on vbench (subject_consistency) using Mean of 5 aspects or each single aspect score |
++-----------------+--------------+--------+--------+--------+--------+--------+-------------------------+
+|      Model      |   Mean Acc   |   VQ   |   TC   |   DD   |  TVA   |   FC   |      Total Examples     |
++-----------------+--------------+--------+--------+--------+--------+--------+-------------------------+
+|      Random     |     0.42     |  0.42  |  0.42  |  0.42  |  0.42  |  0.42  |           1200          |
+|     CLIP-sim    |      0       |   0    |   0    |   0    |   0    |   0    |            0            |
+|     SSIM-sim    |      0       |   0    |   0    |   0    |   0    |   0    |            0            |
+|      gpt4o      |      0       |   0    |   0    |   0    |   0    |   0    |            0            |
+|    videoscore   |      0       |   0    |   0    |   0    |   0    |   0    |            0            |
++-----------------+--------------+--------+--------+--------+--------+--------+-------------------------+
+-------------------dynamics_degree-------------------
+Processing eval_vbench_CLIP-sim.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_CLIP-sim.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
+Processing eval_vbench_SSIM-sim.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_SSIM-sim.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
+Processing eval_vbench_gpt4o.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_gpt4o.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
+Processing eval_vbench_videoscore.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_videoscore.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
++---------------------------------------------------------------------------------------------------+
+| Pairwise Accuracy on vbench (dynamics_degree) using Mean of 5 aspects or each single aspect score |
++--------------+-----------+---------+---------+---------+---------+---------+----------------------+
+|    Model     |  Mean Acc |    VQ   |    TC   |    DD   |   TVA   |    FC   |    Total Examples    |
++--------------+-----------+---------+---------+---------+---------+---------+----------------------+
+|    Random    |   0.3733  |  0.3733 |  0.3733 |  0.3733 |  0.3733 |  0.3733 |         1200         |
+|   CLIP-sim   |     0     |    0    |    0    |    0    |    0    |    0    |          0           |
+|   SSIM-sim   |     0     |    0    |    0    |    0    |    0    |    0    |          0           |
+|    gpt4o     |     0     |    0    |    0    |    0    |    0    |    0    |          0           |
+|  videoscore  |     0     |    0    |    0    |    0    |    0    |    0    |          0           |
++--------------+-----------+---------+---------+---------+---------+---------+----------------------+
+-------------------motion_smoothness-------------------
+Processing eval_vbench_CLIP-sim.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_CLIP-sim.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
+Processing eval_vbench_SSIM-sim.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_SSIM-sim.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
+Processing eval_vbench_gpt4o.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_gpt4o.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
+Processing eval_vbench_videoscore.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_videoscore.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
++-----------------------------------------------------------------------------------------------------+
+| Pairwise Accuracy on vbench (motion_smoothness) using Mean of 5 aspects or each single aspect score |
++---------------+------------+--------+--------+--------+--------+--------+---------------------------+
+|     Model     |  Mean Acc  |   VQ   |   TC   |   DD   |  TVA   |   FC   |       Total Examples      |
++---------------+------------+--------+--------+--------+--------+--------+---------------------------+
+|     Random    |   0.405    | 0.405  | 0.405  | 0.405  | 0.405  | 0.405  |            1200           |
+|    CLIP-sim   |     0      |   0    |   0    |   0    |   0    |   0    |             0             |
+|    SSIM-sim   |     0      |   0    |   0    |   0    |   0    |   0    |             0             |
+|     gpt4o     |     0      |   0    |   0    |   0    |   0    |   0    |             0             |
+|   videoscore  |     0      |   0    |   0    |   0    |   0    |   0    |             0             |
++---------------+------------+--------+--------+--------+--------+--------+---------------------------+
+-------------------overall_consistency-------------------
+Processing eval_vbench_CLIP-sim.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_CLIP-sim.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
+Processing eval_vbench_SSIM-sim.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_SSIM-sim.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
+Processing eval_vbench_gpt4o.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_gpt4o.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
+Processing eval_vbench_videoscore.json
+Total Pairs:  1200
+Missing pairs: 1200
+File: eval_vbench_videoscore.json
+acc: 0
+visual quality: 0
+temporal consistency: 0
+dynamic degree: 0
+text-to-video alignment: 0
+factual consistency: 0
++-------------------------------------------------------------------------------------------------------+
+| Pairwise Accuracy on vbench (overall_consistency) using Mean of 5 aspects or each single aspect score |
++--------------+------------+---------+---------+---------+---------+---------+-------------------------+
+|    Model     |  Mean Acc  |    VQ   |    TC   |    DD   |   TVA   |    FC   |      Total Examples     |
++--------------+------------+---------+---------+---------+---------+---------+-------------------------+
+|    Random    |   0.4483   |  0.4483 |  0.4483 |  0.4483 |  0.4483 |  0.4483 |           1200          |
+|   CLIP-sim   |     0      |    0    |    0    |    0    |    0    |    0    |            0            |
+|   SSIM-sim   |     0      |    0    |    0    |    0    |    0    |    0    |            0            |
+|    gpt4o     |     0      |    0    |    0    |    0    |    0    |    0    |            0            |
+|  videoscore  |     0      |    0    |    0    |    0    |    0    |    0    |            0            |
++--------------+------------+---------+---------+---------+---------+---------+-------------------------+

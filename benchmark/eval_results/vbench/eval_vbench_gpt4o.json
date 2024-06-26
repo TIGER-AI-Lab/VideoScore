@@ -1,0 +1,26 @@
+[
+    {
+        "id": "technical_quality_0_cogvideo",
+        "text": "Close up of grapes on a rotating table.",
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[0, 0, 0, 0, 0]"
+    },
+    {
+        "id": "technical_quality_0_videocraft",
+        "text": "Close up of grapes on a rotating table.",
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[3, 3, 2, 4, 4]"
+    },
+    {
+        "id": "technical_quality_0_modelscope",
+        "text": "Close up of grapes on a rotating table.",
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[3, 4, 2, 4, 4]"
+    },
+    {
+        "id": "technical_quality_0_lavie",
+        "text": "Close up of grapes on a rotating table.",
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[4, 4, 3, 4, 4]"
+    }
+]

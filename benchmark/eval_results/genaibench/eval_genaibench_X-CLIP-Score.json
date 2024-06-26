@@ -1,0 +1,72 @@
+[
+    {
+        "id": "0000_left",
+        "text": "a cute dog is playing a ball",
+        "raw_score": 0.2282489538192749,
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "0000_right",
+        "text": "a cute dog is playing a ball",
+        "raw_score": 0.14067885279655457,
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[1, 1, 1, 1, 1]"
+    },
+    {
+        "id": "0001_left",
+        "text": "A mom is holding a baby's hand.",
+        "raw_score": 0.2979709506034851,
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "0001_right",
+        "text": "A mom is holding a baby's hand.",
+        "raw_score": 0.20903530716896057,
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "0002_left",
+        "text": "Buildings on fire, old film still",
+        "raw_score": 0.20509403944015503,
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "0002_right",
+        "text": "Buildings on fire, old film still",
+        "raw_score": 0.2872118651866913,
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "0003_left",
+        "text": "Hatsune Miku drinks from the bottle in the tavern, masterpiece anime art, kawaii style, pretty anime, high detailed art",
+        "raw_score": 0.2817845046520233,
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "0003_right",
+        "text": "Hatsune Miku drinks from the bottle in the tavern, masterpiece anime art, kawaii style, pretty anime, high detailed art",
+        "raw_score": 0.26236945390701294,
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "0004_left",
+        "text": "An astronaut feeding ducks on a sunny afternoon, reflection from the water.",
+        "raw_score": 0.14846710860729218,
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[1, 1, 1, 1, 1]"
+    },
+    {
+        "id": "0004_right",
+        "text": "An astronaut feeding ducks on a sunny afternoon, reflection from the water.",
+        "raw_score": 0.21450552344322205,
+        "ref": "[-1, -1, -1, -1, -1]",
+        "ans": "[2, 2, 2, 2, 2]"
+    }
+]

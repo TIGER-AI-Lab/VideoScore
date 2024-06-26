@@ -1,0 +1,248 @@
+[
+    {
+        "id": "7001917",
+        "text": "crowd surfing at a Pink Floid rock concert before the show  ",
+        "ref": "[2, 2, 3, 3, 3]",
+        "ans": "[1.898, 1.5, 2.953, 2.438, 1.648]"
+    },
+    {
+        "id": "7001486",
+        "text": "a robot holding baby Jesus at the nativity  ",
+        "ref": "[2, 3, 3, 2, 3]",
+        "ans": "[2.0, 1.992, 2.875, 2.188, 1.844]"
+    },
+    {
+        "id": "0001611",
+        "text": "Near the Elephant Gate village, they approach the haunted house at night. Rajiv feels anxious, but Bhavesh encourages him. As they reach the house, a mysterious sound in the air adds to the suspense.  ",
+        "ref": "[3, 2, 2, 2, 3]",
+        "ans": "[2.422, 2.641, 2.484, 2.453, 2.578]"
+    },
+    {
+        "id": "3000063",
+        "text": "Homer Simpson is running towards you down a hallway in the back rooms  ",
+        "ref": "[2, 2, 2, 3, 2]",
+        "ans": "[1.766, 1.43, 2.906, 2.031, 1.602]"
+    },
+    {
+        "id": "4000615",
+        "text": "Scene of burning incense and sipping tea in a Chinese tea room  ",
+        "ref": "[3, 2, 3, 1, 3]",
+        "ans": "[2.656, 2.297, 3.109, 2.625, 2.594]"
+    },
+    {
+        "id": "5000835",
+        "text": "dead tiger in forest with blood rodent cartoon style  ",
+        "ref": "[3, 3, 1, 2, 2]",
+        "ans": "[2.969, 2.188, 2.703, 2.531, 1.891]"
+    },
+    {
+        "id": "3002527",
+        "text": "lighting strikes clouds all over hyper realistic a storm going on and a city aerial view of the storm zoomed in from the street  ",
+        "ref": "[2, 2, 3, 1, 1]",
+        "ans": "[1.789, 2.297, 2.859, 2.328, 2.078]"
+    },
+    {
+        "id": "6001328",
+        "text": "Green field filled with flowers that sway gently in the wind  ",
+        "ref": "[1, 2, 3, 3, 1]",
+        "ans": "[1.312, 2.188, 2.938, 2.656, 1.406]"
+    },
+    {
+        "id": "3000385",
+        "text": "overhead drone footage of ocean shoreline with atlantic puffins nesting  ",
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[1.789, 1.844, 2.938, 1.992, 1.766]"
+    },
+    {
+        "id": "1001382",
+        "text": "the immense size of a blue whale  heart comparing it to the dimensions of a small car  ",
+        "ref": "[1, 2, 3, 1, 1]",
+        "ans": "[1.156, 1.602, 2.922, 1.711, 0.977]"
+    },
+    {
+        "id": "7000792",
+        "text": "good looking man standing up to his chest in water at the beach  ",
+        "ref": "[3, 2, 3, 2, 3]",
+        "ans": "[2.641, 2.875, 2.812, 2.766, 2.578]"
+    },
+    {
+        "id": "7000492",
+        "text": "The Prince on a white horse  ",
+        "ref": "[2, 3, 3, 3, 2]",
+        "ans": "[2.359, 2.312, 2.891, 2.688, 2.125]"
+    },
+    {
+        "id": "2001481",
+        "text": "The villagers asked what the fish say  ",
+        "ref": "[3, 2, 3, 1, 1]",
+        "ans": "[2.766, 2.734, 3.047, 2.391, 2.469]"
+    },
+    {
+        "id": "0001284",
+        "text": "Iron Man lands in old Marvel style  ",
+        "ref": "[3, 3, 2, 1, 3]",
+        "ans": "[2.969, 2.953, 1.633, 2.547, 2.797]"
+    },
+    {
+        "id": "4001069",
+        "text": "a man pulling handpump from the ground  ",
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[2.609, 2.703, 2.531, 2.328, 2.359]"
+    },
+    {
+        "id": "4000970",
+        "text": "wedding dragon party in a rave with several dragons dancing in a huge castle illuminate with strobbing rgb lights, fast traveling camera, ar 16:9  ",
+        "ref": "[3, 2, 3, 3, 2]",
+        "ans": "[2.312, 1.844, 3.109, 2.688, 2.5]"
+    },
+    {
+        "id": "7001302",
+        "text": "a young 16 year old kid in Napoli jersey  ",
+        "ref": "[2, 3, 3, 3, 3]",
+        "ans": "[2.312, 2.5, 2.797, 2.641, 2.25]"
+    },
+    {
+        "id": "4000117",
+        "text": "A futuristic science fiction scene of a monk standing in front of a quantum computer, in the stlye of roger deakins, cinematic  ",
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[2.797, 2.547, 2.766, 2.75, 3.172]"
+    },
+    {
+        "id": "7001465",
+        "text": "fish swiming fast for his life  ",
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[2.688, 2.688, 2.953, 2.562, 2.469]"
+    },
+    {
+        "id": "2002051",
+        "text": "prison submerged in handcuffs and lemon juice and lemons  ",
+        "ref": "[3, 3, 3, 2, 1]",
+        "ans": "[2.656, 2.906, 2.438, 2.109, 2.406]"
+    },
+    {
+        "id": "2002332",
+        "text": "beautiful brilliant colors sunset on the shore of the beautiful ocean,8k  ",
+        "ref": "[2, 3, 3, 3, 3]",
+        "ans": "[3.0, 3.125, 2.828, 2.891, 2.906]"
+    },
+    {
+        "id": "3000464",
+        "text": "Sudden appearance of shadows , contouring the walls in a fortaleza de Santa Cruz de Anhatomirim terror scene  ",
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[1.961, 1.648, 2.844, 1.883, 1.578]"
+    },
+    {
+        "id": "7000319",
+        "text": "In the style of Luchino Visconti, grainy black and white: Slow pan across an array of unearthed artifacts carefully laid on a cloth, their significance narrated through stark lighting  ",
+        "ref": "[2, 2, 2, 2, 3]",
+        "ans": "[2.234, 2.469, 2.812, 2.625, 2.422]"
+    },
+    {
+        "id": "7001211",
+        "text": "High resolution, a female mechanic works on her 60s muscle car, all  that can be see are her beautiful legs and lower half of her torso, the other half is under the car working and is not seen, She is wearing ultra High Heeled shoes and short shorts, bright outdoor lighting  ",
+        "ref": "[2, 2, 3, 1, 3]",
+        "ans": "[2.094, 1.617, 2.938, 1.992, 1.492]"
+    },
+    {
+        "id": "4000066",
+        "text": "1800s freemasons military  zoom in film  ",
+        "ref": "[2, 2, 3, 3, 3]",
+        "ans": "[2.562, 2.125, 2.906, 2.281, 2.734]"
+    },
+    {
+        "id": "6000039",
+        "text": "After many trials, fish  finally reached the location marked on the map.  cartoon style  ",
+        "ref": "[1, 1, 3, 3, 1]",
+        "ans": "[1.258, 1.742, 2.938, 2.031, 0.996]"
+    },
+    {
+        "id": "0002076",
+        "text": "View from a plant and in the sky you can see more planets and some green and pink nebulae, camera in zoom  Message: Aldhair (Font: MODERN)  ",
+        "ref": "[3, 3, 1, 3, 3]",
+        "ans": "[2.734, 3.0, 1.992, 2.438, 2.797]"
+    },
+    {
+        "id": "6001479",
+        "text": "Sage Kavita holding an ancient scroll with faded prophecies.  ",
+        "ref": "[1, 2, 3, 3, 1]",
+        "ans": "[1.156, 1.656, 2.906, 2.297, 1.0]"
+    },
+    {
+        "id": "2001934",
+        "text": "A man and a friend. Eating chips and watching a football game, waving his arms  ",
+        "ref": "[3, 3, 3, 2, 1]",
+        "ans": "[2.469, 2.578, 2.953, 2.719, 2.25]"
+    },
+    {
+        "id": "4001094",
+        "text": "smooth movement of the character, increasing the perspective of the face  ",
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[2.984, 2.891, 2.438, 2.516, 2.781]"
+    },
+    {
+        "id": "1002934",
+        "text": "Alice in wonderland faking down an endless rabbit hole  ",
+        "ref": "[1, 1, 3, 1, 1]",
+        "ans": "[0.977, 1.289, 2.969, 2.031, 0.922]"
+    },
+    {
+        "id": "8000719",
+        "text": "Scene 2: Show the animals happily living their lives until the drought strikes. 8k full hd  ",
+        "ref": "[1, 1, 3, 1, 1]",
+        "ans": "[1.031, 1.305, 2.969, 1.758, 1.047]"
+    },
+    {
+        "id": "4001506",
+        "text": "Caillou sat on the throne of the blood god  ",
+        "ref": "[3, 2, 3, 3, 3]",
+        "ans": "[2.656, 2.719, 2.547, 2.25, 2.469]"
+    },
+    {
+        "id": "4000182",
+        "text": "psychedelic mandlbrot encapsulated in a glowing sphere, cymatics, ferrofluid  ",
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[2.906, 2.609, 2.922, 2.688, 2.984]"
+    },
+    {
+        "id": "2002807",
+        "text": "Madonna Ciccone Song in the street  ",
+        "ref": "[2, 3, 3, 1, 3]",
+        "ans": "[2.594, 2.703, 2.875, 2.719, 2.438]"
+    },
+    {
+        "id": "3002651",
+        "text": "A man with a Crown talking to his son.  ",
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[1.617, 1.742, 2.891, 2.172, 1.547]"
+    },
+    {
+        "id": "0001073",
+        "text": "The space Fleet is storming the planet  ",
+        "ref": "[3, 3, 3, 3, 2]",
+        "ans": "[2.609, 2.609, 2.625, 2.531, 2.594]"
+    },
+    {
+        "id": "2002231",
+        "text": "Shifting universe, distorted, dislocation, splitting powerful image of a humanoid mecha  ",
+        "ref": "[3, 3, 3, 1, 3]",
+        "ans": "[2.688, 2.641, 2.781, 2.469, 2.594]"
+    },
+    {
+        "id": "3002204",
+        "text": "character dnd concept, Snow leopard like tabaxi paladin, great magical sword  ",
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[2.188, 2.062, 2.953, 2.438, 1.883]"
+    },
+    {
+        "id": "0002425",
+        "text": "3d cartoon animation video of two chicks one chick is cooking and the other is sitting next to him  ",
+        "ref": "[2, 3, 3, 2, 3]",
+        "ans": "[2.672, 2.641, 2.391, 2.25, 2.391]"
+    },
+    {
+        "id": "2002932",
+        "text": "young boy well dressed wearing belt in empty room looking ahead with confidence  ",
+        "ref": "[3, 2, 3, 3, 3]",
+        "ans": "[2.516, 2.609, 2.812, 2.641, 2.5]"
+    }
+]

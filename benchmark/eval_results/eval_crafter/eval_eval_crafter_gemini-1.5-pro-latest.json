@@ -1,0 +1,26 @@
+[
+    {
+        "id": "pika_0000",
+        "text": "2 Dog and a whale, ocean adventure",
+        "ref": "[0.533, 0.8, -1.0, 0.267, -1.0]",
+        "ans": "[2, 1, 1, 1, 2]"
+    },
+    {
+        "id": "pika_0001",
+        "text": "Teddy bear and 3 real bear",
+        "ref": "[0.467, 0.667, -1.0, 0.4, -1.0]",
+        "ans": "[4, 1, 1, 1, 2]"
+    },
+    {
+        "id": "pika_0002",
+        "text": "goldfish in glass",
+        "ref": "[0.667, 0.8, -1.0, 0.4, -1.0]",
+        "ans": "[4, 1, 1, 4, 4]"
+    },
+    {
+        "id": "pika_0003",
+        "text": "A small bird sits atop a blooming flower stem.",
+        "ref": "[0.8, 0.8, -1.0, 0.867, -1.0]",
+        "ans": "[2, 1, 1, 4, 4]"
+    }
+]

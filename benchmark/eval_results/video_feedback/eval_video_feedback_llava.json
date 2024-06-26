@@ -1,0 +1,104 @@
+[
+    {
+        "id": "7001917",
+        "text": "crowd surfing at a Pink Floid rock concert before the show  ",
+        "ref": "[2, 2, 3, 3, 3]",
+        "ans": "[3, 3, 4, 3, 2]"
+    },
+    {
+        "id": "7001486",
+        "text": "a robot holding baby Jesus at the nativity  ",
+        "ref": "[2, 3, 3, 2, 3]",
+        "ans": "[3, 3, 3, 3, 2]"
+    },
+    {
+        "id": "0001611",
+        "text": "Near the Elephant Gate village, they approach the haunted house at night. Rajiv feels anxious, but Bhavesh encourages him. As they reach the house, a mysterious sound in the air adds to the suspense.  ",
+        "ref": "[3, 2, 2, 2, 3]",
+        "ans": "[3, 3, 4, 3, 2]"
+    },
+    {
+        "id": "3000063",
+        "text": "Homer Simpson is running towards you down a hallway in the back rooms  ",
+        "ref": "[2, 2, 2, 3, 2]",
+        "ans": "[3, 3, 4, 2, 2]"
+    },
+    {
+        "id": "4000615",
+        "text": "Scene of burning incense and sipping tea in a Chinese tea room  ",
+        "ref": "[3, 2, 3, 1, 3]",
+        "ans": "[4, 4, 3, 1, 2]"
+    },
+    {
+        "id": "5000835",
+        "text": "dead tiger in forest with blood rodent cartoon style  ",
+        "ref": "[3, 3, 1, 2, 2]",
+        "ans": "[3, 3, 3, 2, 2]"
+    },
+    {
+        "id": "3002527",
+        "text": "lighting strikes clouds all over hyper realistic a storm going on and a city aerial view of the storm zoomed in from the street  ",
+        "ref": "[2, 2, 3, 1, 1]",
+        "ans": "[3, 3, 4, 2, 3]"
+    },
+    {
+        "id": "6001328",
+        "text": "Green field filled with flowers that sway gently in the wind  ",
+        "ref": "[1, 2, 3, 3, 1]",
+        "ans": "[3, 3, 3, 3, 2]"
+    },
+    {
+        "id": "3000385",
+        "text": "overhead drone footage of ocean shoreline with atlantic puffins nesting  ",
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[3, 3, 3, 3, 2]"
+    },
+    {
+        "id": "1001382",
+        "text": "the immense size of a blue whale  heart comparing it to the dimensions of a small car  ",
+        "ref": "[1, 2, 3, 1, 1]",
+        "ans": "[3, 3, 3, 3, 2]"
+    },
+    {
+        "id": "7000792",
+        "text": "good looking man standing up to his chest in water at the beach  ",
+        "ref": "[3, 2, 3, 2, 3]",
+        "ans": "[3, 3, 3, 3, 2]"
+    },
+    {
+        "id": "7000492",
+        "text": "The Prince on a white horse  ",
+        "ref": "[2, 3, 3, 3, 2]",
+        "ans": "[3, 3, 3, 3, 2]"
+    },
+    {
+        "id": "2001481",
+        "text": "The villagers asked what the fish say  ",
+        "ref": "[3, 2, 3, 1, 1]",
+        "ans": "[0, 0, 0, 0, 0]"
+    },
+    {
+        "id": "0001284",
+        "text": "Iron Man lands in old Marvel style  ",
+        "ref": "[3, 3, 2, 1, 3]",
+        "ans": "[4, 4, 3, 1, 2]"
+    },
+    {
+        "id": "4001069",
+        "text": "a man pulling handpump from the ground  ",
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[3, 3, 3, 3, 2]"
+    },
+    {
+        "id": "4000970",
+        "text": "wedding dragon party in a rave with several dragons dancing in a huge castle illuminate with strobbing rgb lights, fast traveling camera, ar 16:9  ",
+        "ref": "[3, 2, 3, 3, 2]",
+        "ans": "[3, 3, 2, 2, 2]"
+    },
+    {
+        "id": "7001302",
+        "text": "a young 16 year old kid in Napoli jersey  ",
+        "ref": "[2, 3, 3, 3, 3]",
+        "ans": "[3, 3, 3, 3, 2]"
+    }
+]

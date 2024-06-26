@@ -1,0 +1,44 @@
+[
+    {
+        "id": "7001917",
+        "text": "crowd surfing at a Pink Floid rock concert before the show  ",
+        "raw_score": 12.699383999720936,
+        "ref": "[2, 2, 3, 3, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "7001486",
+        "text": "a robot holding baby Jesus at the nativity  ",
+        "raw_score": 14.58118687772668,
+        "ref": "[2, 3, 3, 2, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "0001611",
+        "text": "Near the Elephant Gate village, they approach the haunted house at night. Rajiv feels anxious, but Bhavesh encourages him. As they reach the house, a mysterious sound in the air adds to the suspense.  ",
+        "raw_score": 41.71884096934027,
+        "ref": "[3, 2, 2, 2, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "3000063",
+        "text": "Homer Simpson is running towards you down a hallway in the back rooms  ",
+        "raw_score": 26.875277590907444,
+        "ref": "[2, 2, 2, 3, 2]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "4000615",
+        "text": "Scene of burning incense and sipping tea in a Chinese tea room  ",
+        "raw_score": 35.796623473294204,
+        "ref": "[3, 2, 3, 1, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "5000835",
+        "text": "dead tiger in forest with blood rodent cartoon style  ",
+        "raw_score": 15.604501378131296,
+        "ref": "[3, 3, 1, 2, 2]",
+        "ans": "[3, 3, 3, 3, 3]"
+    }
+]

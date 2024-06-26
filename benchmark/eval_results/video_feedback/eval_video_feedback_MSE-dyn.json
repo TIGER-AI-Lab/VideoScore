@@ -1,0 +1,821 @@
+[
+    {
+        "id": "7001917",
+        "text": "crowd surfing at a Pink Floid rock concert before the show  ",
+        "raw_score": 7198.262184143066,
+        "ref": "[2, 2, 3, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "7001486",
+        "text": "a robot holding baby Jesus at the nativity  ",
+        "raw_score": 1458.8047485351562,
+        "ref": "[2, 3, 3, 2, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "0001611",
+        "text": "Near the Elephant Gate village, they approach the haunted house at night. Rajiv feels anxious, but Bhavesh encourages him. As they reach the house, a mysterious sound in the air adds to the suspense.  ",
+        "raw_score": 2497.0835473632815,
+        "ref": "[3, 2, 2, 2, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "3000063",
+        "text": "Homer Simpson is running towards you down a hallway in the back rooms  ",
+        "raw_score": 302.846674601237,
+        "ref": "[2, 2, 2, 3, 2]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "4000615",
+        "text": "Scene of burning incense and sipping tea in a Chinese tea room  ",
+        "raw_score": 9054.79483235677,
+        "ref": "[3, 2, 3, 1, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "5000835",
+        "text": "dead tiger in forest with blood rodent cartoon style  ",
+        "raw_score": 2032.3580017089844,
+        "ref": "[3, 3, 1, 2, 2]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "3002527",
+        "text": "lighting strikes clouds all over hyper realistic a storm going on and a city aerial view of the storm zoomed in from the street  ",
+        "raw_score": 2111.8978271484375,
+        "ref": "[2, 2, 3, 1, 1]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "6001328",
+        "text": "Green field filled with flowers that sway gently in the wind  ",
+        "raw_score": 2227.6141916910806,
+        "ref": "[1, 2, 3, 3, 1]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "3000385",
+        "text": "overhead drone footage of ocean shoreline with atlantic puffins nesting  ",
+        "raw_score": 7778.819676717122,
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "1001382",
+        "text": "the immense size of a blue whale  heart comparing it to the dimensions of a small car  ",
+        "raw_score": 5322.92578125,
+        "ref": "[1, 2, 3, 1, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "7000792",
+        "text": "good looking man standing up to his chest in water at the beach  ",
+        "raw_score": 1735.1483268737793,
+        "ref": "[3, 2, 3, 2, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "7000492",
+        "text": "The Prince on a white horse  ",
+        "raw_score": 2165.545207977295,
+        "ref": "[2, 3, 3, 3, 2]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "2001481",
+        "text": "The villagers asked what the fish say  ",
+        "raw_score": 6067.166739908855,
+        "ref": "[3, 2, 3, 1, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "0001284",
+        "text": "Iron Man lands in old Marvel style  ",
+        "raw_score": 2161.616591389974,
+        "ref": "[3, 3, 2, 1, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "4001069",
+        "text": "a man pulling handpump from the ground  ",
+        "raw_score": 3018.855523681641,
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4000970",
+        "text": "wedding dragon party in a rave with several dragons dancing in a huge castle illuminate with strobbing rgb lights, fast traveling camera, ar 16:9  ",
+        "raw_score": 18322.32591959635,
+        "ref": "[3, 2, 3, 3, 2]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "7001302",
+        "text": "a young 16 year old kid in Napoli jersey  ",
+        "raw_score": 1063.824447631836,
+        "ref": "[2, 3, 3, 3, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "4000117",
+        "text": "A futuristic science fiction scene of a monk standing in front of a quantum computer, in the stlye of roger deakins, cinematic  ",
+        "raw_score": 307.9088460286459,
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "7001465",
+        "text": "fish swiming fast for his life  ",
+        "raw_score": 357.15404510498047,
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "2002051",
+        "text": "prison submerged in handcuffs and lemon juice and lemons  ",
+        "raw_score": 2174.4488037109377,
+        "ref": "[3, 3, 3, 2, 1]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "2002332",
+        "text": "beautiful brilliant colors sunset on the shore of the beautiful ocean,8k  ",
+        "raw_score": 1925.7566080729168,
+        "ref": "[2, 3, 3, 3, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "3000464",
+        "text": "Sudden appearance of shadows , contouring the walls in a fortaleza de Santa Cruz de Anhatomirim terror scene  ",
+        "raw_score": 841.7474212646484,
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "7000319",
+        "text": "In the style of Luchino Visconti, grainy black and white: Slow pan across an array of unearthed artifacts carefully laid on a cloth, their significance narrated through stark lighting  ",
+        "raw_score": 534.7873878479004,
+        "ref": "[2, 2, 2, 2, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "7001211",
+        "text": "High resolution, a female mechanic works on her 60s muscle car, all  that can be see are her beautiful legs and lower half of her torso, the other half is under the car working and is not seen, She is wearing ultra High Heeled shoes and short shorts, bright outdoor lighting  ",
+        "raw_score": 3526.162281036377,
+        "ref": "[2, 2, 3, 1, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4000066",
+        "text": "1800s freemasons military  zoom in film  ",
+        "raw_score": 14195.275683593753,
+        "ref": "[2, 2, 3, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "6000039",
+        "text": "After many trials, fish  finally reached the location marked on the map.  cartoon style  ",
+        "raw_score": 19639.5042775472,
+        "ref": "[1, 1, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "0002076",
+        "text": "View from a plant and in the sky you can see more planets and some green and pink nebulae, camera in zoom  Message: Aldhair (Font: MODERN)  ",
+        "raw_score": 31.570597330729168,
+        "ref": "[3, 3, 1, 3, 3]",
+        "ans": "[1, 1, 1, 1, 1]"
+    },
+    {
+        "id": "6001479",
+        "text": "Sage Kavita holding an ancient scroll with faded prophecies.  ",
+        "raw_score": 11540.904825846354,
+        "ref": "[1, 2, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "2001934",
+        "text": "A man and a friend. Eating chips and watching a football game, waving his arms  ",
+        "raw_score": 4788.160756429036,
+        "ref": "[3, 3, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4001094",
+        "text": "smooth movement of the character, increasing the perspective of the face  ",
+        "raw_score": 2780.5682108561195,
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "1002934",
+        "text": "Alice in wonderland faking down an endless rabbit hole  ",
+        "raw_score": 16544.575419108074,
+        "ref": "[1, 1, 3, 1, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "8000719",
+        "text": "Scene 2: Show the animals happily living their lives until the drought strikes. 8k full hd  ",
+        "raw_score": 13916.004498291015,
+        "ref": "[1, 1, 3, 1, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4001506",
+        "text": "Caillou sat on the throne of the blood god  ",
+        "raw_score": 5880.892797851563,
+        "ref": "[3, 2, 3, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4000182",
+        "text": "psychedelic mandlbrot encapsulated in a glowing sphere, cymatics, ferrofluid  ",
+        "raw_score": 2082.608870442708,
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "2002807",
+        "text": "Madonna Ciccone Song in the street  ",
+        "raw_score": 9553.26829223633,
+        "ref": "[2, 3, 3, 1, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3002651",
+        "text": "A man with a Crown talking to his son.  ",
+        "raw_score": 1234.3421071370442,
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "0001073",
+        "text": "The space Fleet is storming the planet  ",
+        "raw_score": 3007.833002115886,
+        "ref": "[3, 3, 3, 3, 2]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "2002231",
+        "text": "Shifting universe, distorted, dislocation, splitting powerful image of a humanoid mecha  ",
+        "raw_score": 6602.260760498047,
+        "ref": "[3, 3, 3, 1, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3002204",
+        "text": "character dnd concept, Snow leopard like tabaxi paladin, great magical sword  ",
+        "raw_score": 968.0304361979166,
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "0002425",
+        "text": "3d cartoon animation video of two chicks one chick is cooking and the other is sitting next to him  ",
+        "raw_score": 376.16518636067707,
+        "ref": "[2, 3, 3, 2, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "2002932",
+        "text": "young boy well dressed wearing belt in empty room looking ahead with confidence  ",
+        "raw_score": 9321.201542154946,
+        "ref": "[3, 2, 3, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4001509",
+        "text": "25 seconds of a crow flying  ",
+        "raw_score": 829.5617268880209,
+        "ref": "[3, 1, 3, 1, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "6001184",
+        "text": "a train 1960 going in south italy , autumn and windy weather close to the sea  ",
+        "raw_score": 13230.64739481608,
+        "ref": "[1, 3, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3000530",
+        "text": "Running girl, full body, moving camera, weaving in and out of the city.  ",
+        "raw_score": 20925.573740641277,
+        "ref": "[2, 1, 3, 2, 2]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "0002895",
+        "text": "The property of the convicted shall not be confiscated, fast motion  ",
+        "raw_score": 2476.147517089844,
+        "ref": "[3, 3, 1, 2, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "5000217",
+        "text": "A robot that throws a stack of paper from a desk  ",
+        "raw_score": 23699.87408574422,
+        "ref": "[3, 1, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "1000299",
+        "text": "A close up of a beautiful Queen crying on the death of Alexander The great. Alexander the Great lying on the bed surrounded by his courtiers  ",
+        "raw_score": 14672.396372477213,
+        "ref": "[1, 1, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "6001767",
+        "text": "Her ability to unite people under a common purpose and her deep empathy for the struggles of her subjects made her a beloved ruler.  ",
+        "raw_score": 14636.845352172852,
+        "ref": "[1, 2, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "7001972",
+        "text": "animate the flying saucers and make the beard flow with the wind  ",
+        "raw_score": 168.07760620117188,
+        "ref": "[3, 3, 1, 2, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "4001467",
+        "text": "lilliputs playing in doll house, 3d , realistic , 4k  ",
+        "raw_score": 6072.916790771485,
+        "ref": "[3, 3, 3, 1, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "2002156",
+        "text": "A love scenes from two Russian. Between pink trees. Full screen. First pirson. In ten seconds.  ",
+        "raw_score": 2049.2583231608073,
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "6001269",
+        "text": "a giant lake with flowers seen from above, aerial view, realistic photo. Zoom in.  Message: RACHEL (Font: MODERN)  ",
+        "raw_score": 15749.094868977865,
+        "ref": "[1, 3, 3, 3, 2]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4000929",
+        "text": "concept art style of a colorful and vibrant forest  ",
+        "raw_score": 25995.76338704427,
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "8000454",
+        "text": "Every day must be Sunday Amusement park inside the school  ",
+        "raw_score": 8254.528125,
+        "ref": "[1, 1, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4001748",
+        "text": "The mother is seen sweeping the floors, dusting furniture, and arranging the house. Make the atmosphere calm but mysterious.  ",
+        "raw_score": 3702.0113118489585,
+        "ref": "[3, 3, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3002979",
+        "text": ": A quiet suburban neighborhood in Hounslow, London, showing a young Navinder Singh Sarao with his family  ",
+        "raw_score": 1730.6375579833984,
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "4000997",
+        "text": "whale in space near an antimatter star, giant space squid emerges from star  ",
+        "raw_score": 4008.732893880208,
+        "ref": "[3, 3, 3, 3, 2]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "1001035",
+        "text": "show crypto market in tanking and add sound track.  ",
+        "raw_score": 7802.446075439453,
+        "ref": "[1, 2, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3000446",
+        "text": "3 Beach Buggies driving at beach, blue sky, realistic, hd, cinematic  ",
+        "raw_score": 13583.244028727213,
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "8000267",
+        "text": "A hand holding a broken chain, liberation, cinematic  ",
+        "raw_score": 25862.760543823242,
+        "ref": "[1, 2, 3, 1, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "5000995",
+        "text": "One misty evening, Detective Evelyn Harper received an anonymous letter at the Ravenswood Police Department  ",
+        "raw_score": 1457.3254508972168,
+        "ref": "[2, 3, 3, 3, 2]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "7001407",
+        "text": "jiafei sings and her hair is blown by wind background coconut beach blue lagoon and dragon  ",
+        "raw_score": 5597.488563537598,
+        "ref": "[2, 3, 3, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3002472",
+        "text": "a video of a racing  car jumping over a building  ",
+        "raw_score": 3075.312245686849,
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "2001266",
+        "text": "Hikers are drinking coffee at the top of the mountain  ",
+        "raw_score": 1459.4549031575523,
+        "ref": "[2, 3, 3, 3, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "4000326",
+        "text": "darth vader, disappointed watching the news, ultra 4k, hdr, apple video  ",
+        "raw_score": 2.126692708333333,
+        "ref": "[3, 3, 1, 3, 3]",
+        "ans": "[1, 1, 1, 1, 1]"
+    },
+    {
+        "id": "2000088",
+        "text": "god of destruction walking ,anime style ,4k,HD quality  ",
+        "raw_score": 1326.1088317871095,
+        "ref": "[3, 3, 1, 3, 2]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "6000932",
+        "text": "raw, 4k, realistic, girl, walking, rain, street, cars,  ",
+        "raw_score": 15008.394327799479,
+        "ref": "[1, 2, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "6000693",
+        "text": "Daniel in the den of angry lions but along with Daniel there is an angel of light  ",
+        "raw_score": 42267.80572001139,
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4001412",
+        "text": "dream painting small boy look at the christmas food which on the table  ",
+        "raw_score": 19738.211903889973,
+        "ref": "[2, 2, 3, 2, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "6000343",
+        "text": "A Young Girl with black hair and her hair is flow  ",
+        "raw_score": 39670.99166870117,
+        "ref": "[1, 1, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "6001468",
+        "text": "2d kawaii logo cute bright store picture 3d textures purple black pink blue  ",
+        "raw_score": 38406.30007425944,
+        "ref": "[1, 3, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "6000890",
+        "text": "the best cherries of the season  ",
+        "raw_score": 23027.165217081707,
+        "ref": "[1, 1, 2, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3000532",
+        "text": "take me to your leader, stop motion animation, claymation, 1950s animation  ",
+        "raw_score": 21286.706181844074,
+        "ref": "[2, 1, 3, 3, 2]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "6001069",
+        "text": "They developed new tools and techniques that enabled them to build complex structures, such as their famous ziggurats  ",
+        "raw_score": 5164.482208251953,
+        "ref": "[2, 2, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "5000865",
+        "text": "baking together and making a mess with flour everywhere,pixar style,4k , Cartoon  ",
+        "raw_score": 449.79941813151044,
+        "ref": "[3, 3, 2, 2, 2]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "0002196",
+        "text": "Add ambient sounds of ancient creatures and rustling leaves to set the eerie atmosphere  ",
+        "raw_score": 91.22163736979167,
+        "ref": "[3, 3, 2, 1, 3]",
+        "ans": "[1, 1, 1, 1, 1]"
+    },
+    {
+        "id": "6001383",
+        "text": "Sasquatch is afraid of conspiracy theories  ",
+        "raw_score": 3148.491053263346,
+        "ref": "[1, 2, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4001899",
+        "text": "now transformed into a living testament of filial devotion,  ",
+        "raw_score": 22864.42448730469,
+        "ref": "[2, 1, 3, 1, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3001514",
+        "text": "surprised boys look at the ceiling  ",
+        "raw_score": 1865.666539510091,
+        "ref": "[2, 3, 2, 3, 2]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "0000037",
+        "text": "George W. Bush speaking to Walter White, Christmas, snowing, Breaking Bad, 2012  ",
+        "raw_score": 313.05250244140626,
+        "ref": "[2, 2, 2, 3, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "1002369",
+        "text": "A cute dog  but getting startled by a loud noise and jumping into a bowl of popcorn, 8k, hyper detailed, highly detailed  ",
+        "raw_score": 12544.43123881022,
+        "ref": "[1, 1, 3, 1, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "6001162",
+        "text": "A primary school student with a worried expression  ",
+        "raw_score": 1093.5065205891926,
+        "ref": "[1, 3, 3, 3, 1]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "0002431",
+        "text": "a colorful image of 2 people walking on a beach watching high winds and high tides rolling in. Brilliant  ",
+        "raw_score": 1967.7559448242187,
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "1002436",
+        "text": "live man floating and flying through the air  ",
+        "raw_score": 5457.416041056315,
+        "ref": "[1, 1, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "2002708",
+        "text": "Make images of Indian scout motorcycles, each one of a different color, the first will be green, the second will be white and the third will be red with a road background.  ",
+        "raw_score": 2237.826593017578,
+        "ref": "[2, 3, 2, 2, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "7001056",
+        "text": "a blond hair and green eyes warrior lady on a walking dark horse  ",
+        "raw_score": 2657.4358444213867,
+        "ref": "[3, 3, 3, 2, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "2000791",
+        "text": ": pine tree mountain top . Raining with thunderstorm . Panning camera  ",
+        "raw_score": 640.0384521484375,
+        "ref": "[3, 3, 2, 3, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "6000228",
+        "text": "night sky with ufo invasion shining light on the city  ",
+        "raw_score": 15672.305216471354,
+        "ref": "[1, 2, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "6001880",
+        "text": "The two hugged each other, their clothes flying gently in the wind  ",
+        "raw_score": 26722.012496948242,
+        "ref": "[2, 1, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4001169",
+        "text": "a mini studio for a cricket fan with team india collectives, podcast studio, indian team, cricket studio, commentary studio, realistic setting,  ",
+        "raw_score": 5644.75517171224,
+        "ref": "[2, 2, 3, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "2000620",
+        "text": "titan musclare black robot in suit and purple metal lightning core, big old tv head and cannon blasters in arms staying on the city  ",
+        "raw_score": 3323.782167561849,
+        "ref": "[3, 3, 3, 3, 2]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "0001900",
+        "text": "There are conchs crawling under the sea.  ",
+        "raw_score": 914.4840954589845,
+        "ref": "[3, 2, 1, 3, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "1001356",
+        "text": "a woman driving a car on a mountain  ",
+        "raw_score": 13042.219029744467,
+        "ref": "[1, 1, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3001117",
+        "text": "different pros babysitter,handyman, tutor, photographer, personal trainer are shown on the map of a city  ",
+        "raw_score": 6882.365407307942,
+        "ref": "[2, 3, 2, 3, 2]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4001075",
+        "text": "May the hearts of those who witness this vision be filled with reverence and gratitude, for they stand before GOD himself, the architect of the universe, the conductor of the cosmic symphony, the light that illuminates every corner of existence, cinematic style  ",
+        "raw_score": 13933.584967041015,
+        "ref": "[3, 2, 3, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3002855",
+        "text": "a 50 years old man wearing faded blue long sleeves shirt and long sleeves faded jeans walking in the jungle in the early morning, dim sun light, photorealistic images,  ",
+        "raw_score": 3863.6092274983725,
+        "ref": "[2, 1, 3, 1, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "7000237",
+        "text": "a close up of a boy with purple eyes opening his eyes, anime style  ",
+        "raw_score": 1870.706398010254,
+        "ref": "[3, 3, 3, 2, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "2002107",
+        "text": "realistic photo of terminator robots in an apocalypsis world, fire, smoke, detailed, 4k  Message: genesis (Font: MODERN)  ",
+        "raw_score": 7162.779467773437,
+        "ref": "[3, 3, 2, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4000455",
+        "text": "fantastic lights from the vulcano, uhd, ultradetailed  ",
+        "raw_score": 4702.13828125,
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3001999",
+        "text": "Generate 10 second cartoon of a character expressing intense emotions: joy, anger, fear, surprise. Bright, exaggerated style. Character gestures wildly. Simple background.  ",
+        "raw_score": 1757.9035085042317,
+        "ref": "[3, 2, 3, 2, 2]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "6000051",
+        "text": "Anime girl light blue hair pink clothes  ",
+        "raw_score": 11699.36752319336,
+        "ref": "[1, 1, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "1002083",
+        "text": "short film, realistic, human, 16:9, dark, art house, forest,  sacrificing, burning, forest background, real, children, worshipping, flames, story telling, multiple scenes, grainy, raining, horror, multiple images of sadness, crying, devil worship, film, movie  ",
+        "raw_score": 16022.447321573893,
+        "ref": "[1, 1, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "1002899",
+        "text": "image for concentration when studying,futuristic image  ",
+        "raw_score": 20124.160858154297,
+        "ref": "[1, 1, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "4001518",
+        "text": "The electrician is burning struck by lightning and moaning in unbearable pain.  ",
+        "raw_score": 34808.15113728841,
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "6000768",
+        "text": "a village boy running in gree effect  ",
+        "raw_score": 24053.18829345703,
+        "ref": "[1, 1, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3001363",
+        "text": "Show the child cautiously exploring the dimly lit interior of the house. Use shadows to hint at the presence of supernatural entities or eerie happenings, such as a ghostly figure or a swinging old swing that moves on its own.  ",
+        "raw_score": 3437.6590576171875,
+        "ref": "[2, 2, 3, 3, 2]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "0001342",
+        "text": "the first Sparkling Stone revealed itself, emitting a soft glow.  ",
+        "raw_score": 1708.3170292154948,
+        "ref": "[2, 2, 2, 3, 3]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "8000783",
+        "text": "The magical meadow not only transforms the land but also the young man, who learns that true magic lies in the power of friendship, love and courage.  ",
+        "raw_score": 19450.883978271486,
+        "ref": "[1, 2, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "1002669",
+        "text": "make a presentation of a hinged rocking chair in a natural style with green plants and exotic birds in make a presentation of a hinged rocking chair in a natural style with green plants and exotic birds inmake a presentation of a hinged rocking chair in a natural style with green plants and exotic birds  ",
+        "raw_score": 13788.126754760742,
+        "ref": "[1, 1, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "6000707",
+        "text": "rays of light leaving the sun and making their way towards earth  ",
+        "raw_score": 36696.41946919759,
+        "ref": "[1, 1, 3, 3, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "8000515",
+        "text": "Jawan movie, shah rukh khan, stylish, cinematic footage, high quality  ",
+        "raw_score": 13758.235845947265,
+        "ref": "[1, 2, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "5000586",
+        "text": "It is capable of speaking, writing and translating like humans.  ",
+        "raw_score": 1521.5459632873535,
+        "ref": "[3, 1, 3, 3, 1]",
+        "ans": "[3, 3, 3, 3, 3]"
+    },
+    {
+        "id": "1000858",
+        "text": "beyond time and space there is a construct that rotates  ",
+        "raw_score": 14767.247400919596,
+        "ref": "[1, 2, 3, 2, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "0002110",
+        "text": "A small construction site with Eddie the Excavator in action, showcasing his powerful digging arm in motion, scooping up dirt. The background should show a partially dug earth area.  ",
+        "raw_score": 4132.106316731772,
+        "ref": "[3, 3, 3, 3, 3]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "3001810",
+        "text": "After this, the sounds of the palace and the forest also became quiet and people now find peace there.  ",
+        "raw_score": 661.1229654947916,
+        "ref": "[2, 3, 2, 3, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    },
+    {
+        "id": "8000876",
+        "text": "a boy from a poor family and become  a rich man  ",
+        "raw_score": 10554.399038696289,
+        "ref": "[1, 2, 3, 1, 1]",
+        "ans": "[4, 4, 4, 4, 4]"
+    },
+    {
+        "id": "7000830",
+        "text": "a realistic picture of a drawn table, full of tools and colours  Message: Pencil (Font: MODERN)  ",
+        "raw_score": 122.42229461669922,
+        "ref": "[2, 1, 1, 3, 3]",
+        "ans": "[2, 2, 2, 2, 2]"
+    }
+]
