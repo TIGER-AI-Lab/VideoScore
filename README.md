@@ -19,7 +19,8 @@ This is the official repo for "VideoScore: Building Automatic Metrics to Simulat
 
 
 
-
+## News
+(2024-08-05) We released the Wandb training cruves of [VideoScore](https://wandb.ai/xuanhe/Mantis/reports/VideoScore--Vmlldzo4OTM2MDE3) and [VideoScore-anno-only](https://wandb.ai/xuanhe/Mantis/reports/VideoScore-anno-only--Vmlldzo4OTM2MTg5) to help reproduce the training results.
 
 
 ## Introduction
