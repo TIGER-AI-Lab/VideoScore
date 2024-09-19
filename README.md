@@ -1,5 +1,5 @@
 # VideoScore
-This is the official repo for "VideoScore: Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation"
+This is the official repo for our EMNLP 2024 paper "VideoScore: Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation".
 
 <a target="_blank" href="https://arxiv.org/abs/2406.15252">
 <img style="height:22pt" src="https://img.shields.io/badge/-Paper-red?style=flat&logo=arxiv"></a>
