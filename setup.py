@@ -9,7 +9,7 @@ setup(
     author='Xuan He & Dongfu Jiang',
     author_email='hexuan21@mails.tsinghua.edu.cn & dongfu.jiang@uwaterloo.ca',
     packages=find_packages(),
-    url='https://github.com/jdf-prog/many-image-qa',
+    url='https://github.com/TIGER-AI-Lab/VideoScore',
     install_requires=[
         "mantis-vl",
         "transformers",
