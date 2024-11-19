@@ -61,22 +61,22 @@ pip install flash-attn --no-build-isolation
 
 - [🤗 VideoScore-Bench](https://huggingface.co/datasets/TIGER-Lab/VideoScore-Bench) 
 We derive four test sets from 
-VideoFeedback, 
+[VideoFeedback](https://huggingface.co/datasets/TIGER-Lab/VideoFeedback), 
 [EvalCrafter](https://github.com/evalcrafter/EvalCrafter), 
 [GenAI-Bench](https://huggingface.co/datasets/TIGER-Lab/GenAI-Bench) and 
 [VBench](https://github.com/Vchitect/VBench) respectively to curate VideoScore-Bench. 
 VideoScore-Bench is composed of about 7,000 videos, covering both Likert-scale annotation and human preference data.  
 
 ## Model
-- [🤗 VideoScore](https://huggingface.co/TIGER-Lab/VideoScore) VideoScore is a video quality evaluation model, taking [Mantis-8B-Idefics2](https://huggingface.co/TIGER-Lab/Mantis-8B-Idefics2) as base-model and trained on [VideoFeedback](https://huggingface.co/datasets/TIGER-Lab/VideoFeedback). 
+- [🤗 VideoScore](https://huggingface.co/TIGER-Lab/VideoScore) is a video quality evaluation model, taking [Mantis-8B-Idefics2](https://huggingface.co/TIGER-Lab/Mantis-8B-Idefics2) as base-model and trained on [VideoFeedback](https://huggingface.co/datasets/TIGER-Lab/VideoFeedback). 
 
-- [🤗 VideoScore-anno-only](https://huggingface.co/TIGER-Lab/VideoScore-anno-only) VideoScore-anno-only is a variant of VideoScore, trained on VideoFeedback with the real videos excluded.
+- [🤗 VideoScore-anno-only](https://huggingface.co/TIGER-Lab/VideoScore-anno-only) is a variant of VideoScore, trained on VideoFeedback with the real videos excluded.
 
 
 ## Inference examples
 ```bash
 cd examples
-python run_mantiscore.py
+python run_videoscore.py
 ```
 
 ## Evaluation
