@@ -21,8 +21,7 @@ def _read_video_pyav(
             frames.append(frame)
     return np.stack([x.to_ndarray(format="rgb24") for x in frames])
 
-MAX_NUM_FRAMES=16
-ROUND_DIGIT=3
+
 REGRESSION_QUERY_PROMPT = """
 Suppose you are an expert in judging and evaluating the quality of AI-generated videos,
 please watch the following frames of a given video and see the text prompt for generating the video,
@@ -46,8 +45,17 @@ factual consistency: 1.8
 For this video, the text prompt is "{text_prompt}",
 all the frames of video are as follows:
 """
+ROUND_DIGIT=3
 
-model_name="TIGER-Lab/VideoScore"
+# MAX_NUM_FRAMES=16
+# model_name="TIGER-Lab/VideoScore"
+
+# =======================================
+# we support 48 frames in VideoScore-v1.1
+# =======================================
+MAX_NUM_FRAMES=48
+model_name="TIGER-Lab/VideoScore-v1.1"
+
 video_path="video1.mp4"
 video_prompt="Near the Elephant Gate village, they approach the haunted house at night. Rajiv feels anxious, but Bhavesh encourages him. As they reach the house, a mysterious sound in the air adds to the suspense."
 
@@ -96,5 +104,10 @@ print(aspect_scores)
 model output on visual quality, temporal consistency, dynamic degree,
 text-to-video alignment, factual consistency, respectively
 
+
+VideoScore: 
 [2.297, 2.469, 2.906, 2.766, 2.516]
+
+VideoScore-v1.1:
+[2.328, 2.484, 2.562, 1.969, 2.594]
 """

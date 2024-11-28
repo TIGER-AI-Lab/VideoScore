@@ -20,6 +20,7 @@ This is the official repo for our EMNLP 2024 paper "VideoScore: Building Automat
 
 
 ## News
+[2024-11-28] Try on our new version [VideoScore-v1.1](https://huggingface.co/TIGER-Lab/VideoScore-v1.1), with better performance in **"text-to-video alignment"** subscore and the support for **48 frames** in inference now!
 [2024-08-05] We released the Wandb training cruves of [VideoScore](https://api.wandb.ai/links/xuanhe/ptohlfcx) and [VideoScore-anno-only](https://api.wandb.ai/links/xuanhe/4vs5k0cq) to help reproduce the training results.
 
 

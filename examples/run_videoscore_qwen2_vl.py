@@ -6,8 +6,7 @@ from mantis.models.qwen2_vl import Qwen2VLForSequenceClassification
 from transformers import Qwen2VLProcessor
 from qwen_vl_utils import process_vision_info
 
-MAX_NUM_FRAMES=16
-ROUND_DIGIT=3
+
 REGRESSION_QUERY_PROMPT = """
 Suppose you are an expert in judging and evaluating the quality of AI-generated videos,
 please watch the following frames of a given video and see the text prompt for generating the video,
@@ -31,6 +30,9 @@ factual consistency: 1.8
 For this video, the text prompt is "{text_prompt}",
 all the frames of video are as follows:
 """
+ROUND_DIGIT=3
+FPS=8.0
+
 
 model_name="TIGER-Lab/VideoScore-Qwen2-VL"
 video_path="video1.mp4"
@@ -52,7 +54,7 @@ messages = [
             {
                 "type": "video",
                 "video": video_path,
-                "fps": 8.0,
+                "fps": FPS,
             },
             {"type": "text", "text": REGRESSION_QUERY_PROMPT.format(text_prompt=video_prompt)},
         ],

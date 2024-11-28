@@ -1,6 +1,6 @@
 
-# bench_name="video_feedback"
-bench_name="eval_crafter"
+bench_name="video_feedback"
+# bench_name="eval_crafter"
 # bench_name="genaibench"
 # bench_name="vbench"
 
@@ -13,6 +13,12 @@ if [ "$metric_name" = "video_feedback" ]; then
 else
     model_repo_name="TIGER-Lab/VideoScore-anno-only"
 fi
+
+# =======================================================
+# set model_repo_name to "VideoScore-v1.1" to evaluate it  
+# =======================================================
+
+# model_repo_name="TIGER-Lab/VideoScore-v1.1"
 
 
 data_repo_name="TIGER-Lab/VideoScore-Bench"
