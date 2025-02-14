@@ -4,11 +4,11 @@ bench_name="video_feedback"
 # bench_name="genaibench"
 # bench_name="vbench"
 
-mkdir -p mkdir -p "./eval_results/${bench_name}"
+mkdir -p "./eval_results/${bench_name}"
 
 ## for video_feedback, we use default model of VideoScore; 
 ## while for the other three test sets, we use the variant VideoScore-anno-only, with real videos excluded from training set
-if [ "$metric_name" = "video_feedback" ]; then
+if [ "$bench_name" = "video_feedback" ]; then
     model_repo_name="TIGER-Lab/VideoScore"
 else
     model_repo_name="TIGER-Lab/VideoScore-anno-only"
