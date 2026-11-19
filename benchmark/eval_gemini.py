@@ -35,7 +35,7 @@ def eval_gemini(
     
     logging.basicConfig(level=logging.INFO)
     logger= logging.getLogger(__name__)
-    date_time=datetime.now().strftime("%m-%d %H:%M:%S")
+    date_time=datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     log_file=f"./logs/{bench_name}/eval_{base_model}_on_{bench_name}_{date_time}.log"
     os.makedirs(os.path.dirname(log_file),exist_ok=True)
     file_handler = logging.FileHandler(log_file)
